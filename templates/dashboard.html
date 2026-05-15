@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - FIR Crime Detection{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <div class="section-container">
+        <h1>Welcome, {{ user.name }}</h1>
+        <p>File a complaint and explore crime hotspots on the interactive map</p>
+    </div>
+</div>
+
+<main class="dashboard-main">
+    <div class="dashboard-container">
+        <div class="left-panel">
+            <div class="card form-card">
+                <h2><span class="card-icon">&#128221;</span> File a Complaint</h2>
+                <form id="fir-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" min="1" max="120" placeholder="Age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="complaint">Complaint Details</label>
+                        <textarea id="complaint" name="complaint" rows="4"
+                            placeholder="Describe the incident in detail..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address (Click on the map to select location)</label>
+                        <div class="coords-display">
+                            <div class="coord-field">
+                                <label for="latitude">Latitude</label>
+                                <input type="text" id="latitude" name="latitude" readonly
+                                    placeholder="Click on map">
+                            </div>
+                            <div class="coord-field">
+                                <label for="longitude">Longitude</label>
+                                <input type="text" id="longitude" name="longitude" readonly
+                                    placeholder="Click on map">
+                            </div>
+                        </div>
+                        <p class="hint">&#128070; Click anywhere on the map to select your address location</p>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                        <span class="btn-text">Submit Complaint</span>
+                        <span class="btn-loading" style="display:none;">Processing...</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="card result-card" id="result-card" style="display:none;">
+                <h2><span class="card-icon">&#128203;</span> FIR Result</h2>
+                <div id="result-content"></div>
+            </div>
+
+            <div class="card stats-card">
+                <h2><span class="card-icon">&#128202;</span> Crime Statistics</h2>
+                <div id="stats-content">
+                    <p class="loading-text">Loading statistics...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="card map-card">
+                <div class="map-header">
+                    <h2><span class="card-icon">&#128506;</span> Crime Hotspot Map</h2>
+                    <div class="map-controls">
+                        <select id="crime-filter">
+                            <option value="All">All Crime Types</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="map"></div>
+                <div class="map-legend" id="map-legend"></div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="/static/js/app.js"></script>
+{% endblock %}

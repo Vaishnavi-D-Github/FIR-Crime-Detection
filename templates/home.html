@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}FIR Crime Detection - Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">FIR Crime Classification<br>&amp; Hotspot Detection</h1>
+        <p class="hero-subtitle">AI-powered crime type detection from complaint text with interactive crime hotspot mapping</p>
+        <div class="hero-actions">
+            {% if user %}
+                <a href="/dashboard" class="btn btn-primary btn-lg">Go to Dashboard</a>
+            {% else %}
+                <a href="/register" class="btn btn-primary btn-lg">Get Started</a>
+                <a href="/login" class="btn btn-outline btn-lg">Login</a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="section-container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">&#128221;</div>
+                <h3>File a Complaint</h3>
+                <p>Enter your details, describe the incident, and select your location on an interactive map</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#129302;</div>
+                <h3>AI Classification</h3>
+                <p>Our PyTorch neural network instantly classifies the crime type from your complaint text</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128506;</div>
+                <h3>Hotspot Mapping</h3>
+                <p>View crime hotspots on an interactive heatmap that updates in real-time with new reports</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128202;</div>
+                <h3>Crime Statistics</h3>
+                <p>Track crime trends with live statistics and filter the map by specific crime types</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="crime-types-section">
+    <div class="section-container">
+        <h2 class="section-title">Crime Types Detected</h2>
+        <div class="crime-tags">
+            <span class="crime-tag" style="--tag-color: #e74c3c">Theft</span>
+            <span class="crime-tag" style="--tag-color: #e67e22">Assault</span>
+            <span class="crime-tag" style="--tag-color: #9b59b6">Robbery</span>
+            <span class="crime-tag" style="--tag-color: #3498db">Fraud</span>
+            <span class="crime-tag" style="--tag-color: #1abc9c">Kidnapping</span>
+            <span class="crime-tag" style="--tag-color: #c0392b">Murder</span>
+            <span class="crime-tag" style="--tag-color: #2980b9">Cybercrime</span>
+            <span class="crime-tag" style="--tag-color: #27ae60">Drug Offense</span>
+            <span class="crime-tag" style="--tag-color: #d35400">Domestic Violence</span>
+            <span class="crime-tag" style="--tag-color: #8e44ad">Burglary</span>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="section-container">
+        <p>FIR Crime Detection System &mdash; Powered by PyTorch &amp; Leaflet.js</p>
+    </div>
+</footer>
+{% endblock %}
