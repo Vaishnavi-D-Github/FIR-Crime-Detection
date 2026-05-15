@@ -1,0 +1,1002 @@
+FIR_ID,Name,Age,Gender,Crime_Type,Complaint,Latitude,Longitude,Date,Area
+FIR-2024-00001,Rahul Das,35,Male,Fraud,Cheated by a fake job placement agency in Vikhroli.,19.106129,72.931034,2024-02-19,Vikhroli
+FIR-2025-00002,Sunita Sharma,23,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Vikhroli.,19.10344,72.928725,2025-11-23,Vikhroli
+FIR-2021-00003,Swati Pawar,55,Female,Kidnapping,A young girl was abducted by unknown men in a white van near Andheri.,19.123663,72.843205,2021-04-25,Andheri
+FIR-2025-00004,Neha Patel,42,Female,Assault,Was assaulted by neighbour over a property dispute in Kopar Khairane.,19.104575,73.013743,2025-08-18,Kopar Khairane
+FIR-2021-00005,Arvind Patel,53,Male,Kidnapping,Child went missing from a park in Fort and is suspected to be kidnapped.,18.941509,72.833033,2021-12-03,Fort
+FIR-2023-00006,Vishal Desai,67,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Kurla.,19.07993,72.877003,2023-11-27,Kurla
+FIR-2020-00007,Kavita Kulkarni,40,Female,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Mahalaxmi.,18.986836,72.815671,2020-10-21,Mahalaxmi
+FIR-2025-00008,Mahesh Das,33,Male,Robbery,Home invasion robbery at my residence in Dombivli colony.,19.213699,73.095208,2025-09-08,Dombivli
+FIR-2024-00009,Pallavi Bose,21,Female,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Colaba.,18.904723,72.806024,2024-12-11,Colaba
+FIR-2024-00010,Akash More,43,Male,Drug Offense,Drug peddlers operating near Powai college campus.,19.110393,72.9109,2024-05-24,Powai
+FIR-2020-00011,Komal Sawant,41,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Thane.,19.21817,72.983216,2020-03-21,Thane
+FIR-2024-00012,Ravi Reddy,45,Male,Burglary,Warehouse burglary at Juhu industrial area.,19.085932,72.836322,2024-05-18,Juhu
+FIR-2021-00013,Vishal Das,25,Male,Domestic Violence,Verbal and physical abuse by partner at our flat in Bhandup.,19.146604,72.93337,2021-08-01,Bhandup
+FIR-2024-00014,Divya Bose,29,Female,Domestic Violence,Verbal and physical abuse by partner at our flat in Malad.,19.183169,72.851179,2024-04-05,Malad
+FIR-2022-00015,Pallavi Gupta,52,Female,Domestic Violence,Domestic violence complaint against spouse. We live in Andheri.,19.116183,72.83679,2022-05-08,Andheri
+FIR-2021-00016,Manoj Pillai,23,Male,Assault,I was physically attacked by unknown persons near Badlapur bus stop.,19.16486,73.229054,2021-03-22,Badlapur
+FIR-2025-00017,Sapna Gupta,34,Female,Domestic Violence,Elderly parents being abused by their son at Churchgate house.,18.941487,72.834978,2025-12-07,Churchgate
+FIR-2020-00018,Geeta Reddy,59,Female,Murder,Unidentified body found near Kalyan railway tracks.,19.24273,73.130458,2020-06-01,Kalyan
+FIR-2022-00019,Ramesh Desai,18,Male,Assault,I was physically attacked by unknown persons near Fort bus stop.,18.928379,72.843908,2022-02-17,Fort
+FIR-2024-00020,Sanjay Reddy,49,Male,Fraud,Cheated by a fake job placement agency in Mira Road.,19.285667,72.876148,2024-08-08,Mira Road
+FIR-2025-00021,Seema Joshi,24,Female,Assault,Attacked with a knife by an unknown person near Mahalaxmi park.,18.979886,72.810222,2025-01-22,Mahalaxmi
+FIR-2021-00022,Amit Sawant,64,Male,Murder,Man found murdered in his apartment in Malad society.,19.181032,72.849126,2021-07-06,Malad
+FIR-2020-00023,Nisha Desai,22,Female,Drug Offense,Suspected drug dealing activity near Vasai slum area.,19.351712,72.849686,2020-02-25,Vasai
+FIR-2020-00024,Anil Jadhav,49,Male,Drug Offense,Illicit liquor being sold at Kandivali market area.,19.217449,72.845293,2020-07-09,Kandivali
+FIR-2021-00025,Lakshmi Jadhav,62,Female,Domestic Violence,Verbal and physical abuse by partner at our flat in Mahalaxmi.,18.982533,72.805798,2021-01-19,Mahalaxmi
+FIR-2021-00026,Harsh Patil,21,Male,Theft,Bicycle stolen from outside Nalasopara railway station.,19.417257,72.829454,2021-01-17,Nalasopara
+FIR-2021-00027,Anil Patel,56,Male,Assault,Attacked with a knife by an unknown person near Ghatkopar park.,19.078198,72.915906,2021-10-20,Ghatkopar
+FIR-2025-00028,Dinesh Patel,44,Male,Burglary,Apartment burglary in Virar society. Lock was broken.,19.452227,72.806815,2025-12-11,Virar
+FIR-2020-00029,Sanjay Sawant,26,Male,Kidnapping,Businessman kidnapped for ransom from his office in Dombivli.,19.22688,73.095415,2020-08-20,Dombivli
+FIR-2021-00030,Suresh Naik,31,Male,Domestic Violence,Dowry harassment by in-laws at residence in Mulund.,19.181265,72.963917,2021-06-10,Mulund
+FIR-2022-00031,Sachin Banerjee,52,Male,Kidnapping,Child went missing from a park in Marine Lines and is suspected to be kidnapped.,18.933356,72.829842,2022-11-04,Marine Lines
+FIR-2022-00032,Sanjay Singh,24,Male,Domestic Violence,Wife beaten and threatened by husband and his family in Powai.,19.113235,72.900213,2022-04-22,Powai
+FIR-2022-00033,Divya More,34,Female,Theft,Pickpocket stole my purse while shopping at Kurla mall.,19.079187,72.870282,2022-03-21,Kurla
+FIR-2025-00034,Kavita Das,46,Female,Domestic Violence,Domestic violence complaint against spouse. We live in Seawoods.,19.011693,73.009005,2025-03-18,Seawoods
+FIR-2020-00035,Sunil Kulkarni,55,Male,Domestic Violence,Elderly parents being abused by their son at Powai house.,19.110149,72.902165,2020-06-07,Powai
+FIR-2021-00036,Vishal Singh,40,Male,Domestic Violence,Domestic violence complaint against spouse. We live in Turbhe.,19.08659,73.021115,2021-03-26,Turbhe
+FIR-2020-00037,Prashant Sharma,29,Male,Murder,Man found murdered in his apartment in Turbhe society.,19.076936,73.018347,2020-07-28,Turbhe
+FIR-2021-00038,Mohan Desai,30,Male,Drug Offense,Drug peddlers operating near Kopar Khairane college campus.,19.108911,73.015026,2021-01-22,Kopar Khairane
+FIR-2024-00039,Arvind Patil,35,Male,Assault,Was assaulted by neighbour over a property dispute in Bhandup.,19.15263,72.935494,2024-06-01,Bhandup
+FIR-2022-00040,Sanjay Gupta,55,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Colaba.,18.908631,72.811614,2022-07-20,Colaba
+FIR-2024-00041,Arvind Pillai,30,Male,Kidnapping,Woman kidnapped from her workplace in Colaba industrial area.,18.896734,72.823212,2024-11-24,Colaba
+FIR-2022-00042,Nikhil Jadhav,22,Male,Murder,Woman killed by known assailant in Marine Lines residential area.,18.946468,72.815993,2022-09-10,Marine Lines
+FIR-2023-00043,Shalini Sawant,62,Female,Kidnapping,A young girl was abducted by unknown men in a white van near Vasai.,19.354537,72.842999,2023-11-24,Vasai
+FIR-2024-00044,Dinesh Pillai,37,Male,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Vasai.,19.356777,72.833904,2024-10-21,Vasai
+FIR-2025-00045,Nisha Pawar,46,Female,Fraud,Real estate fraud. Sold a property with forged documents in Ulhasnagar.,19.227375,73.173697,2025-03-22,Ulhasnagar
+FIR-2025-00046,Ajay Rane,60,Male,Burglary,House was broken into while we were away. Jewellery and cash stolen from Airoli residence.,19.162268,73.003423,2025-05-08,Airoli
+FIR-2023-00047,Vikram Sharma,20,Male,Fraud,Credit card cloned and used for unauthorised purchases. I live near Ambernath.,19.211495,73.177457,2023-11-19,Ambernath
+FIR-2020-00048,Karan Rao,42,Male,Drug Offense,Found suspicious white powder packets near Kharghar park.,19.040351,73.069552,2020-07-08,Kharghar
+FIR-2023-00049,Ravi Rao,51,Male,Drug Offense,Narcotics being smuggled through Dadar bus terminus.,19.012784,72.854767,2023-03-26,Dadar
+FIR-2024-00050,Anjali Rane,53,Female,Burglary,Warehouse burglary at Panvel industrial area.,18.991653,73.121885,2024-07-27,Panvel
+FIR-2024-00051,Kavita Das,48,Female,Drug Offense,Found suspicious white powder packets near Mulund park.,19.179397,72.951846,2024-08-21,Mulund
+FIR-2020-00052,Sanjay Pawar,22,Male,Kidnapping,Businessman kidnapped for ransom from his office in Ghatkopar.,19.082517,72.915961,2020-03-05,Ghatkopar
+FIR-2023-00053,Arvind Rao,27,Male,Fraud,Real estate fraud. Sold a property with forged documents in Juhu.,19.086452,72.827252,2023-01-07,Juhu
+FIR-2022-00054,Geeta Bose,55,Female,Theft,Pickpocket stole my purse while shopping at Virar mall.,19.45544,72.820455,2022-07-28,Virar
+FIR-2023-00055,Sapna Das,65,Female,Domestic Violence,Dowry harassment by in-laws at residence in Churchgate.,18.931965,72.821859,2023-01-13,Churchgate
+FIR-2024-00056,Anjali Reddy,69,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Worli.,19.025991,72.824814,2024-01-13,Worli
+FIR-2021-00057,Suresh Iyer,45,Male,Robbery,Three men with weapons robbed a jewellery store at Dombivli.,19.209306,73.084282,2021-08-11,Dombivli
+FIR-2020-00058,Pallavi Sawant,35,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Mulund.,19.172006,72.96128,2020-06-08,Mulund
+FIR-2021-00059,Dev Iyer,20,Male,Theft,Gold chain snatched by two men on a bike near Ghatkopar junction.,19.092585,72.910527,2021-03-16,Ghatkopar
+FIR-2025-00060,Ramesh Joshi,47,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Sanpada.,19.065618,73.022075,2025-02-25,Sanpada
+FIR-2020-00061,Ajay Singh,55,Male,Theft,Pickpocket stole my purse while shopping at Nerul mall.,19.030933,73.0212,2020-10-23,Nerul
+FIR-2020-00062,Rajesh Rao,67,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Churchgate.,18.938125,72.827719,2020-06-18,Churchgate
+FIR-2023-00063,Anjali Kulkarni,22,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Lower Parel.,18.983053,72.829701,2023-02-14,Lower Parel
+FIR-2022-00064,Sneha Banerjee,47,Female,Robbery,Three men with weapons robbed a jewellery store at Seawoods.,19.026176,73.026809,2022-10-26,Seawoods
+FIR-2020-00065,Nisha Jadhav,70,Female,Burglary,Shop broken into at night in Bhandup market. Stock worth lakhs stolen.,19.156834,72.944115,2020-05-15,Bhandup
+FIR-2022-00066,Dev Pawar,54,Male,Burglary,Warehouse burglary at Mahalaxmi industrial area.,18.979528,72.811886,2022-03-16,Mahalaxmi
+FIR-2020-00067,Nikhil Ghosh,34,Male,Murder,Unidentified body found near Bhandup railway tracks.,19.153824,72.933025,2020-09-07,Bhandup
+FIR-2023-00068,Manoj Das,44,Male,Drug Offense,Found suspicious white powder packets near Vasai park.,19.364512,72.842618,2023-08-26,Vasai
+FIR-2024-00069,Suresh Shah,32,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Ghatkopar.,19.089079,72.90548,2024-09-12,Ghatkopar
+FIR-2025-00070,Shruti Naik,39,Female,Murder,Woman killed by known assailant in Dombivli residential area.,19.214432,73.081311,2025-04-11,Dombivli
+FIR-2024-00071,Harsh Naik,66,Male,Robbery,Three men with weapons robbed a jewellery store at Goregaon.,19.171072,72.84813,2024-09-20,Goregaon
+FIR-2024-00072,Neha Banerjee,30,Female,Kidnapping,Businessman kidnapped for ransom from his office in Vikhroli.,19.094989,72.917783,2024-03-09,Vikhroli
+FIR-2022-00073,Amit Naik,36,Male,Robbery,Home invasion robbery at my residence in Fort colony.,18.925852,72.826045,2022-08-16,Fort
+FIR-2020-00074,Shalini Gupta,21,Female,Kidnapping,My 8-year-old child was kidnapped from outside school near Ambernath.,19.210942,73.184014,2020-10-21,Ambernath
+FIR-2023-00075,Vikram Kumar,69,Male,Burglary,House was broken into while we were away. Jewellery and cash stolen from Nerul residence.,19.042878,73.009269,2023-10-20,Nerul
+FIR-2022-00076,Dev Rane,42,Male,Drug Offense,Drug peddlers operating near Kalyan college campus.,19.250903,73.145301,2022-10-20,Kalyan
+FIR-2021-00077,Dinesh Das,24,Male,Fraud,Cheated by a fake job placement agency in Fort.,18.929093,72.827424,2021-03-18,Fort
+FIR-2025-00078,Anil Sharma,44,Male,Drug Offense,Illicit liquor being sold at Churchgate market area.,18.928025,72.82103,2025-05-23,Churchgate
+FIR-2023-00079,Rekha Reddy,32,Female,Kidnapping,Child went missing from a park in Fort and is suspected to be kidnapped.,18.937024,72.844473,2023-02-18,Fort
+FIR-2025-00080,Akash Kumar,35,Male,Robbery,Armed robbery at my shop in Juhu. Cash and goods worth lakhs were looted.,19.081618,72.822552,2025-10-10,Juhu
+FIR-2020-00081,Neha Pawar,62,Female,Kidnapping,Businessman kidnapped for ransom from his office in Kharghar.,19.047409,73.065676,2020-10-02,Kharghar
+FIR-2024-00082,Shruti Patil,56,Female,Kidnapping,My 8-year-old child was kidnapped from outside school near Bandra.,19.054178,72.832986,2024-10-01,Bandra
+FIR-2021-00083,Komal Verma,66,Female,Robbery,ATM robbery by masked men at Ambernath main road.,19.20753,73.194321,2021-10-14,Ambernath
+FIR-2022-00084,Rekha More,40,Female,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Airoli.,19.159303,73.005555,2022-07-23,Airoli
+FIR-2020-00085,Lakshmi Reddy,43,Female,Domestic Violence,Elderly parents being abused by their son at Colaba house.,18.898461,72.809748,2020-07-28,Colaba
+FIR-2023-00086,Vishal Mukherjee,52,Male,Drug Offense,Suspected drug dealing activity near Turbhe slum area.,19.075352,73.009836,2023-11-15,Turbhe
+FIR-2020-00087,Deepak Mehta,53,Male,Robbery,Home invasion robbery at my residence in Vashi colony.,19.084717,72.998294,2020-11-20,Vashi
+FIR-2020-00088,Karan Gupta,37,Male,Domestic Violence,Domestic violence complaint against spouse. We live in Andheri.,19.11786,72.840894,2020-08-04,Andheri
+FIR-2021-00089,Mohan Rao,36,Male,Domestic Violence,Elderly parents being abused by their son at Bhandup house.,19.156494,72.947105,2021-08-18,Bhandup
+FIR-2023-00090,Arvind Joshi,56,Male,Domestic Violence,Being physically abused by husband at our home in Thane.,19.213825,72.9839,2023-06-26,Thane
+FIR-2021-00091,Priya Shah,64,Female,Kidnapping,Child went missing from a park in Nalasopara and is suspected to be kidnapped.,19.427178,72.822193,2021-08-18,Nalasopara
+FIR-2025-00092,Ritu Patil,53,Female,Domestic Violence,Elderly parents being abused by their son at Belapur house.,19.032157,73.045892,2025-04-19,Belapur
+FIR-2023-00093,Swati Mukherjee,67,Female,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Colaba.,18.911594,72.818805,2023-07-22,Colaba
+FIR-2023-00094,Mohan Verma,26,Male,Domestic Violence,Wife beaten and threatened by husband and his family in Nalasopara.,19.424594,72.829884,2023-02-17,Nalasopara
+FIR-2022-00095,Priya Das,27,Female,Cybercrime,Received threatening emails from an unknown sender. Reporting from Lower Parel.,18.984297,72.836931,2022-06-20,Lower Parel
+FIR-2023-00096,Sneha Patel,39,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Belapur.,19.026036,73.046249,2023-09-02,Belapur
+FIR-2025-00097,Manoj Iyer,61,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Vikhroli.,19.100079,72.919469,2025-12-28,Vikhroli
+FIR-2022-00098,Sachin Gupta,62,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Bandra.,19.056087,72.820622,2022-06-14,Bandra
+FIR-2023-00099,Manoj Rane,44,Male,Burglary,Office burglary at Chembur. Electronic equipment stolen.,19.045701,72.90159,2023-10-22,Chembur
+FIR-2020-00100,Mohan Pillai,27,Male,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Dombivli.,19.21338,73.081807,2020-08-10,Dombivli
+FIR-2023-00101,Suresh Pawar,40,Male,Burglary,Godown broken into and goods stolen at Nerul commercial complex.,19.042241,73.020706,2023-05-07,Nerul
+FIR-2022-00102,Manisha Singh,33,Female,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Virar.,19.457396,72.821454,2022-01-27,Virar
+FIR-2021-00103,Meera Sharma,54,Female,Theft,Bicycle stolen from outside Churchgate railway station.,18.938857,72.834459,2021-10-26,Churchgate
+FIR-2025-00104,Swati Iyer,30,Female,Burglary,Godown broken into and goods stolen at Mulund commercial complex.,19.177712,72.961649,2025-03-21,Mulund
+FIR-2020-00105,Akash Iyer,20,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Kalyan.,19.245291,73.140147,2020-05-11,Kalyan
+FIR-2021-00106,Kavita Joshi,26,Female,Domestic Violence,Domestic violence complaint against spouse. We live in Sanpada.,19.063536,73.008251,2021-05-27,Sanpada
+FIR-2025-00107,Lakshmi Das,39,Female,Assault,I was physically attacked by unknown persons near Dombivli bus stop.,19.211115,73.09603,2025-12-22,Dombivli
+FIR-2025-00108,Sapna Kulkarni,23,Female,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Andheri.,19.120431,72.845496,2025-12-22,Andheri
+FIR-2024-00109,Komal Sawant,70,Female,Murder,Man found murdered in his apartment in Malad society.,19.18663,72.850791,2024-06-20,Malad
+FIR-2020-00110,Akash Patel,58,Male,Drug Offense,Illicit liquor being sold at Nerul market area.,19.025334,73.007807,2020-05-16,Nerul
+FIR-2025-00111,Rajesh Desai,52,Male,Robbery,Home invasion robbery at my residence in Belapur colony.,19.02092,73.047488,2025-09-14,Belapur
+FIR-2025-00112,Prashant Iyer,24,Male,Drug Offense,Illicit liquor being sold at Marine Lines market area.,18.951981,72.819095,2025-06-07,Marine Lines
+FIR-2020-00113,Nisha Desai,41,Female,Assault,Road rage incident led to physical assault at Sanpada signal.,19.071534,73.015697,2020-07-09,Sanpada
+FIR-2020-00114,Rajesh Mukherjee,70,Male,Drug Offense,Found suspicious white powder packets near Kurla park.,19.075434,72.881343,2020-01-26,Kurla
+FIR-2024-00115,Swati Kumar,68,Female,Burglary,House was broken into while we were away. Jewellery and cash stolen from Kandivali residence.,19.215996,72.853084,2024-04-27,Kandivali
+FIR-2021-00116,Rohit Bose,27,Male,Burglary,Shop broken into at night in Andheri market. Stock worth lakhs stolen.,19.126868,72.839294,2021-09-09,Andheri
+FIR-2022-00117,Rajesh Reddy,19,Male,Robbery,Bank robbery attempt at Andheri branch. Suspects fled with cash.,19.1255,72.841159,2022-01-06,Andheri
+FIR-2022-00118,Sunita Kumar,65,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Bhiwandi.,19.286213,73.047825,2022-09-19,Bhiwandi
+FIR-2024-00119,Sachin Rane,32,Male,Burglary,Godown broken into and goods stolen at Colaba commercial complex.,18.912365,72.82204,2024-05-15,Colaba
+FIR-2020-00120,Amit More,43,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Malad.,19.191448,72.847271,2020-06-20,Malad
+FIR-2024-00121,Suresh Kumar,35,Male,Burglary,Apartment burglary in Fort society. Lock was broken.,18.934767,72.832304,2024-09-10,Fort
+FIR-2025-00122,Divya Nair,45,Female,Assault,Was assaulted by colleagues after office hours near Borivali.,19.233718,72.862079,2025-04-14,Borivali
+FIR-2022-00123,Swati Jadhav,39,Female,Drug Offense,Illicit liquor being sold at Kharghar market area.,19.051992,73.062051,2022-11-09,Kharghar
+FIR-2025-00124,Anita Reddy,48,Female,Assault,I was physically attacked by unknown persons near Kurla bus stop.,19.064465,72.871331,2025-06-26,Kurla
+FIR-2025-00125,Mahesh Verma,55,Male,Domestic Violence,Wife beaten and threatened by husband and his family in Vasai.,19.3641,72.837916,2025-07-28,Vasai
+FIR-2023-00126,Ajay Nair,37,Male,Murder,Unidentified body found near Malad railway tracks.,19.187348,72.841495,2023-04-28,Malad
+FIR-2024-00127,Nikhil Mukherjee,53,Male,Murder,Woman killed by known assailant in Borivali residential area.,19.232182,72.862844,2024-10-20,Borivali
+FIR-2022-00128,Dinesh Reddy,62,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Bandra.,19.055065,72.834748,2022-06-01,Bandra
+FIR-2020-00129,Vikram Pillai,60,Male,Cybercrime,Received threatening emails from an unknown sender. Reporting from Juhu.,19.093119,72.835836,2020-12-17,Juhu
+FIR-2024-00130,Arvind Jadhav,47,Male,Murder,Woman killed by known assailant in Worli residential area.,19.013833,72.811688,2024-10-03,Worli
+FIR-2023-00131,Vikram Gupta,66,Male,Burglary,Godown broken into and goods stolen at Dadar commercial complex.,19.009432,72.846662,2023-08-20,Dadar
+FIR-2025-00132,Seema Mehta,31,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Borivali.,19.229298,72.852365,2025-10-16,Borivali
+FIR-2021-00133,Sunita Desai,43,Female,Burglary,House was broken into while we were away. Jewellery and cash stolen from Dadar residence.,19.011888,72.856706,2021-05-10,Dadar
+FIR-2024-00134,Neha Sharma,49,Female,Cybercrime,Received threatening emails from an unknown sender. Reporting from Chembur.,19.049804,72.903473,2024-09-27,Chembur
+FIR-2022-00135,Rekha Sawant,65,Female,Theft,My mobile phone was stolen while I was travelling in the bus near Seawoods.,19.020695,73.009057,2022-10-14,Seawoods
+FIR-2024-00136,Tanvi Iyer,44,Female,Kidnapping,Woman kidnapped from her workplace in Borivali industrial area.,19.221117,72.853195,2024-08-27,Borivali
+FIR-2022-00137,Rekha Jadhav,24,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Seawoods.,19.019509,73.009073,2022-12-11,Seawoods
+FIR-2022-00138,Rohit Bose,28,Male,Assault,Was assaulted by colleagues after office hours near Ulhasnagar.,19.213781,73.164699,2022-06-24,Ulhasnagar
+FIR-2025-00139,Manoj Singh,27,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Goregaon.,19.168348,72.857804,2025-02-06,Goregaon
+FIR-2025-00140,Nisha Bose,54,Female,Burglary,Godown broken into and goods stolen at Kalyan commercial complex.,19.252183,73.13679,2025-10-11,Kalyan
+FIR-2022-00141,Anita Pawar,22,Female,Drug Offense,Drug peddlers operating near Kalyan college campus.,19.249627,73.137328,2022-09-03,Kalyan
+FIR-2020-00142,Nisha Pawar,20,Female,Theft,Laptop stolen from my office cabin at Sanpada tech park.,19.055035,73.020085,2020-10-20,Sanpada
+FIR-2021-00143,Nisha Pillai,53,Female,Theft,Gold chain snatched by two men on a bike near Kalyan junction.,19.240131,73.135013,2021-01-15,Kalyan
+FIR-2023-00144,Ravi Banerjee,39,Male,Assault,Was assaulted by colleagues after office hours near Ulhasnagar.,19.214951,73.159455,2023-08-17,Ulhasnagar
+FIR-2025-00145,Nikhil Kulkarni,36,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Turbhe.,19.085178,73.003647,2025-11-11,Turbhe
+FIR-2024-00146,Rohit Singh,53,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Vashi.,19.081575,73.001731,2024-03-11,Vashi
+FIR-2020-00147,Ramesh Reddy,27,Male,Murder,Double homicide reported at a house in Nerul colony.,19.025579,73.021077,2020-05-18,Nerul
+FIR-2025-00148,Sneha Ghosh,39,Female,Robbery,Petrol pump looted at gunpoint near Mahalaxmi highway.,18.989379,72.816775,2025-09-03,Mahalaxmi
+FIR-2023-00149,Divya Kulkarni,19,Female,Murder,Man found murdered in his apartment in Nerul society.,19.042023,73.013735,2023-04-08,Nerul
+FIR-2020-00150,Vikram Patel,36,Male,Assault,Road rage incident led to physical assault at Ulhasnagar signal.,19.228202,73.172174,2020-11-11,Ulhasnagar
+FIR-2021-00151,Dinesh Sawant,27,Male,Robbery,Petrol pump looted at gunpoint near Chembur highway.,19.057622,72.905581,2021-12-15,Chembur
+FIR-2023-00152,Prashant Kulkarni,61,Male,Fraud,Credit card cloned and used for unauthorised purchases. I live near Kalyan.,19.239399,73.140471,2023-04-18,Kalyan
+FIR-2023-00153,Ajay Ghosh,68,Male,Drug Offense,Drug peddlers operating near Goregaon college campus.,19.169866,72.854008,2023-08-25,Goregaon
+FIR-2021-00154,Pallavi Sawant,50,Female,Domestic Violence,Dowry harassment by in-laws at residence in Turbhe.,19.087938,73.018625,2021-05-02,Turbhe
+FIR-2023-00155,Ritu Naik,24,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Borivali.,19.222378,72.849906,2023-09-05,Borivali
+FIR-2022-00156,Rekha Desai,70,Female,Drug Offense,Suspected drug dealing activity near Kopar Khairane slum area.,19.100798,73.005529,2022-04-13,Kopar Khairane
+FIR-2022-00157,Nikhil Desai,19,Male,Murder,Woman killed by known assailant in Malad residential area.,19.193028,72.841152,2022-08-23,Malad
+FIR-2021-00158,Dev Rao,48,Male,Drug Offense,Suspected drug dealing activity near Marine Lines slum area.,18.951317,72.81388,2021-03-18,Marine Lines
+FIR-2024-00159,Neha Bose,36,Female,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Nerul.",19.023955,73.015297,2024-08-03,Nerul
+FIR-2021-00160,Sunil More,56,Male,Domestic Violence,Verbal and physical abuse by partner at our flat in Bandra.,19.059908,72.824339,2021-05-14,Bandra
+FIR-2022-00161,Dinesh Kulkarni,33,Male,Burglary,Office burglary at Turbhe. Electronic equipment stolen.,19.084887,73.004312,2022-02-17,Turbhe
+FIR-2020-00162,Arvind Mukherjee,48,Male,Theft,Pickpocket stole my purse while shopping at Fort mall.,18.943421,72.830873,2020-06-26,Fort
+FIR-2022-00163,Nikhil Desai,64,Male,Assault,Was assaulted by colleagues after office hours near Nalasopara.,19.422334,72.815068,2022-09-11,Nalasopara
+FIR-2023-00164,Sunil Bose,61,Male,Drug Offense,Found suspicious white powder packets near Ambernath park.,19.21073,73.177262,2023-01-10,Ambernath
+FIR-2024-00165,Amit Ghosh,30,Male,Theft,Laptop stolen from my office cabin at Panvel tech park.,18.989708,73.127282,2024-08-09,Panvel
+FIR-2020-00166,Dev Iyer,30,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Kopar Khairane.,19.109816,73.004238,2020-06-14,Kopar Khairane
+FIR-2024-00167,Shruti Pawar,42,Female,Murder,Double homicide reported at a house in Chembur colony.,19.056041,72.896747,2024-05-26,Chembur
+FIR-2020-00168,Harsh Jadhav,23,Male,Cybercrime,Received threatening emails from an unknown sender. Reporting from Churchgate.,18.933109,72.822824,2020-06-22,Churchgate
+FIR-2025-00169,Lakshmi Pawar,56,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Worli.,19.016478,72.814143,2025-06-20,Worli
+FIR-2025-00170,Meera Iyer,68,Female,Theft,Pickpocket stole my purse while shopping at Juhu mall.,19.085566,72.832422,2025-03-01,Juhu
+FIR-2022-00171,Dinesh Reddy,68,Male,Drug Offense,Found suspicious white powder packets near Colaba park.,18.898045,72.82027,2022-06-13,Colaba
+FIR-2021-00172,Dinesh Kumar,61,Male,Drug Offense,Drug peddlers operating near Sanpada college campus.,19.062379,73.004338,2021-09-12,Sanpada
+FIR-2023-00173,Shalini Iyer,35,Female,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Borivali.",19.235413,72.856681,2023-09-04,Borivali
+FIR-2023-00174,Pallavi Mehta,63,Female,Drug Offense,Narcotics being smuggled through Kandivali bus terminus.,19.205112,72.86033,2023-04-04,Kandivali
+FIR-2024-00175,Suresh Pawar,29,Male,Drug Offense,Drug peddlers operating near Kurla college campus.,19.075957,72.883591,2024-09-10,Kurla
+FIR-2021-00176,Kavita Rao,63,Female,Robbery,ATM robbery by masked men at Sanpada main road.,19.057985,73.022503,2021-04-26,Sanpada
+FIR-2024-00177,Priya Kulkarni,53,Female,Burglary,Warehouse burglary at Sanpada industrial area.,19.069573,73.013833,2024-02-03,Sanpada
+FIR-2020-00178,Geeta Rao,64,Female,Drug Offense,Illicit liquor being sold at Bhiwandi market area.,19.286683,73.054767,2020-03-11,Bhiwandi
+FIR-2025-00179,Sachin Pawar,61,Male,Domestic Violence,Dowry harassment by in-laws at residence in Kopar Khairane.,19.110059,73.013205,2025-10-06,Kopar Khairane
+FIR-2025-00180,Prashant Rane,21,Male,Assault,Got beaten up by a group of men after an argument at Bhiwandi.,19.277382,73.041539,2025-04-12,Bhiwandi
+FIR-2020-00181,Rekha Mehta,30,Female,Domestic Violence,Dowry harassment by in-laws at residence in Bhandup.,19.1523,72.939789,2020-09-21,Bhandup
+FIR-2024-00182,Ramesh Pillai,27,Male,Robbery,ATM robbery by masked men at Mahalaxmi main road.,18.987213,72.814103,2024-01-27,Mahalaxmi
+FIR-2024-00183,Suresh Verma,59,Male,Burglary,Godown broken into and goods stolen at Mulund commercial complex.,19.166816,72.957743,2024-11-01,Mulund
+FIR-2022-00184,Sneha Naik,36,Female,Kidnapping,A young girl was abducted by unknown men in a white van near Ambernath.,19.210594,73.1897,2022-08-03,Ambernath
+FIR-2025-00185,Anil Pawar,44,Male,Drug Offense,Found suspicious white powder packets near Dombivli park.,19.215104,73.079573,2025-06-24,Dombivli
+FIR-2020-00186,Geeta Kumar,66,Female,Murder,Unidentified body found near Ulhasnagar railway tracks.,19.213624,73.159335,2020-05-15,Ulhasnagar
+FIR-2021-00187,Vikram Singh,21,Male,Kidnapping,Child went missing from a park in Belapur and is suspected to be kidnapped.,19.021863,73.047754,2021-06-19,Belapur
+FIR-2020-00188,Pooja Bose,28,Female,Drug Offense,Illicit liquor being sold at Ulhasnagar market area.,19.221475,73.160671,2020-02-13,Ulhasnagar
+FIR-2025-00189,Swati Joshi,55,Female,Murder,Dead body found with stab wounds near Dadar lake.,19.013427,72.84975,2025-11-16,Dadar
+FIR-2022-00190,Sapna Sharma,24,Female,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Thane.,19.22285,72.983377,2022-01-13,Thane
+FIR-2024-00191,Ramesh Naik,30,Male,Murder,Woman killed by known assailant in Vasai residential area.,19.352171,72.839785,2024-05-27,Vasai
+FIR-2021-00192,Vikram Singh,43,Male,Murder,Unidentified body found near Airoli railway tracks.,19.164679,73.003499,2021-10-17,Airoli
+FIR-2021-00193,Divya Verma,20,Female,Theft,My car was broken into and valuables were stolen at Thane parking.,19.224379,72.978487,2021-10-17,Thane
+FIR-2022-00194,Rohit Nair,38,Male,Robbery,ATM robbery by masked men at Kharghar main road.,19.052186,73.061785,2022-09-27,Kharghar
+FIR-2023-00195,Tanvi Pillai,37,Female,Drug Offense,Drug peddlers operating near Bandra college campus.,19.056225,72.821692,2023-10-10,Bandra
+FIR-2021-00196,Dinesh More,34,Male,Burglary,Office burglary at Virar. Electronic equipment stolen.,19.460328,72.81327,2021-09-21,Virar
+FIR-2020-00197,Anita Banerjee,61,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Colaba.,18.915664,72.806898,2020-08-11,Colaba
+FIR-2025-00198,Anita Jadhav,62,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Turbhe.,19.087099,73.02101,2025-12-02,Turbhe
+FIR-2021-00199,Ganesh Joshi,53,Male,Murder,Double homicide reported at a house in Mahalaxmi colony.,18.98331,72.808275,2021-08-18,Mahalaxmi
+FIR-2024-00200,Sapna Kulkarni,61,Female,Kidnapping,Woman kidnapped from her workplace in Marine Lines industrial area.,18.937045,72.81843,2024-05-08,Marine Lines
+FIR-2025-00201,Pallavi Shah,63,Female,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Badlapur.,19.154896,73.22961,2025-05-10,Badlapur
+FIR-2022-00202,Ramesh Reddy,52,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Kharghar.,19.056492,73.071892,2022-01-10,Kharghar
+FIR-2024-00203,Nikhil Pawar,59,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Ambernath.,19.198541,73.186772,2024-12-09,Ambernath
+FIR-2021-00204,Rajesh Nair,65,Male,Burglary,Office burglary at Ghatkopar. Electronic equipment stolen.,19.076815,72.916204,2021-11-08,Ghatkopar
+FIR-2021-00205,Rajesh Jadhav,39,Male,Drug Offense,Found suspicious white powder packets near Malad park.,19.177304,72.849407,2021-07-21,Malad
+FIR-2020-00206,Manisha Iyer,30,Female,Kidnapping,Businessman kidnapped for ransom from his office in Panvel.,18.992318,73.125659,2020-11-19,Panvel
+FIR-2020-00207,Mahesh Das,64,Male,Theft,Pickpocket stole my purse while shopping at Chembur mall.,19.059845,72.892916,2020-07-26,Chembur
+FIR-2022-00208,Kavita Das,36,Female,Theft,Laptop stolen from my office cabin at Andheri tech park.,19.121059,72.838546,2022-05-15,Andheri
+FIR-2025-00209,Anita Mukherjee,50,Female,Drug Offense,Found suspicious white powder packets near Bhandup park.,19.155976,72.934114,2025-08-21,Bhandup
+FIR-2024-00210,Tanvi Gupta,18,Female,Murder,Unidentified body found near Vashi railway tracks.,19.080588,72.992463,2024-11-13,Vashi
+FIR-2022-00211,Divya Patil,23,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Mahalaxmi.,18.976496,72.804812,2022-04-01,Mahalaxmi
+FIR-2022-00212,Geeta Desai,46,Female,Kidnapping,Businessman kidnapped for ransom from his office in Airoli.,19.157549,72.999858,2022-11-12,Airoli
+FIR-2025-00213,Amit Reddy,25,Male,Drug Offense,Found suspicious white powder packets near Nerul park.,19.031108,73.01695,2025-05-23,Nerul
+FIR-2023-00214,Akash Shah,41,Male,Burglary,Office burglary at Vikhroli. Electronic equipment stolen.,19.110547,72.927064,2023-12-20,Vikhroli
+FIR-2024-00215,Seema Rao,53,Female,Drug Offense,Found suspicious white powder packets near Mira Road park.,19.286437,72.872107,2024-02-17,Mira Road
+FIR-2024-00216,Divya Rao,41,Female,Assault,I was physically attacked by unknown persons near Virar bus stop.,19.447135,72.812553,2024-04-19,Virar
+FIR-2024-00217,Anil Patil,51,Male,Drug Offense,Found suspicious white powder packets near Borivali park.,19.235038,72.856477,2024-08-26,Borivali
+FIR-2022-00218,Sachin Kumar,50,Male,Cybercrime,Ransomware attack on my business computer systems at Dombivli office.,19.209455,73.085948,2022-12-01,Dombivli
+FIR-2020-00219,Meera Banerjee,18,Female,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Nalasopara.",19.408106,72.819291,2020-09-02,Nalasopara
+FIR-2025-00220,Mohan Verma,36,Male,Cybercrime,Received threatening emails from an unknown sender. Reporting from Chembur.,19.057517,72.908967,2025-07-12,Chembur
+FIR-2021-00221,Nisha Mukherjee,42,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Kurla.,19.081883,72.886891,2021-11-28,Kurla
+FIR-2020-00222,Neha Gupta,52,Female,Cybercrime,Received threatening emails from an unknown sender. Reporting from Bhiwandi.,19.285857,73.042754,2020-01-10,Bhiwandi
+FIR-2022-00223,Anjali Das,52,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Mira Road.,19.287667,72.86345,2022-03-09,Mira Road
+FIR-2020-00224,Harsh Bose,25,Male,Theft,Pickpocket stole my purse while shopping at Mahalaxmi mall.,18.985098,72.820725,2020-04-07,Mahalaxmi
+FIR-2023-00225,Rajesh Nair,20,Male,Drug Offense,Suspected drug dealing activity near Churchgate slum area.,18.927095,72.817285,2023-04-18,Churchgate
+FIR-2024-00226,Dev Mukherjee,67,Male,Theft,Laptop stolen from my office cabin at Thane tech park.,19.212983,72.986428,2024-06-19,Thane
+FIR-2024-00227,Swati Shah,27,Female,Domestic Violence,Elderly parents being abused by their son at Vikhroli house.,19.09741,72.918719,2024-12-06,Vikhroli
+FIR-2023-00228,Sapna More,21,Female,Murder,Double homicide reported at a house in Lower Parel colony.,18.998516,72.827675,2023-07-05,Lower Parel
+FIR-2025-00229,Geeta Gupta,66,Female,Domestic Violence,Dowry harassment by in-laws at residence in Ambernath.,19.211487,73.182015,2025-03-26,Ambernath
+FIR-2021-00230,Sunita Naik,44,Female,Cybercrime,Ransomware attack on my business computer systems at Vasai office.,19.353382,72.834557,2021-06-21,Vasai
+FIR-2023-00231,Sachin Mukherjee,41,Male,Assault,Was assaulted by colleagues after office hours near Mira Road.,19.287788,72.859531,2023-11-20,Mira Road
+FIR-2022-00232,Suresh Joshi,69,Male,Burglary,Apartment burglary in Mahalaxmi society. Lock was broken.,18.97714,72.806178,2022-05-01,Mahalaxmi
+FIR-2021-00233,Deepak Das,25,Male,Drug Offense,Narcotics being smuggled through Ghatkopar bus terminus.,19.089875,72.906033,2021-09-11,Ghatkopar
+FIR-2023-00234,Geeta Pawar,52,Female,Murder,Woman killed by known assailant in Nerul residential area.,19.030193,73.024556,2023-02-26,Nerul
+FIR-2021-00235,Pallavi Banerjee,38,Female,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Sanpada.,19.061779,73.01405,2021-12-05,Sanpada
+FIR-2023-00236,Sanjay Naik,55,Male,Burglary,Shop broken into at night in Turbhe market. Stock worth lakhs stolen.,19.074648,73.009197,2023-10-27,Turbhe
+FIR-2023-00237,Mohan Naik,59,Male,Murder,Double homicide reported at a house in Mulund colony.,19.18193,72.959134,2023-08-06,Mulund
+FIR-2025-00238,Kavita Kumar,64,Female,Domestic Violence,Dowry harassment by in-laws at residence in Badlapur.,19.163638,73.229243,2025-01-17,Badlapur
+FIR-2020-00239,Sunil Mukherjee,22,Male,Theft,Pickpocket stole my purse while shopping at Andheri mall.,19.11245,72.849014,2020-12-05,Andheri
+FIR-2023-00240,Deepak Rane,47,Male,Murder,Unidentified body found near Dadar railway tracks.,19.020555,72.856478,2023-11-16,Dadar
+FIR-2022-00241,Rahul Naik,53,Male,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Andheri.,19.120288,72.841895,2022-01-17,Andheri
+FIR-2022-00242,Kavita Singh,24,Female,Domestic Violence,Dowry harassment by in-laws at residence in Powai.,19.111439,72.906529,2022-05-26,Powai
+FIR-2025-00243,Rekha Kulkarni,43,Female,Drug Offense,Found suspicious white powder packets near Virar park.,19.465705,72.806117,2025-02-21,Virar
+FIR-2021-00244,Suresh Sawant,42,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Vasai.,19.351822,72.829889,2021-02-16,Vasai
+FIR-2025-00245,Sneha Ghosh,39,Female,Burglary,Apartment burglary in Malad society. Lock was broken.,19.195583,72.842995,2025-10-16,Malad
+FIR-2022-00246,Sunita Patel,61,Female,Kidnapping,Child went missing from a park in Mira Road and is suspected to be kidnapped.,19.284362,72.862087,2022-01-07,Mira Road
+FIR-2023-00247,Dev Banerjee,63,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Juhu.,19.081549,72.821209,2023-11-18,Juhu
+FIR-2020-00248,Geeta Bose,65,Female,Robbery,ATM robbery by masked men at Kurla main road.,19.077509,72.876317,2020-07-08,Kurla
+FIR-2025-00249,Rohit Nair,67,Male,Burglary,Warehouse burglary at Churchgate industrial area.,18.941578,72.822928,2025-05-26,Churchgate
+FIR-2023-00250,Manisha Desai,40,Female,Domestic Violence,Elderly parents being abused by their son at Belapur house.,19.017215,73.040218,2023-02-25,Belapur
+FIR-2021-00251,Swati Rao,22,Female,Assault,Got beaten up by a group of men after an argument at Bhandup.,19.1474,72.943178,2021-12-13,Bhandup
+FIR-2021-00252,Ritu Singh,23,Female,Theft,Bicycle stolen from outside Nerul railway station.,19.030198,73.012295,2021-02-06,Nerul
+FIR-2020-00253,Nisha Naik,53,Female,Domestic Violence,Being physically abused by husband at our home in Turbhe.,19.072125,73.009678,2020-10-20,Turbhe
+FIR-2021-00254,Geeta Sharma,36,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Belapur.,19.027997,73.039691,2021-10-17,Belapur
+FIR-2021-00255,Vishal Sawant,28,Male,Robbery,Bank robbery attempt at Bhandup branch. Suspects fled with cash.,19.145168,72.930419,2021-07-09,Bhandup
+FIR-2023-00256,Lakshmi More,68,Female,Assault,Was assaulted by neighbour over a property dispute in Sanpada.,19.072384,73.017218,2023-10-20,Sanpada
+FIR-2022-00257,Sachin Singh,26,Male,Kidnapping,Woman kidnapped from her workplace in Andheri industrial area.,19.116344,72.848804,2022-08-11,Andheri
+FIR-2022-00258,Sneha Nair,26,Female,Kidnapping,Child went missing from a park in Panvel and is suspected to be kidnapped.,18.998346,73.111517,2022-03-13,Panvel
+FIR-2023-00259,Lakshmi Das,62,Female,Drug Offense,Found suspicious white powder packets near Virar park.,19.452418,72.807206,2023-06-04,Virar
+FIR-2023-00260,Ramesh Naik,29,Male,Domestic Violence,Verbal and physical abuse by partner at our flat in Bandra.,19.058832,72.833667,2023-05-27,Bandra
+FIR-2025-00261,Sunil Mukherjee,68,Male,Cybercrime,Received threatening emails from an unknown sender. Reporting from Badlapur.,19.157967,73.22324,2025-03-23,Badlapur
+FIR-2025-00262,Geeta Patel,46,Female,Burglary,Apartment burglary in Ambernath society. Lock was broken.,19.202516,73.186132,2025-07-18,Ambernath
+FIR-2021-00263,Ravi Kulkarni,62,Male,Domestic Violence,Verbal and physical abuse by partner at our flat in Churchgate.,18.940488,72.818587,2021-11-22,Churchgate
+FIR-2023-00264,Kavita Iyer,57,Female,Theft,Pickpocket stole my purse while shopping at Virar mall.,19.465236,72.808232,2023-02-01,Virar
+FIR-2022-00265,Sanjay Desai,50,Male,Domestic Violence,Domestic violence complaint against spouse. We live in Vasai.,19.364453,72.834121,2022-07-15,Vasai
+FIR-2025-00266,Nikhil Sharma,48,Male,Assault,Attacked with a knife by an unknown person near Vashi park.,19.085511,72.990317,2025-03-12,Vashi
+FIR-2025-00267,Shalini Pawar,68,Female,Fraud,Real estate fraud. Sold a property with forged documents in Bhiwandi.,19.278266,73.040252,2025-12-15,Bhiwandi
+FIR-2021-00268,Rekha Shah,20,Female,Assault,Was assaulted by neighbour over a property dispute in Bandra.,19.062559,72.833043,2021-12-08,Bandra
+FIR-2021-00269,Mahesh Gupta,39,Male,Domestic Violence,Elderly parents being abused by their son at Seawoods house.,19.016137,73.015601,2021-03-21,Seawoods
+FIR-2025-00270,Geeta Sharma,65,Female,Burglary,Warehouse burglary at Goregaon industrial area.,19.168144,72.850377,2025-04-07,Goregaon
+FIR-2022-00271,Pallavi Rao,69,Female,Assault,I was physically attacked by unknown persons near Virar bus stop.,19.46189,72.812338,2022-06-07,Virar
+FIR-2024-00272,Neha Mehta,60,Female,Drug Offense,Drug peddlers operating near Bhiwandi college campus.,19.283239,73.050526,2024-02-12,Bhiwandi
+FIR-2020-00273,Nisha Nair,29,Female,Kidnapping,Child went missing from a park in Marine Lines and is suspected to be kidnapped.,18.934895,72.816179,2020-04-10,Marine Lines
+FIR-2023-00274,Anil Kulkarni,62,Male,Robbery,Home invasion robbery at my residence in Ulhasnagar colony.,19.219865,73.157257,2023-07-06,Ulhasnagar
+FIR-2022-00275,Sneha Naik,62,Female,Robbery,Three men with weapons robbed a jewellery store at Vasai.,19.360493,72.832506,2022-08-20,Vasai
+FIR-2023-00276,Nikhil Sharma,49,Male,Robbery,Home invasion robbery at my residence in Goregaon colony.,19.175577,72.852709,2023-07-22,Goregaon
+FIR-2021-00277,Seema Rao,46,Female,Drug Offense,Suspected drug dealing activity near Worli slum area.,19.018908,72.821118,2021-05-02,Worli
+FIR-2024-00278,Swati Naik,36,Female,Robbery,ATM robbery by masked men at Dombivli main road.,19.22315,73.092018,2024-09-04,Dombivli
+FIR-2021-00279,Sanjay Bose,52,Male,Murder,Dead body found with stab wounds near Mira Road lake.,19.2864,72.867327,2021-07-04,Mira Road
+FIR-2020-00280,Ajay Mukherjee,20,Male,Drug Offense,Drug peddlers operating near Mulund college campus.,19.179844,72.94804,2020-04-07,Mulund
+FIR-2021-00281,Tanvi Nair,58,Female,Cybercrime,Ransomware attack on my business computer systems at Worli office.,19.010385,72.809332,2021-01-19,Worli
+FIR-2024-00282,Sapna Mehta,56,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Worli.,19.02718,72.811053,2024-05-28,Worli
+FIR-2021-00283,Vikram Bose,68,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Dadar.,19.025141,72.840338,2021-04-05,Dadar
+FIR-2023-00284,Swati Bose,61,Female,Cybercrime,Received threatening emails from an unknown sender. Reporting from Badlapur.,19.156849,73.223774,2023-07-15,Badlapur
+FIR-2022-00285,Akash Ghosh,67,Male,Assault,Road rage incident led to physical assault at Kharghar signal.,19.052396,73.069694,2022-08-16,Kharghar
+FIR-2020-00286,Komal Sharma,67,Female,Assault,Was assaulted by colleagues after office hours near Dombivli.,19.221583,73.083864,2020-09-13,Dombivli
+FIR-2024-00287,Prashant Banerjee,31,Male,Drug Offense,Drug peddlers operating near Bhandup college campus.,19.156367,72.934255,2024-03-19,Bhandup
+FIR-2020-00288,Shalini Reddy,66,Female,Theft,Someone stole my wallet containing cash and cards at Colaba market.,18.909224,72.821434,2020-02-28,Colaba
+FIR-2022-00289,Sachin Pawar,18,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Goregaon.,19.174488,72.860243,2022-03-28,Goregaon
+FIR-2020-00290,Rekha Iyer,41,Female,Kidnapping,Businessman kidnapped for ransom from his office in Kurla.,19.07589,72.882378,2020-07-21,Kurla
+FIR-2021-00291,Shruti Rao,66,Female,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Seawoods.,19.013324,73.009404,2021-08-03,Seawoods
+FIR-2023-00292,Ramesh Desai,51,Male,Drug Offense,Suspected drug dealing activity near Andheri slum area.,19.123612,72.852742,2023-12-05,Andheri
+FIR-2021-00293,Rekha Desai,42,Female,Assault,I was physically attacked by unknown persons near Malad bus stop.,19.183467,72.85602,2021-07-25,Malad
+FIR-2023-00294,Akash Reddy,27,Male,Assault,Road rage incident led to physical assault at Bhiwandi signal.,19.271469,73.0513,2023-06-24,Bhiwandi
+FIR-2020-00295,Akash Das,27,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Marine Lines.,18.942048,72.817845,2020-03-25,Marine Lines
+FIR-2025-00296,Ramesh Das,42,Male,Murder,Woman killed by known assailant in Seawoods residential area.,19.027322,73.012456,2025-02-08,Seawoods
+FIR-2023-00297,Pallavi Rao,19,Female,Kidnapping,Child went missing from a park in Kandivali and is suspected to be kidnapped.,19.211539,72.845773,2023-05-21,Kandivali
+FIR-2020-00298,Ravi Ghosh,33,Male,Drug Offense,Suspected drug dealing activity near Belapur slum area.,19.018322,73.041262,2020-09-01,Belapur
+FIR-2023-00299,Shalini Kumar,42,Female,Burglary,Shop broken into at night in Turbhe market. Stock worth lakhs stolen.,19.082527,73.006055,2023-02-01,Turbhe
+FIR-2024-00300,Rahul Mehta,31,Male,Theft,Pickpocket stole my purse while shopping at Dadar mall.,19.017932,72.850371,2024-07-14,Dadar
+FIR-2024-00301,Rekha Iyer,52,Female,Domestic Violence,Dowry harassment by in-laws at residence in Marine Lines.,18.938749,72.819698,2024-04-26,Marine Lines
+FIR-2025-00302,Mahesh Patil,43,Male,Burglary,Godown broken into and goods stolen at Fort commercial complex.,18.937421,72.827122,2025-07-24,Fort
+FIR-2025-00303,Amit Desai,23,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Borivali.,19.232946,72.847801,2025-12-22,Borivali
+FIR-2024-00304,Rajesh Sharma,63,Male,Robbery,Three men with weapons robbed a jewellery store at Andheri.,19.119628,72.843334,2024-12-09,Andheri
+FIR-2024-00305,Nikhil Kumar,65,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Borivali.,19.2274,72.855286,2024-02-09,Borivali
+FIR-2021-00306,Mohan Pawar,50,Male,Murder,Double homicide reported at a house in Dadar colony.,19.024987,72.841138,2021-05-25,Dadar
+FIR-2020-00307,Ramesh Reddy,64,Male,Assault,Was assaulted by colleagues after office hours near Vikhroli.,19.101576,72.918381,2020-04-02,Vikhroli
+FIR-2025-00308,Ritu Sawant,27,Female,Robbery,ATM robbery by masked men at Colaba main road.,18.912762,72.81898,2025-07-08,Colaba
+FIR-2025-00309,Swati Jadhav,64,Female,Murder,Dead body found with stab wounds near Bhandup lake.,19.151231,72.929888,2025-01-06,Bhandup
+FIR-2022-00310,Ravi Rane,20,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Juhu.,19.095621,72.831871,2022-06-03,Juhu
+FIR-2022-00311,Priya Kulkarni,30,Female,Kidnapping,Businessman kidnapped for ransom from his office in Virar.,19.460692,72.806452,2022-10-16,Virar
+FIR-2024-00312,Harsh Naik,66,Male,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Powai.",19.126248,72.896478,2024-06-21,Powai
+FIR-2023-00313,Rohit Sharma,66,Male,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Nerul.,19.027104,73.026562,2023-08-02,Nerul
+FIR-2025-00314,Karan Mehta,23,Male,Theft,Pickpocket stole my purse while shopping at Vikhroli mall.,19.105417,72.92495,2025-02-19,Vikhroli
+FIR-2021-00315,Ganesh Kumar,58,Male,Cybercrime,Ransomware attack on my business computer systems at Juhu office.,19.089656,72.8251,2021-04-10,Juhu
+FIR-2021-00316,Shalini Ghosh,43,Female,Murder,Double homicide reported at a house in Panvel colony.,18.984839,73.108994,2021-03-25,Panvel
+FIR-2021-00317,Vikram Singh,28,Male,Drug Offense,Drug peddlers operating near Dombivli college campus.,19.21643,73.087418,2021-08-10,Dombivli
+FIR-2024-00318,Meera Mukherjee,25,Female,Assault,Was assaulted by colleagues after office hours near Worli.,19.013684,72.819294,2024-01-07,Worli
+FIR-2022-00319,Anita Patel,63,Female,Fraud,Real estate fraud. Sold a property with forged documents in Kopar Khairane.,19.102769,73.011144,2022-03-01,Kopar Khairane
+FIR-2021-00320,Nisha Naik,65,Female,Domestic Violence,Being physically abused by husband at our home in Ghatkopar.,19.085041,72.914178,2021-02-01,Ghatkopar
+FIR-2025-00321,Sunil Bose,32,Male,Robbery,Home invasion robbery at my residence in Goregaon colony.,19.163745,72.855206,2025-02-19,Goregaon
+FIR-2022-00322,Rekha Sharma,22,Female,Fraud,Real estate fraud. Sold a property with forged documents in Lower Parel.,18.998986,72.82314,2022-02-02,Lower Parel
+FIR-2021-00323,Sunita Gupta,54,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Kharghar.,19.03799,73.069464,2021-06-07,Kharghar
+FIR-2022-00324,Sanjay Mehta,46,Male,Robbery,ATM robbery by masked men at Colaba main road.,18.909084,72.809616,2022-08-14,Colaba
+FIR-2024-00325,Sunita Patel,35,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Thane.,19.212289,72.985793,2024-04-21,Thane
+FIR-2024-00326,Arvind Ghosh,63,Male,Murder,Unidentified body found near Ambernath railway tracks.,19.210129,73.182881,2024-09-11,Ambernath
+FIR-2022-00327,Meera Gupta,19,Female,Murder,Man found murdered in his apartment in Churchgate society.,18.922786,72.832614,2022-01-26,Churchgate
+FIR-2022-00328,Divya Kulkarni,67,Female,Burglary,Office burglary at Vikhroli. Electronic equipment stolen.,19.093403,72.930637,2022-09-27,Vikhroli
+FIR-2025-00329,Dev Desai,54,Male,Cybercrime,Received threatening emails from an unknown sender. Reporting from Kopar Khairane.,19.096022,73.00945,2025-12-12,Kopar Khairane
+FIR-2023-00330,Karan Rao,40,Male,Burglary,Office burglary at Virar. Electronic equipment stolen.,19.457162,72.805365,2023-09-10,Virar
+FIR-2022-00331,Mohan Verma,23,Male,Theft,Gold chain snatched by two men on a bike near Vikhroli junction.,19.091799,72.92706,2022-10-07,Vikhroli
+FIR-2021-00332,Rohit Rao,29,Male,Murder,Dead body found with stab wounds near Dadar lake.,19.010754,72.851894,2021-02-28,Dadar
+FIR-2021-00333,Rekha Kulkarni,63,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Nalasopara.,19.413931,72.818852,2021-12-14,Nalasopara
+FIR-2021-00334,Sneha Patil,29,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Marine Lines.,18.937665,72.825279,2021-07-10,Marine Lines
+FIR-2024-00335,Anita Gupta,64,Female,Theft,Pickpocket stole my purse while shopping at Virar mall.,19.462915,72.817017,2024-01-06,Virar
+FIR-2021-00336,Aarti Desai,58,Female,Burglary,Warehouse burglary at Malad industrial area.,19.180013,72.853307,2021-06-11,Malad
+FIR-2020-00337,Akash Patel,70,Male,Murder,Dead body found with stab wounds near Kalyan lake.,19.239004,73.130491,2020-06-09,Kalyan
+FIR-2023-00338,Harsh Sharma,21,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Kalyan.,19.242093,73.128827,2023-08-13,Kalyan
+FIR-2020-00339,Sapna Sawant,24,Female,Drug Offense,Found suspicious white powder packets near Virar park.,19.449153,72.803074,2020-05-01,Virar
+FIR-2020-00340,Meera Singh,22,Female,Murder,Double homicide reported at a house in Worli colony.,19.010818,72.8067,2020-06-20,Worli
+FIR-2021-00341,Tanvi Sharma,45,Female,Robbery,Home invasion robbery at my residence in Churchgate colony.,18.925342,72.818425,2021-04-14,Churchgate
+FIR-2023-00342,Anjali Shah,37,Female,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Malad.",19.185058,72.849393,2023-03-02,Malad
+FIR-2021-00343,Priya Jadhav,23,Female,Kidnapping,Child went missing from a park in Mahalaxmi and is suspected to be kidnapped.,18.982407,72.80394,2021-03-21,Mahalaxmi
+FIR-2020-00344,Rekha More,25,Female,Kidnapping,Woman kidnapped from her workplace in Kharghar industrial area.,19.047182,73.069021,2020-11-18,Kharghar
+FIR-2022-00345,Kavita Kulkarni,42,Female,Murder,Double homicide reported at a house in Chembur colony.,19.043092,72.898195,2022-04-27,Chembur
+FIR-2024-00346,Komal Verma,27,Female,Assault,Was assaulted by colleagues after office hours near Kurla.,19.069476,72.880229,2024-04-18,Kurla
+FIR-2024-00347,Sunil Sawant,70,Male,Domestic Violence,Domestic violence complaint against spouse. We live in Turbhe.,19.085341,73.021327,2024-04-16,Turbhe
+FIR-2021-00348,Rekha Sawant,63,Female,Theft,My two-wheeler was stolen from the parking lot near Ulhasnagar.,19.213906,73.169644,2021-03-07,Ulhasnagar
+FIR-2024-00349,Vikram Verma,45,Male,Assault,Got beaten up by a group of men after an argument at Seawoods.,19.031445,73.020045,2024-05-11,Seawoods
+FIR-2020-00350,Suresh Sawant,53,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Vasai.,19.367832,72.840094,2020-12-20,Vasai
+FIR-2020-00351,Neha Jadhav,27,Female,Robbery,ATM robbery by masked men at Virar main road.,19.457554,72.820897,2020-02-19,Virar
+FIR-2024-00352,Ravi Shah,52,Male,Murder,Woman killed by known assailant in Turbhe residential area.,19.079261,73.012312,2024-08-02,Turbhe
+FIR-2022-00353,Sanjay Sawant,27,Male,Burglary,Godown broken into and goods stolen at Churchgate commercial complex.,18.936073,72.817176,2022-12-08,Churchgate
+FIR-2022-00354,Harsh More,35,Male,Murder,Woman killed by known assailant in Bandra residential area.,19.065948,72.825561,2022-08-28,Bandra
+FIR-2020-00355,Manoj Kumar,37,Male,Drug Offense,Drug peddlers operating near Panvel college campus.,18.993976,73.1196,2020-04-15,Panvel
+FIR-2021-00356,Sunil Jadhav,65,Male,Drug Offense,Drug peddlers operating near Bhiwandi college campus.,19.28772,73.048605,2021-02-10,Bhiwandi
+FIR-2020-00357,Anita Bose,51,Female,Burglary,Office burglary at Bandra. Electronic equipment stolen.,19.053455,72.836159,2020-04-02,Bandra
+FIR-2025-00358,Sunita Kulkarni,63,Female,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Bhandup.,19.15627,72.937603,2025-02-22,Bhandup
+FIR-2024-00359,Manoj Kulkarni,49,Male,Burglary,Office burglary at Kalyan. Electronic equipment stolen.,19.25291,73.134992,2024-06-12,Kalyan
+FIR-2024-00360,Sunil Mehta,65,Male,Assault,I was physically attacked by unknown persons near Vashi bus stop.,19.074831,72.991858,2024-04-28,Vashi
+FIR-2025-00361,Akash Desai,61,Male,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Bhandup.,19.14799,72.927901,2025-01-16,Bhandup
+FIR-2025-00362,Akash Gupta,56,Male,Theft,Laptop stolen from my office cabin at Vikhroli tech park.,19.103567,72.93636,2025-12-21,Vikhroli
+FIR-2024-00363,Seema Sawant,40,Female,Drug Offense,Found suspicious white powder packets near Mulund park.,19.171934,72.959844,2024-07-19,Mulund
+FIR-2020-00364,Rahul Rane,60,Male,Murder,Unidentified body found near Vasai railway tracks.,19.362881,72.83567,2020-08-03,Vasai
+FIR-2021-00365,Meera Iyer,38,Female,Kidnapping,Businessman kidnapped for ransom from his office in Mulund.,19.166367,72.956646,2021-01-26,Mulund
+FIR-2023-00366,Anjali Patil,61,Female,Robbery,Petrol pump looted at gunpoint near Bandra highway.,19.059547,72.825412,2023-07-13,Bandra
+FIR-2025-00367,Ramesh Rao,54,Male,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Airoli.,19.160167,73.002126,2025-08-22,Airoli
+FIR-2022-00368,Divya Shah,28,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Chembur.,19.044152,72.891959,2022-12-26,Chembur
+FIR-2023-00369,Vishal Patil,59,Male,Assault,Was assaulted by neighbour over a property dispute in Vikhroli.,19.095867,72.934929,2023-06-12,Vikhroli
+FIR-2024-00370,Komal Shah,47,Female,Assault,I was physically attacked by unknown persons near Ambernath bus stop.,19.211828,73.187671,2024-02-16,Ambernath
+FIR-2021-00371,Ganesh Singh,61,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Bhiwandi.,19.279562,73.055717,2021-03-07,Bhiwandi
+FIR-2022-00372,Seema Pillai,47,Female,Robbery,Petrol pump looted at gunpoint near Panvel highway.,18.983007,73.109116,2022-11-06,Panvel
+FIR-2021-00373,Sneha Verma,18,Female,Drug Offense,Found suspicious white powder packets near Bhandup park.,19.155024,72.930872,2021-08-26,Bhandup
+FIR-2020-00374,Vikram Nair,45,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Kharghar.,19.056707,73.063466,2020-09-07,Kharghar
+FIR-2021-00375,Priya Patil,66,Female,Domestic Violence,Being physically abused by husband at our home in Goregaon.,19.169835,72.855134,2021-04-23,Goregaon
+FIR-2020-00376,Lakshmi Kumar,24,Female,Cybercrime,Ransomware attack on my business computer systems at Ulhasnagar office.,19.217622,73.155806,2020-05-10,Ulhasnagar
+FIR-2022-00377,Shruti Rane,56,Female,Domestic Violence,Elderly parents being abused by their son at Airoli house.,19.163659,73.008309,2022-08-12,Airoli
+FIR-2025-00378,Anil Ghosh,43,Male,Theft,Gold chain snatched by two men on a bike near Vikhroli junction.,19.105943,72.920124,2025-01-19,Vikhroli
+FIR-2024-00379,Rajesh Kulkarni,63,Male,Theft,Laptop stolen from my office cabin at Belapur tech park.,19.028925,73.040963,2024-01-22,Belapur
+FIR-2022-00380,Akash Banerjee,19,Male,Theft,Pickpocket stole my purse while shopping at Borivali mall.,19.229586,72.849172,2022-08-23,Borivali
+FIR-2022-00381,Deepak Rao,61,Male,Theft,Pickpocket stole my purse while shopping at Nerul mall.,19.036233,73.02015,2022-10-20,Nerul
+FIR-2023-00382,Prashant Banerjee,24,Male,Domestic Violence,Being physically abused by husband at our home in Marine Lines.,18.938854,72.829195,2023-04-20,Marine Lines
+FIR-2024-00383,Dev Mehta,51,Male,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Kopar Khairane.,19.100695,73.000807,2024-08-07,Kopar Khairane
+FIR-2025-00384,Shalini Desai,18,Female,Theft,Someone stole my wallet containing cash and cards at Mahalaxmi market.,18.990938,72.818705,2025-08-05,Mahalaxmi
+FIR-2022-00385,Dev Rane,22,Male,Assault,Was assaulted by colleagues after office hours near Mulund.,19.167223,72.966073,2022-05-15,Mulund
+FIR-2025-00386,Rajesh Banerjee,29,Male,Theft,My car was broken into and valuables were stolen at Vashi parking.,19.083132,72.994854,2025-02-04,Vashi
+FIR-2022-00387,Rahul Mukherjee,26,Male,Robbery,Bank robbery attempt at Airoli branch. Suspects fled with cash.,19.163791,73.007502,2022-12-03,Airoli
+FIR-2023-00388,Shalini Gupta,25,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Kharghar.,19.042837,73.063514,2023-07-21,Kharghar
+FIR-2024-00389,Rajesh Kumar,62,Male,Theft,Someone stole my wallet containing cash and cards at Worli market.,19.015921,72.817015,2024-11-15,Worli
+FIR-2025-00390,Dinesh Sawant,67,Male,Murder,Dead body found with stab wounds near Marine Lines lake.,18.950452,72.831099,2025-03-16,Marine Lines
+FIR-2025-00391,Neha Jadhav,46,Female,Theft,Laptop stolen from my office cabin at Juhu tech park.,19.091399,72.816647,2025-09-25,Juhu
+FIR-2025-00392,Vishal Mukherjee,39,Male,Domestic Violence,Verbal and physical abuse by partner at our flat in Bhiwandi.,19.285312,73.040205,2025-12-08,Bhiwandi
+FIR-2020-00393,Ritu Reddy,61,Female,Cybercrime,Ransomware attack on my business computer systems at Powai office.,19.125441,72.908258,2020-11-06,Powai
+FIR-2020-00394,Manisha Mukherjee,28,Female,Assault,Was assaulted by neighbour over a property dispute in Badlapur.,19.150118,73.237803,2020-09-08,Badlapur
+FIR-2023-00395,Geeta Banerjee,33,Female,Assault,Attacked with a knife by an unknown person near Dombivli park.,19.224325,73.085662,2023-08-11,Dombivli
+FIR-2020-00396,Mohan Das,59,Male,Theft,Pickpocket stole my purse while shopping at Malad mall.,19.185447,72.849543,2020-02-26,Malad
+FIR-2023-00397,Divya Naik,31,Female,Drug Offense,Drug peddlers operating near Airoli college campus.,19.162406,73.004732,2023-06-18,Airoli
+FIR-2022-00398,Tanvi Reddy,41,Female,Drug Offense,Suspected drug dealing activity near Borivali slum area.,19.235886,72.851135,2022-06-27,Borivali
+FIR-2025-00399,Sapna Rane,41,Female,Assault,Got beaten up by a group of men after an argument at Colaba.,18.906548,72.821137,2025-12-14,Colaba
+FIR-2021-00400,Sanjay Nair,30,Male,Fraud,Real estate fraud. Sold a property with forged documents in Borivali.,19.225012,72.863191,2021-12-11,Borivali
+FIR-2024-00401,Dev Jadhav,20,Male,Burglary,Warehouse burglary at Borivali industrial area.,19.229848,72.858486,2024-03-16,Borivali
+FIR-2021-00402,Ganesh Das,21,Male,Domestic Violence,Domestic violence complaint against spouse. We live in Seawoods.,19.021159,73.017667,2021-12-19,Seawoods
+FIR-2024-00403,Harsh Banerjee,26,Male,Assault,Was assaulted by colleagues after office hours near Belapur.,19.025511,73.046154,2024-07-14,Belapur
+FIR-2025-00404,Sanjay Sawant,39,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Kalyan.,19.236464,73.13755,2025-09-10,Kalyan
+FIR-2022-00405,Tanvi Das,53,Female,Fraud,Cheated by a fake job placement agency in Goregaon.,19.168783,72.848412,2022-11-05,Goregaon
+FIR-2025-00406,Ganesh Naik,62,Male,Murder,Woman killed by known assailant in Borivali residential area.,19.231946,72.858356,2025-12-14,Borivali
+FIR-2020-00407,Seema Ghosh,18,Female,Domestic Violence,Being physically abused by husband at our home in Malad.,19.184817,72.839461,2020-04-09,Malad
+FIR-2024-00408,Ajay Reddy,34,Male,Robbery,Petrol pump looted at gunpoint near Dadar highway.,19.023487,72.84188,2024-01-12,Dadar
+FIR-2024-00409,Neha Nair,61,Female,Domestic Violence,Verbal and physical abuse by partner at our flat in Vikhroli.,19.104342,72.925278,2024-12-10,Vikhroli
+FIR-2024-00410,Arvind Sawant,44,Male,Murder,Dead body found with stab wounds near Vasai lake.,19.350959,72.834727,2024-08-27,Vasai
+FIR-2025-00411,Akash Rao,63,Male,Murder,Unidentified body found near Nalasopara railway tracks.,19.421969,72.816329,2025-04-10,Nalasopara
+FIR-2023-00412,Kavita Reddy,22,Female,Robbery,Petrol pump looted at gunpoint near Chembur highway.,19.052477,72.896944,2023-05-18,Chembur
+FIR-2020-00413,Anita Gupta,55,Female,Kidnapping,Businessman kidnapped for ransom from his office in Andheri.,19.119027,72.85515,2020-03-11,Andheri
+FIR-2025-00414,Dev Iyer,57,Male,Kidnapping,Child went missing from a park in Badlapur and is suspected to be kidnapped.,19.156303,73.219858,2025-06-17,Badlapur
+FIR-2022-00415,Anil Rane,22,Male,Domestic Violence,Elderly parents being abused by their son at Worli house.,19.018462,72.813268,2022-04-07,Worli
+FIR-2025-00416,Shalini Kulkarni,36,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Marine Lines.,18.942697,72.824727,2025-01-04,Marine Lines
+FIR-2022-00417,Nisha Desai,59,Female,Burglary,Office burglary at Marine Lines. Electronic equipment stolen.,18.952378,72.827151,2022-07-26,Marine Lines
+FIR-2024-00418,Arvind Mehta,52,Male,Kidnapping,Child went missing from a park in Bandra and is suspected to be kidnapped.,19.066042,72.826999,2024-08-16,Bandra
+FIR-2024-00419,Ajay Iyer,30,Male,Murder,Dead body found with stab wounds near Ulhasnagar lake.,19.230464,73.157848,2024-09-01,Ulhasnagar
+FIR-2025-00420,Deepak Reddy,58,Male,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Seawoods.",19.015612,73.024075,2025-07-21,Seawoods
+FIR-2021-00421,Harsh Reddy,27,Male,Theft,My car was broken into and valuables were stolen at Dombivli parking.,19.209058,73.078165,2021-05-18,Dombivli
+FIR-2022-00422,Ramesh Banerjee,32,Male,Kidnapping,Woman kidnapped from her workplace in Turbhe industrial area.,19.080623,73.010689,2022-01-13,Turbhe
+FIR-2020-00423,Mahesh Sharma,59,Male,Burglary,Godown broken into and goods stolen at Juhu commercial complex.,19.090012,72.830418,2020-06-17,Juhu
+FIR-2023-00424,Ajay Ghosh,61,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Churchgate.,18.92783,72.834934,2023-07-27,Churchgate
+FIR-2024-00425,Mohan Gupta,52,Male,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Thane.,19.21612,72.98405,2024-05-21,Thane
+FIR-2020-00426,Ajay Reddy,68,Male,Murder,Unidentified body found near Andheri railway tracks.,19.127195,72.839227,2020-01-19,Andheri
+FIR-2024-00427,Sapna Naik,23,Female,Kidnapping,Businessman kidnapped for ransom from his office in Kandivali.,19.203635,72.860113,2024-03-06,Kandivali
+FIR-2020-00428,Manoj Nair,34,Male,Fraud,Cheated by a fake job placement agency in Borivali.,19.23412,72.858046,2020-09-15,Borivali
+FIR-2022-00429,Ajay Reddy,22,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Malad.,19.191712,72.848144,2022-06-05,Malad
+FIR-2025-00430,Rajesh Shah,57,Male,Assault,Was assaulted by neighbour over a property dispute in Goregaon.,19.166017,72.849167,2025-05-23,Goregaon
+FIR-2021-00431,Ramesh Pillai,41,Male,Murder,Man found murdered in his apartment in Seawoods society.,19.011597,73.012424,2021-12-24,Seawoods
+FIR-2022-00432,Meera Banerjee,41,Female,Robbery,Home invasion robbery at my residence in Airoli colony.,19.155157,72.995575,2022-08-18,Airoli
+FIR-2025-00433,Anil Iyer,56,Male,Assault,Got beaten up by a group of men after an argument at Bhandup.,19.157626,72.931429,2025-11-03,Bhandup
+FIR-2020-00434,Rahul Mukherjee,50,Male,Theft,Pickpocket stole my purse while shopping at Nalasopara mall.,19.422584,72.816655,2020-09-09,Nalasopara
+FIR-2022-00435,Sneha Bose,27,Female,Murder,Man found murdered in his apartment in Kharghar society.,19.055229,73.067592,2022-03-15,Kharghar
+FIR-2024-00436,Arvind Kulkarni,50,Male,Theft,Gold chain snatched by two men on a bike near Mahalaxmi junction.,18.98976,72.818131,2024-11-06,Mahalaxmi
+FIR-2025-00437,Sachin Gupta,29,Male,Burglary,Godown broken into and goods stolen at Virar commercial complex.,19.463344,72.804524,2025-08-12,Virar
+FIR-2021-00438,Manoj Bose,49,Male,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Juhu.,19.085689,72.817256,2021-09-26,Juhu
+FIR-2025-00439,Geeta More,47,Female,Theft,My car was broken into and valuables were stolen at Colaba parking.,18.898765,72.824069,2025-05-27,Colaba
+FIR-2020-00440,Komal Naik,54,Female,Robbery,Petrol pump looted at gunpoint near Belapur highway.,19.02107,73.040254,2020-09-09,Belapur
+FIR-2020-00441,Swati Rane,43,Female,Murder,Double homicide reported at a house in Kopar Khairane colony.,19.108353,73.015343,2020-09-05,Kopar Khairane
+FIR-2022-00442,Kavita Desai,22,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Lower Parel.,18.98703,72.825038,2022-10-23,Lower Parel
+FIR-2024-00443,Vishal Desai,44,Male,Murder,Double homicide reported at a house in Borivali colony.,19.234205,72.85628,2024-03-21,Borivali
+FIR-2020-00444,Priya Desai,20,Female,Robbery,ATM robbery by masked men at Virar main road.,19.449123,72.814191,2020-10-05,Virar
+FIR-2025-00445,Anil Mehta,29,Male,Domestic Violence,Domestic violence complaint against spouse. We live in Kharghar.,19.056785,73.068552,2025-12-22,Kharghar
+FIR-2024-00446,Rekha Joshi,46,Female,Burglary,Warehouse burglary at Ambernath industrial area.,19.197911,73.192607,2024-03-26,Ambernath
+FIR-2020-00447,Dinesh Reddy,50,Male,Kidnapping,Businessman kidnapped for ransom from his office in Worli.,19.026047,72.817131,2020-04-13,Worli
+FIR-2024-00448,Anita Singh,19,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Bhiwandi.,19.284987,73.05483,2024-02-06,Bhiwandi
+FIR-2024-00449,Aarti Nair,20,Female,Domestic Violence,Being physically abused by husband at our home in Ulhasnagar.,19.213364,73.167688,2024-09-27,Ulhasnagar
+FIR-2024-00450,Dev Reddy,59,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Bhiwandi.,19.278708,73.039169,2024-07-08,Bhiwandi
+FIR-2021-00451,Pallavi Sawant,40,Female,Burglary,House was broken into while we were away. Jewellery and cash stolen from Virar residence.,19.45441,72.80669,2021-02-10,Virar
+FIR-2021-00452,Meera Joshi,18,Female,Theft,Someone stole my wallet containing cash and cards at Virar market.,19.456295,72.809101,2021-12-26,Virar
+FIR-2024-00453,Seema Kulkarni,24,Female,Robbery,Petrol pump looted at gunpoint near Seawoods highway.,19.023207,73.012726,2024-07-19,Seawoods
+FIR-2021-00454,Aarti Mehta,61,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Kandivali.,19.210442,72.853151,2021-06-18,Kandivali
+FIR-2025-00455,Meera Shah,54,Female,Murder,Man found murdered in his apartment in Kharghar society.,19.0545,73.068986,2025-04-15,Kharghar
+FIR-2020-00456,Rajesh Joshi,50,Male,Cybercrime,Ransomware attack on my business computer systems at Airoli office.,19.158181,73.002091,2020-03-13,Airoli
+FIR-2021-00457,Ravi Patel,70,Male,Robbery,ATM robbery by masked men at Ambernath main road.,19.203208,73.177282,2021-06-03,Ambernath
+FIR-2020-00458,Harsh Sawant,43,Male,Burglary,Apartment burglary in Lower Parel society. Lock was broken.,18.988529,72.840571,2020-03-21,Lower Parel
+FIR-2024-00459,Nisha Sharma,30,Female,Domestic Violence,Dowry harassment by in-laws at residence in Vashi.,19.067772,73.00059,2024-12-08,Vashi
+FIR-2022-00460,Vishal Verma,41,Male,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Lower Parel.",19.002313,72.823037,2022-07-12,Lower Parel
+FIR-2024-00461,Geeta Pillai,30,Female,Domestic Violence,Verbal and physical abuse by partner at our flat in Andheri.,19.123772,72.854784,2024-05-24,Andheri
+FIR-2020-00462,Ritu Banerjee,35,Female,Fraud,Cheated by a fake job placement agency in Churchgate.,18.931295,72.824479,2020-05-06,Churchgate
+FIR-2024-00463,Divya Singh,53,Female,Assault,Was assaulted by neighbour over a property dispute in Ulhasnagar.,19.218299,73.15684,2024-05-18,Ulhasnagar
+FIR-2023-00464,Tanvi Pawar,42,Female,Burglary,Office burglary at Ambernath. Electronic equipment stolen.,19.209649,73.195225,2023-11-15,Ambernath
+FIR-2025-00465,Mohan Singh,34,Male,Assault,Was assaulted by colleagues after office hours near Belapur.,19.029273,73.032908,2025-04-26,Belapur
+FIR-2020-00466,Seema Kulkarni,51,Female,Domestic Violence,Verbal and physical abuse by partner at our flat in Andheri.,19.126344,72.841365,2020-07-22,Andheri
+FIR-2021-00467,Rekha Naik,29,Female,Drug Offense,Drug peddlers operating near Panvel college campus.,18.983771,73.118974,2021-12-22,Panvel
+FIR-2021-00468,Mohan Das,30,Male,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Ghatkopar.,19.079936,72.902155,2021-10-12,Ghatkopar
+FIR-2024-00469,Dev Singh,25,Male,Assault,Attacked with a knife by an unknown person near Mahalaxmi park.,18.985077,72.817285,2024-01-28,Mahalaxmi
+FIR-2024-00470,Ritu Nair,38,Female,Drug Offense,Drug peddlers operating near Virar college campus.,19.455716,72.821288,2024-05-13,Virar
+FIR-2024-00471,Dev Pillai,26,Male,Theft,Pickpocket stole my purse while shopping at Bhiwandi mall.,19.280866,73.049115,2024-06-13,Bhiwandi
+FIR-2021-00472,Sachin Singh,62,Male,Domestic Violence,Wife beaten and threatened by husband and his family in Dombivli.,19.222084,73.076936,2021-07-19,Dombivli
+FIR-2024-00473,Rohit Kulkarni,57,Male,Kidnapping,Child went missing from a park in Chembur and is suspected to be kidnapped.,19.047457,72.894788,2024-06-12,Chembur
+FIR-2021-00474,Mohan Jadhav,31,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Sanpada.,19.070587,73.008393,2021-10-05,Sanpada
+FIR-2021-00475,Sunil Singh,64,Male,Kidnapping,Child went missing from a park in Ghatkopar and is suspected to be kidnapped.,19.084444,72.905718,2021-12-05,Ghatkopar
+FIR-2023-00476,Priya Gupta,44,Female,Drug Offense,Narcotics being smuggled through Thane bus terminus.,19.21898,72.974415,2023-05-09,Thane
+FIR-2025-00477,Arvind Singh,62,Male,Robbery,Three men with weapons robbed a jewellery store at Dadar.,19.024076,72.847331,2025-02-15,Dadar
+FIR-2022-00478,Meera Kulkarni,41,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Vasai.,19.357583,72.837935,2022-11-20,Vasai
+FIR-2023-00479,Ramesh Pillai,59,Male,Domestic Violence,Wife beaten and threatened by husband and his family in Chembur.,19.049302,72.902864,2023-12-15,Chembur
+FIR-2022-00480,Arvind Nair,36,Male,Drug Offense,Found suspicious white powder packets near Fort park.,18.941165,72.838612,2022-07-21,Fort
+FIR-2022-00481,Rekha Patel,28,Female,Murder,Woman killed by known assailant in Vikhroli residential area.,19.097738,72.923327,2022-10-21,Vikhroli
+FIR-2021-00482,Meera Pawar,67,Female,Murder,Unidentified body found near Nalasopara railway tracks.,19.426511,72.82068,2021-01-05,Nalasopara
+FIR-2023-00483,Vishal Mehta,65,Male,Assault,Got beaten up by a group of men after an argument at Kandivali.,19.207341,72.843911,2023-09-02,Kandivali
+FIR-2023-00484,Dev Sawant,51,Male,Assault,Was assaulted by neighbour over a property dispute in Malad.,19.189562,72.840086,2023-05-08,Malad
+FIR-2025-00485,Harsh Shah,46,Male,Robbery,ATM robbery by masked men at Thane main road.,19.22507,72.968671,2025-06-28,Thane
+FIR-2024-00486,Manisha Pawar,52,Female,Kidnapping,Woman kidnapped from her workplace in Vasai industrial area.,19.353402,72.84867,2024-03-19,Vasai
+FIR-2022-00487,Sneha Das,58,Female,Burglary,Apartment burglary in Seawoods society. Lock was broken.,19.024296,73.018176,2022-08-18,Seawoods
+FIR-2020-00488,Ravi Patel,46,Male,Kidnapping,Woman kidnapped from her workplace in Sanpada industrial area.,19.058696,73.008871,2020-09-27,Sanpada
+FIR-2023-00489,Nikhil Shah,48,Male,Domestic Violence,Verbal and physical abuse by partner at our flat in Andheri.,19.128142,72.855339,2023-05-01,Andheri
+FIR-2023-00490,Lakshmi Nair,32,Female,Theft,My car was broken into and valuables were stolen at Vasai parking.,19.354471,72.847343,2023-07-08,Vasai
+FIR-2021-00491,Karan Das,59,Male,Cybercrime,Received threatening emails from an unknown sender. Reporting from Belapur.,19.01876,73.036945,2021-09-25,Belapur
+FIR-2021-00492,Lakshmi Iyer,65,Female,Domestic Violence,Elderly parents being abused by their son at Bhandup house.,19.14356,72.928869,2021-05-04,Bhandup
+FIR-2024-00493,Aarti Pawar,35,Female,Burglary,Office burglary at Badlapur. Electronic equipment stolen.,19.151713,73.221443,2024-01-06,Badlapur
+FIR-2021-00494,Ajay Mehta,26,Male,Drug Offense,Found suspicious white powder packets near Andheri park.,19.111504,72.836694,2021-06-14,Andheri
+FIR-2020-00495,Manisha Kulkarni,47,Female,Theft,Someone stole my wallet containing cash and cards at Airoli market.,19.162771,73.007433,2020-05-25,Airoli
+FIR-2020-00496,Rekha Naik,48,Female,Robbery,Bank robbery attempt at Goregaon branch. Suspects fled with cash.,19.172645,72.859165,2020-12-08,Goregaon
+FIR-2025-00497,Pallavi Pawar,33,Female,Theft,Bicycle stolen from outside Goregaon railway station.,19.171006,72.844479,2025-04-16,Goregaon
+FIR-2024-00498,Anjali Shah,38,Female,Robbery,Petrol pump looted at gunpoint near Fort highway.,18.924644,72.844548,2024-02-09,Fort
+FIR-2023-00499,Sneha Shah,30,Female,Murder,Man found murdered in his apartment in Dadar society.,19.027265,72.842519,2023-06-01,Dadar
+FIR-2025-00500,Ravi Mehta,55,Male,Assault,Got beaten up by a group of men after an argument at Kharghar.,19.037579,73.05664,2025-08-23,Kharghar
+FIR-2025-00501,Nikhil Bose,23,Male,Fraud,Real estate fraud. Sold a property with forged documents in Worli.,19.009428,72.817573,2025-01-02,Worli
+FIR-2024-00502,Sneha Kumar,62,Female,Domestic Violence,Dowry harassment by in-laws at residence in Malad.,19.186957,72.844735,2024-11-25,Malad
+FIR-2020-00503,Nisha Das,30,Female,Theft,My car was broken into and valuables were stolen at Belapur parking.,19.027988,73.033514,2020-08-23,Belapur
+FIR-2025-00504,Sapna Shah,52,Female,Drug Offense,Narcotics being smuggled through Goregaon bus terminus.,19.160033,72.849553,2025-08-09,Goregaon
+FIR-2025-00505,Suresh Rane,27,Male,Drug Offense,Drug peddlers operating near Vashi college campus.,19.077932,72.997682,2025-09-13,Vashi
+FIR-2024-00506,Rahul Nair,41,Male,Burglary,Shop broken into at night in Ghatkopar market. Stock worth lakhs stolen.,19.09022,72.911266,2024-07-07,Ghatkopar
+FIR-2020-00507,Pallavi Naik,27,Female,Burglary,Shop broken into at night in Vashi market. Stock worth lakhs stolen.,19.075296,72.99504,2020-09-22,Vashi
+FIR-2020-00508,Amit Banerjee,26,Male,Robbery,Three men with weapons robbed a jewellery store at Colaba.,18.898841,72.808532,2020-10-21,Colaba
+FIR-2025-00509,Anjali More,51,Female,Burglary,Shop broken into at night in Nalasopara market. Stock worth lakhs stolen.,19.408182,72.816814,2025-02-01,Nalasopara
+FIR-2023-00510,Akash More,23,Male,Drug Offense,Suspected drug dealing activity near Fort slum area.,18.931019,72.84067,2023-06-26,Fort
+FIR-2021-00511,Sunil Nair,35,Male,Domestic Violence,Verbal and physical abuse by partner at our flat in Colaba.,18.898108,72.810778,2021-09-04,Colaba
+FIR-2025-00512,Harsh Desai,52,Male,Cybercrime,Received threatening emails from an unknown sender. Reporting from Goregaon.,19.166824,72.847575,2025-03-18,Goregaon
+FIR-2020-00513,Shruti Singh,67,Female,Burglary,Godown broken into and goods stolen at Kopar Khairane commercial complex.,19.101674,73.010905,2020-03-26,Kopar Khairane
+FIR-2022-00514,Mahesh Sawant,50,Male,Murder,Man found murdered in his apartment in Mahalaxmi society.,18.983478,72.813998,2022-06-18,Mahalaxmi
+FIR-2023-00515,Ritu Jadhav,66,Female,Cybercrime,Ransomware attack on my business computer systems at Panvel office.,18.984214,73.118413,2023-09-24,Panvel
+FIR-2020-00516,Ritu Pawar,46,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Andheri.,19.110393,72.84209,2020-09-05,Andheri
+FIR-2022-00517,Priya Shah,32,Female,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Panvel.",18.99483,73.126367,2022-09-17,Panvel
+FIR-2021-00518,Rajesh Verma,47,Male,Murder,Man found murdered in his apartment in Powai society.,19.1129,72.913793,2021-04-09,Powai
+FIR-2023-00519,Rekha Pillai,43,Female,Burglary,Godown broken into and goods stolen at Kandivali commercial complex.,19.200944,72.848494,2023-03-16,Kandivali
+FIR-2022-00520,Dinesh Iyer,37,Male,Theft,Pickpocket stole my purse while shopping at Virar mall.,19.44747,72.802718,2022-06-27,Virar
+FIR-2025-00521,Seema Mukherjee,25,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Lower Parel.,19.001373,72.833978,2025-07-02,Lower Parel
+FIR-2021-00522,Divya Verma,38,Female,Domestic Violence,Dowry harassment by in-laws at residence in Virar.,19.452437,72.815555,2021-01-22,Virar
+FIR-2023-00523,Nisha Bose,56,Female,Burglary,House was broken into while we were away. Jewellery and cash stolen from Ulhasnagar residence.,19.215942,73.160296,2023-03-05,Ulhasnagar
+FIR-2023-00524,Rekha More,54,Female,Theft,Pickpocket stole my purse while shopping at Vasai mall.,19.355951,72.837671,2023-12-05,Vasai
+FIR-2025-00525,Mohan Naik,30,Male,Drug Offense,Narcotics being smuggled through Kharghar bus terminus.,19.041322,73.06812,2025-09-08,Kharghar
+FIR-2025-00526,Suresh Mehta,67,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Panvel.,18.997883,73.109292,2025-07-14,Panvel
+FIR-2022-00527,Ritu Joshi,38,Female,Murder,Dead body found with stab wounds near Churchgate lake.,18.937594,72.819785,2022-10-27,Churchgate
+FIR-2025-00528,Aarti Kumar,46,Female,Theft,Gold chain snatched by two men on a bike near Vikhroli junction.,19.105107,72.92062,2025-02-04,Vikhroli
+FIR-2023-00529,Manoj Nair,27,Male,Kidnapping,Businessman kidnapped for ransom from his office in Andheri.,19.123576,72.838626,2023-08-01,Andheri
+FIR-2023-00530,Pooja Das,52,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Kandivali.,19.209865,72.847173,2023-10-24,Kandivali
+FIR-2021-00531,Karan Rao,60,Male,Theft,My mobile phone was stolen while I was travelling in the bus near Belapur.,19.018609,73.029702,2021-12-20,Belapur
+FIR-2025-00532,Sunita Pawar,59,Female,Theft,Pickpocket stole my purse while shopping at Juhu mall.,19.091507,72.82966,2025-06-28,Juhu
+FIR-2022-00533,Rahul Shah,59,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Vikhroli.,19.101571,72.931694,2022-08-28,Vikhroli
+FIR-2022-00534,Anil Joshi,50,Male,Drug Offense,Suspected drug dealing activity near Vasai slum area.,19.351495,72.848145,2022-06-16,Vasai
+FIR-2024-00535,Shruti Gupta,19,Female,Murder,Woman killed by known assailant in Kopar Khairane residential area.,19.105005,73.002324,2024-05-26,Kopar Khairane
+FIR-2023-00536,Akash Mehta,42,Male,Theft,Laptop stolen from my office cabin at Vasai tech park.,19.355212,72.836536,2023-11-05,Vasai
+FIR-2021-00537,Harsh Sawant,51,Male,Burglary,Godown broken into and goods stolen at Fort commercial complex.,18.928349,72.830607,2021-07-10,Fort
+FIR-2021-00538,Nisha Naik,26,Female,Fraud,Cheated by a fake job placement agency in Lower Parel.,18.994421,72.834981,2021-03-10,Lower Parel
+FIR-2025-00539,Prashant Bose,27,Male,Burglary,Shop broken into at night in Worli market. Stock worth lakhs stolen.,19.008956,72.815859,2025-02-06,Worli
+FIR-2025-00540,Anita Das,19,Female,Murder,Double homicide reported at a house in Turbhe colony.,19.077667,73.017512,2025-12-09,Turbhe
+FIR-2022-00541,Dev Joshi,24,Male,Robbery,Armed robbery at my shop in Chembur. Cash and goods worth lakhs were looted.,19.057449,72.90164,2022-10-19,Chembur
+FIR-2024-00542,Dinesh Desai,32,Male,Theft,Someone stole my wallet containing cash and cards at Kopar Khairane market.,19.106263,73.007132,2024-10-16,Kopar Khairane
+FIR-2023-00543,Kavita Mukherjee,42,Female,Drug Offense,Found suspicious white powder packets near Ambernath park.,19.197776,73.180525,2023-01-09,Ambernath
+FIR-2023-00544,Swati Das,60,Female,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Kandivali.",19.202942,72.861094,2023-10-16,Kandivali
+FIR-2022-00545,Nisha Desai,45,Female,Cybercrime,Ransomware attack on my business computer systems at Colaba office.,18.911407,72.812307,2022-07-20,Colaba
+FIR-2025-00546,Ganesh Singh,46,Male,Drug Offense,Found suspicious white powder packets near Colaba park.,18.907074,72.812612,2025-01-18,Colaba
+FIR-2022-00547,Divya Bose,58,Female,Theft,Laptop stolen from my office cabin at Goregaon tech park.,19.165091,72.860288,2022-08-06,Goregaon
+FIR-2025-00548,Lakshmi Nair,21,Female,Domestic Violence,Elderly parents being abused by their son at Powai house.,19.124198,72.905034,2025-09-04,Powai
+FIR-2021-00549,Dev Pillai,62,Male,Domestic Violence,Elderly parents being abused by their son at Thane house.,19.216571,72.977118,2021-08-19,Thane
+FIR-2020-00550,Sachin Patel,34,Male,Murder,Man found murdered in his apartment in Lower Parel society.,18.997167,72.823771,2020-12-15,Lower Parel
+FIR-2023-00551,Rekha Rane,63,Female,Cybercrime,Ransomware attack on my business computer systems at Ulhasnagar office.,19.230495,73.162074,2023-01-25,Ulhasnagar
+FIR-2023-00552,Rohit Pillai,60,Male,Robbery,Three men with weapons robbed a jewellery store at Worli.,19.011177,72.819441,2023-05-10,Worli
+FIR-2020-00553,Lakshmi Iyer,29,Female,Assault,Got beaten up by a group of men after an argument at Thane.,19.208371,72.983408,2020-08-16,Thane
+FIR-2023-00554,Sapna Ghosh,18,Female,Burglary,Office burglary at Badlapur. Electronic equipment stolen.,19.149637,73.231589,2023-07-15,Badlapur
+FIR-2021-00555,Dinesh Nair,18,Male,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Vasai.,19.363095,72.840851,2021-01-06,Vasai
+FIR-2022-00556,Amit Iyer,40,Male,Theft,My mobile phone was stolen while I was travelling in the bus near Powai.,19.12094,72.91276,2022-06-03,Powai
+FIR-2024-00557,Rajesh Jadhav,29,Male,Robbery,ATM robbery by masked men at Vashi main road.,19.080318,73.002597,2024-09-06,Vashi
+FIR-2020-00558,Shruti Pillai,41,Female,Theft,Laptop stolen from my office cabin at Kurla tech park.,19.069056,72.887351,2020-07-27,Kurla
+FIR-2025-00559,Ajay More,26,Male,Assault,Was assaulted by neighbour over a property dispute in Bhandup.,19.150341,72.937993,2025-04-20,Bhandup
+FIR-2025-00560,Rajesh Pillai,64,Male,Domestic Violence,Elderly parents being abused by their son at Kurla house.,19.077081,72.881496,2025-05-14,Kurla
+FIR-2025-00561,Meera Rane,54,Female,Burglary,Office burglary at Kopar Khairane. Electronic equipment stolen.,19.104786,73.007528,2025-11-16,Kopar Khairane
+FIR-2020-00562,Kavita Nair,32,Female,Kidnapping,My 8-year-old child was kidnapped from outside school near Goregaon.,19.158664,72.851898,2020-12-28,Goregaon
+FIR-2021-00563,Ravi Nair,44,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Colaba.,18.903693,72.820821,2021-01-21,Colaba
+FIR-2020-00564,Karan Shah,34,Male,Assault,Was assaulted by neighbour over a property dispute in Nerul.,19.033134,73.013378,2020-02-22,Nerul
+FIR-2022-00565,Shalini Sawant,64,Female,Burglary,House was broken into while we were away. Jewellery and cash stolen from Marine Lines residence.,18.949841,72.81738,2022-11-16,Marine Lines
+FIR-2022-00566,Sunita Iyer,26,Female,Drug Offense,Illicit liquor being sold at Powai market area.,19.125441,72.906739,2022-08-26,Powai
+FIR-2024-00567,Shruti Verma,51,Female,Kidnapping,Businessman kidnapped for ransom from his office in Virar.,19.457004,72.801974,2024-11-11,Virar
+FIR-2024-00568,Rekha Kumar,35,Female,Theft,Pickpocket stole my purse while shopping at Airoli mall.,19.15843,73.005248,2024-10-13,Airoli
+FIR-2021-00569,Dinesh Singh,68,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Panvel.,18.98483,73.109236,2021-06-15,Panvel
+FIR-2020-00570,Pooja Rane,37,Female,Robbery,Bank robbery attempt at Borivali branch. Suspects fled with cash.,19.236399,72.862256,2020-08-17,Borivali
+FIR-2024-00571,Ravi More,50,Male,Robbery,Bank robbery attempt at Goregaon branch. Suspects fled with cash.,19.174773,72.857249,2024-05-25,Goregaon
+FIR-2025-00572,Anita Bose,24,Female,Domestic Violence,Dowry harassment by in-laws at residence in Thane.,19.222791,72.977287,2025-09-04,Thane
+FIR-2024-00573,Ajay Verma,61,Male,Burglary,Shop broken into at night in Kurla market. Stock worth lakhs stolen.,19.071938,72.870323,2024-11-24,Kurla
+FIR-2022-00574,Priya Pillai,66,Female,Kidnapping,A young girl was abducted by unknown men in a white van near Fort.,18.930218,72.829651,2022-09-11,Fort
+FIR-2024-00575,Anjali Singh,35,Female,Robbery,Bank robbery attempt at Worli branch. Suspects fled with cash.,19.009889,72.824366,2024-09-04,Worli
+FIR-2024-00576,Mahesh Kulkarni,53,Male,Murder,Man found murdered in his apartment in Bhandup society.,19.158666,72.94358,2024-04-06,Bhandup
+FIR-2025-00577,Ajay Nair,39,Male,Domestic Violence,Being physically abused by husband at our home in Kalyan.,19.236301,73.134915,2025-01-04,Kalyan
+FIR-2025-00578,Sunita Patel,45,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Chembur.,19.054122,72.901255,2025-12-15,Chembur
+FIR-2023-00579,Lakshmi Patil,70,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Mahalaxmi.,18.974371,72.820456,2023-10-05,Mahalaxmi
+FIR-2023-00580,Sunil Ghosh,62,Male,Drug Offense,Illicit liquor being sold at Malad market area.,19.183408,72.851288,2023-08-08,Malad
+FIR-2022-00581,Vikram Mukherjee,57,Male,Kidnapping,Woman kidnapped from her workplace in Sanpada industrial area.,19.057167,73.021145,2022-06-15,Sanpada
+FIR-2022-00582,Priya Patel,48,Female,Assault,Attacked with a knife by an unknown person near Kopar Khairane park.,19.101725,73.001016,2022-10-19,Kopar Khairane
+FIR-2024-00583,Ganesh Singh,43,Male,Assault,Road rage incident led to physical assault at Panvel signal.,18.992389,73.123349,2024-08-13,Panvel
+FIR-2025-00584,Swati Nair,33,Female,Domestic Violence,Elderly parents being abused by their son at Worli house.,19.015276,72.812014,2025-10-14,Worli
+FIR-2025-00585,Komal Ghosh,39,Female,Domestic Violence,Dowry harassment by in-laws at residence in Ghatkopar.,19.089052,72.899658,2025-10-27,Ghatkopar
+FIR-2022-00586,Neha Pillai,56,Female,Drug Offense,Narcotics being smuggled through Panvel bus terminus.,18.981353,73.116404,2022-07-03,Panvel
+FIR-2021-00587,Vishal Banerjee,56,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Panvel.,18.9923,73.10873,2021-03-19,Panvel
+FIR-2023-00588,Dev Kumar,60,Male,Robbery,ATM robbery by masked men at Kalyan main road.,19.23953,73.137811,2023-04-07,Kalyan
+FIR-2024-00589,Lakshmi Pillai,68,Female,Kidnapping,Businessman kidnapped for ransom from his office in Seawoods.,19.031306,73.019155,2024-09-13,Seawoods
+FIR-2022-00590,Ajay Verma,41,Male,Domestic Violence,Being physically abused by husband at our home in Dadar.,19.021867,72.854215,2022-02-28,Dadar
+FIR-2023-00591,Priya Desai,45,Female,Burglary,Godown broken into and goods stolen at Kharghar commercial complex.,19.043763,73.063456,2023-07-18,Kharghar
+FIR-2023-00592,Vishal Gupta,48,Male,Robbery,ATM robbery by masked men at Goregaon main road.,19.163992,72.86109,2023-03-10,Goregaon
+FIR-2021-00593,Vikram Sharma,22,Male,Theft,Bicycle stolen from outside Powai railway station.,19.120759,72.9155,2021-02-05,Powai
+FIR-2024-00594,Nisha Ghosh,62,Female,Burglary,Apartment burglary in Seawoods society. Lock was broken.,19.015096,73.017688,2024-08-13,Seawoods
+FIR-2025-00595,Swati Gupta,45,Female,Burglary,Apartment burglary in Andheri society. Lock was broken.,19.119663,72.851018,2025-09-09,Andheri
+FIR-2023-00596,Sapna Pillai,41,Female,Theft,Bicycle stolen from outside Colaba railway station.,18.910798,72.806963,2023-12-03,Colaba
+FIR-2020-00597,Harsh Das,51,Male,Kidnapping,Child went missing from a park in Dombivli and is suspected to be kidnapped.,19.209865,73.094498,2020-04-16,Dombivli
+FIR-2020-00598,Vishal Iyer,52,Male,Burglary,Apartment burglary in Nerul society. Lock was broken.,19.024055,73.013771,2020-08-15,Nerul
+FIR-2024-00599,Komal Das,39,Female,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Kopar Khairane.,19.098284,72.998307,2024-12-10,Kopar Khairane
+FIR-2025-00600,Sunita Iyer,48,Female,Burglary,Apartment burglary in Worli society. Lock was broken.,19.008632,72.825007,2025-10-01,Worli
+FIR-2022-00601,Manisha Patel,26,Female,Domestic Violence,Wife beaten and threatened by husband and his family in Juhu.,19.083341,72.828716,2022-05-01,Juhu
+FIR-2025-00602,Dinesh Gupta,55,Male,Robbery,Home invasion robbery at my residence in Mahalaxmi colony.,18.980195,72.805508,2025-04-16,Mahalaxmi
+FIR-2023-00603,Ravi Rane,20,Male,Murder,Man found murdered in his apartment in Kurla society.,19.074511,72.885834,2023-07-25,Kurla
+FIR-2025-00604,Swati Reddy,46,Female,Robbery,ATM robbery by masked men at Kandivali main road.,19.214087,72.848902,2025-05-25,Kandivali
+FIR-2024-00605,Amit Gupta,47,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Ambernath.,19.204025,73.194965,2024-04-13,Ambernath
+FIR-2023-00606,Manisha Mehta,27,Female,Domestic Violence,Being physically abused by husband at our home in Seawoods.,19.017276,73.023446,2023-11-11,Seawoods
+FIR-2022-00607,Rajesh Naik,58,Male,Murder,Unidentified body found near Seawoods railway tracks.,19.029861,73.024667,2022-05-09,Seawoods
+FIR-2024-00608,Sanjay Iyer,55,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Dombivli.,19.223282,73.091386,2024-04-17,Dombivli
+FIR-2020-00609,Anjali Rao,29,Female,Murder,Dead body found with stab wounds near Vasai lake.,19.364156,72.846334,2020-07-04,Vasai
+FIR-2020-00610,Vishal Pawar,40,Male,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Vashi.,19.070962,72.989074,2020-01-20,Vashi
+FIR-2025-00611,Dinesh Iyer,25,Male,Assault,Road rage incident led to physical assault at Kurla signal.,19.065198,72.882528,2025-10-26,Kurla
+FIR-2023-00612,Rajesh Rao,29,Male,Kidnapping,Woman kidnapped from her workplace in Vashi industrial area.,19.08031,72.990114,2023-05-25,Vashi
+FIR-2020-00613,Tanvi Reddy,67,Female,Murder,Man found murdered in his apartment in Mulund society.,19.178215,72.951846,2020-07-13,Mulund
+FIR-2021-00614,Sunita Mehta,70,Female,Kidnapping,Woman kidnapped from her workplace in Chembur industrial area.,19.043588,72.908988,2021-10-13,Chembur
+FIR-2023-00615,Akash More,24,Male,Robbery,Home invasion robbery at my residence in Mira Road colony.,19.275568,72.871367,2023-12-09,Mira Road
+FIR-2025-00616,Amit Patel,22,Male,Burglary,Warehouse burglary at Mulund industrial area.,19.162975,72.956254,2025-11-01,Mulund
+FIR-2023-00617,Vishal Sawant,35,Male,Robbery,Home invasion robbery at my residence in Airoli colony.,19.157393,72.998708,2023-08-14,Airoli
+FIR-2023-00618,Shruti Bose,69,Female,Assault,Got beaten up by a group of men after an argument at Mira Road.,19.271266,72.877583,2023-02-19,Mira Road
+FIR-2022-00619,Shalini Reddy,37,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Dadar.,19.02774,72.850741,2022-09-28,Dadar
+FIR-2023-00620,Rekha Banerjee,47,Female,Kidnapping,A young girl was abducted by unknown men in a white van near Lower Parel.,18.986332,72.822087,2023-11-07,Lower Parel
+FIR-2021-00621,Tanvi Sawant,24,Female,Murder,Dead body found with stab wounds near Badlapur lake.,19.163004,73.22716,2021-03-02,Badlapur
+FIR-2022-00622,Rahul Das,55,Male,Fraud,Real estate fraud. Sold a property with forged documents in Badlapur.,19.14656,73.229211,2022-08-18,Badlapur
+FIR-2025-00623,Priya Verma,39,Female,Theft,My mobile phone was stolen while I was travelling in the bus near Airoli.,19.15401,72.992634,2025-11-17,Airoli
+FIR-2021-00624,Anjali Mukherjee,52,Female,Robbery,Three men with weapons robbed a jewellery store at Nalasopara.,19.425696,72.813138,2021-08-21,Nalasopara
+FIR-2022-00625,Mohan Nair,20,Male,Fraud,Cheated by a fake job placement agency in Lower Parel.,18.983087,72.833953,2022-02-15,Lower Parel
+FIR-2020-00626,Sunil Pillai,22,Male,Assault,Attacked with a knife by an unknown person near Borivali park.,19.2326,72.859013,2020-04-14,Borivali
+FIR-2021-00627,Shruti Reddy,43,Female,Murder,Unidentified body found near Borivali railway tracks.,19.231618,72.853132,2021-01-19,Borivali
+FIR-2021-00628,Rohit Patel,25,Male,Kidnapping,Woman kidnapped from her workplace in Powai industrial area.,19.110961,72.903399,2021-08-08,Powai
+FIR-2020-00629,Vikram Singh,68,Male,Burglary,Office burglary at Belapur. Electronic equipment stolen.,19.013813,73.038239,2020-01-06,Belapur
+FIR-2025-00630,Karan Iyer,55,Male,Kidnapping,Woman kidnapped from her workplace in Turbhe industrial area.,19.085447,73.006723,2025-05-17,Turbhe
+FIR-2020-00631,Seema Desai,29,Female,Burglary,Apartment burglary in Colaba society. Lock was broken.,18.9003,72.814698,2020-11-27,Colaba
+FIR-2020-00632,Ritu Jadhav,18,Female,Domestic Violence,Dowry harassment by in-laws at residence in Ghatkopar.,19.07815,72.908704,2020-10-12,Ghatkopar
+FIR-2025-00633,Sachin Bose,58,Male,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Bhandup.",19.143674,72.943432,2025-08-16,Bhandup
+FIR-2022-00634,Anil Reddy,20,Male,Theft,My car was broken into and valuables were stolen at Lower Parel parking.,18.988501,72.829993,2022-10-26,Lower Parel
+FIR-2024-00635,Sunita Singh,65,Female,Theft,My two-wheeler was stolen from the parking lot near Mira Road.,19.274361,72.859081,2024-02-03,Mira Road
+FIR-2022-00636,Harsh Pawar,55,Male,Burglary,Warehouse burglary at Panvel industrial area.,18.983375,73.121037,2022-04-25,Panvel
+FIR-2023-00637,Rohit Desai,24,Male,Fraud,Cheated by a fake job placement agency in Turbhe.,19.079111,73.007013,2023-10-16,Turbhe
+FIR-2025-00638,Prashant Kumar,31,Male,Burglary,Office burglary at Dombivli. Electronic equipment stolen.,19.216047,73.079428,2025-04-21,Dombivli
+FIR-2020-00639,Meera Joshi,39,Female,Robbery,Petrol pump looted at gunpoint near Colaba highway.,18.908073,72.810312,2020-08-15,Colaba
+FIR-2024-00640,Kavita Bose,39,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Vashi.,19.070236,73.004491,2024-03-19,Vashi
+FIR-2020-00641,Suresh Jadhav,51,Male,Drug Offense,Narcotics being smuggled through Kandivali bus terminus.,19.20887,72.851255,2020-12-14,Kandivali
+FIR-2020-00642,Manoj Patil,45,Male,Burglary,Apartment burglary in Vikhroli society. Lock was broken.,19.110325,72.935775,2020-07-02,Vikhroli
+FIR-2025-00643,Mohan Das,67,Male,Domestic Violence,Elderly parents being abused by their son at Colaba house.,18.907322,72.814285,2025-02-15,Colaba
+FIR-2025-00644,Swati Patel,53,Female,Theft,Gold chain snatched by two men on a bike near Turbhe junction.,19.074254,73.008516,2025-02-01,Turbhe
+FIR-2021-00645,Anjali Shah,28,Female,Drug Offense,Narcotics being smuggled through Virar bus terminus.,19.446388,72.810697,2021-12-13,Virar
+FIR-2025-00646,Ravi Mukherjee,41,Male,Drug Offense,Suspected drug dealing activity near Fort slum area.,18.941008,72.827214,2025-06-17,Fort
+FIR-2025-00647,Ajay Jadhav,66,Male,Kidnapping,Child went missing from a park in Marine Lines and is suspected to be kidnapped.,18.944705,72.817643,2025-02-20,Marine Lines
+FIR-2020-00648,Shruti Verma,50,Female,Murder,Dead body found with stab wounds near Dadar lake.,19.015459,72.847107,2020-06-12,Dadar
+FIR-2022-00649,Akash Naik,63,Male,Assault,Was assaulted by colleagues after office hours near Vasai.,19.366172,72.832468,2022-04-18,Vasai
+FIR-2022-00650,Akash More,65,Male,Burglary,Godown broken into and goods stolen at Kandivali commercial complex.,19.214618,72.848409,2022-09-22,Kandivali
+FIR-2020-00651,Meera Verma,22,Female,Murder,Double homicide reported at a house in Kopar Khairane colony.,19.102225,73.008134,2020-08-23,Kopar Khairane
+FIR-2021-00652,Nisha Nair,41,Female,Assault,Attacked with a knife by an unknown person near Goregaon park.,19.158046,72.850414,2021-05-03,Goregaon
+FIR-2025-00653,Anil Mehta,25,Male,Robbery,Three men with weapons robbed a jewellery store at Badlapur.,19.1628,73.228814,2025-01-10,Badlapur
+FIR-2022-00654,Anjali Naik,26,Female,Drug Offense,Illicit liquor being sold at Kopar Khairane market area.,19.101377,73.010494,2022-04-03,Kopar Khairane
+FIR-2022-00655,Ravi Desai,51,Male,Murder,Unidentified body found near Turbhe railway tracks.,19.078456,73.015521,2022-08-19,Turbhe
+FIR-2022-00656,Nisha Shah,54,Female,Robbery,Three men with weapons robbed a jewellery store at Nerul.,19.038785,73.011436,2022-05-25,Nerul
+FIR-2022-00657,Vikram Kulkarni,36,Male,Drug Offense,Narcotics being smuggled through Worli bus terminus.,19.026083,72.819436,2022-03-06,Worli
+FIR-2021-00658,Anil Desai,25,Male,Theft,My two-wheeler was stolen from the parking lot near Panvel.,18.988218,73.114893,2021-09-23,Panvel
+FIR-2022-00659,Vishal Patil,40,Male,Robbery,Home invasion robbery at my residence in Sanpada colony.,19.064297,73.006052,2022-02-01,Sanpada
+FIR-2024-00660,Manisha Bose,27,Female,Drug Offense,Found suspicious white powder packets near Panvel park.,18.979486,73.12227,2024-06-21,Panvel
+FIR-2023-00661,Manisha Shah,66,Female,Burglary,Office burglary at Mahalaxmi. Electronic equipment stolen.,18.988792,72.816571,2023-06-23,Mahalaxmi
+FIR-2021-00662,Harsh More,20,Male,Robbery,Armed robbery at my shop in Vasai. Cash and goods worth lakhs were looted.,19.356862,72.837733,2021-08-12,Vasai
+FIR-2022-00663,Rohit Verma,56,Male,Fraud,Credit card cloned and used for unauthorised purchases. I live near Nalasopara.,19.411643,72.831113,2022-04-01,Nalasopara
+FIR-2024-00664,Mahesh Mukherjee,46,Male,Assault,Attacked with a knife by an unknown person near Ulhasnagar park.,19.215389,73.160855,2024-09-02,Ulhasnagar
+FIR-2022-00665,Geeta Kumar,63,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Sanpada.,19.060957,73.008493,2022-05-15,Sanpada
+FIR-2023-00666,Deepak Das,46,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Kalyan.,19.236976,73.14006,2023-12-14,Kalyan
+FIR-2024-00667,Sunil Pillai,56,Male,Assault,Got beaten up by a group of men after an argument at Powai.,19.113665,72.915768,2024-06-03,Powai
+FIR-2021-00668,Rekha Sharma,44,Female,Kidnapping,A young girl was abducted by unknown men in a white van near Turbhe.,19.082716,73.016805,2021-04-06,Turbhe
+FIR-2021-00669,Lakshmi Naik,49,Female,Theft,Laptop stolen from my office cabin at Nerul tech park.,19.032882,73.021697,2021-01-26,Nerul
+FIR-2025-00670,Vikram Mehta,37,Male,Drug Offense,Drug peddlers operating near Borivali college campus.,19.229043,72.856538,2025-11-08,Borivali
+FIR-2024-00671,Rajesh Bose,35,Male,Drug Offense,Narcotics being smuggled through Juhu bus terminus.,19.093211,72.828021,2024-07-28,Juhu
+FIR-2022-00672,Sneha Reddy,48,Female,Assault,Road rage incident led to physical assault at Sanpada signal.,19.068159,73.003151,2022-03-19,Sanpada
+FIR-2025-00673,Vikram Patil,47,Male,Robbery,Three men with weapons robbed a jewellery store at Kopar Khairane.,19.093558,73.004823,2025-06-02,Kopar Khairane
+FIR-2020-00674,Lakshmi Rane,58,Female,Assault,Got beaten up by a group of men after an argument at Ulhasnagar.,19.226829,73.158165,2020-10-25,Ulhasnagar
+FIR-2021-00675,Mahesh Patil,38,Male,Kidnapping,Businessman kidnapped for ransom from his office in Bhandup.,19.141717,72.939101,2021-01-05,Bhandup
+FIR-2021-00676,Ritu Bose,49,Female,Cybercrime,Received threatening emails from an unknown sender. Reporting from Airoli.,19.147948,72.991491,2021-04-26,Airoli
+FIR-2022-00677,Prashant Pawar,22,Male,Assault,I was physically attacked by unknown persons near Thane bus stop.,19.21789,72.974331,2022-03-27,Thane
+FIR-2021-00678,Aarti Rane,66,Female,Murder,Woman killed by known assailant in Chembur residential area.,19.042775,72.905691,2021-03-28,Chembur
+FIR-2020-00679,Karan Desai,37,Male,Robbery,Three men with weapons robbed a jewellery store at Kandivali.,19.219022,72.850496,2020-02-01,Kandivali
+FIR-2020-00680,Pallavi Jadhav,20,Female,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Malad.",19.193061,72.84867,2020-08-04,Malad
+FIR-2021-00681,Sunita Patel,37,Female,Theft,Someone stole my wallet containing cash and cards at Malad market.,19.195602,72.842508,2021-03-22,Malad
+FIR-2025-00682,Priya Patel,27,Female,Kidnapping,Businessman kidnapped for ransom from his office in Nalasopara.,19.414244,72.829503,2025-10-08,Nalasopara
+FIR-2021-00683,Rajesh Banerjee,55,Male,Theft,Gold chain snatched by two men on a bike near Bhiwandi junction.,19.285616,73.057585,2021-09-01,Bhiwandi
+FIR-2020-00684,Deepak Rane,63,Male,Drug Offense,Narcotics being smuggled through Sanpada bus terminus.,19.057203,73.016271,2020-03-27,Sanpada
+FIR-2020-00685,Geeta Jadhav,31,Female,Domestic Violence,Elderly parents being abused by their son at Vikhroli house.,19.093657,72.937192,2020-08-04,Vikhroli
+FIR-2023-00686,Mohan Bose,41,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Vasai.,19.352345,72.839574,2023-05-15,Vasai
+FIR-2021-00687,Anjali Banerjee,46,Female,Fraud,Real estate fraud. Sold a property with forged documents in Vasai.,19.356512,72.846807,2021-02-27,Vasai
+FIR-2025-00688,Anjali Kulkarni,29,Female,Theft,Someone stole my wallet containing cash and cards at Badlapur market.,19.153227,73.228853,2025-02-04,Badlapur
+FIR-2020-00689,Arvind Sawant,62,Male,Burglary,Godown broken into and goods stolen at Malad commercial complex.,19.195706,72.857957,2020-06-07,Malad
+FIR-2025-00690,Pooja Nair,43,Female,Assault,Attacked with a knife by an unknown person near Vikhroli park.,19.105904,72.92307,2025-10-19,Vikhroli
+FIR-2023-00691,Pallavi Ghosh,69,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Kopar Khairane.,19.105834,73.016603,2023-09-09,Kopar Khairane
+FIR-2021-00692,Dev Pawar,24,Male,Assault,Attacked with a knife by an unknown person near Mulund park.,19.172545,72.958867,2021-01-04,Mulund
+FIR-2022-00693,Sunil Patel,49,Male,Theft,Pickpocket stole my purse while shopping at Chembur mall.,19.054292,72.895939,2022-10-20,Chembur
+FIR-2023-00694,Dev Patel,60,Male,Domestic Violence,Elderly parents being abused by their son at Badlapur house.,19.149339,73.231642,2023-09-09,Badlapur
+FIR-2023-00695,Sapna Naik,19,Female,Theft,Someone stole my wallet containing cash and cards at Seawoods market.,19.019173,73.013791,2023-08-15,Seawoods
+FIR-2023-00696,Amit Gupta,53,Male,Kidnapping,Woman kidnapped from her workplace in Worli industrial area.,19.016214,72.811449,2023-08-25,Worli
+FIR-2021-00697,Ramesh Reddy,49,Male,Domestic Violence,Domestic violence complaint against spouse. We live in Mira Road.,19.280596,72.869745,2021-09-02,Mira Road
+FIR-2022-00698,Meera More,55,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Marine Lines.,18.940255,72.833056,2022-01-01,Marine Lines
+FIR-2023-00699,Vikram Banerjee,41,Male,Murder,Dead body found with stab wounds near Nalasopara lake.,19.422504,72.824903,2023-02-14,Nalasopara
+FIR-2024-00700,Ritu Jadhav,40,Female,Theft,Gold chain snatched by two men on a bike near Mahalaxmi junction.,18.977752,72.814962,2024-02-23,Mahalaxmi
+FIR-2023-00701,Ajay Singh,39,Male,Robbery,ATM robbery by masked men at Bandra main road.,19.056122,72.828718,2023-10-17,Bandra
+FIR-2023-00702,Meera Sharma,62,Female,Drug Offense,Suspected drug dealing activity near Nalasopara slum area.,19.426915,72.819955,2023-06-19,Nalasopara
+FIR-2022-00703,Ravi More,24,Male,Fraud,Real estate fraud. Sold a property with forged documents in Airoli.,19.155955,73.003698,2022-03-20,Airoli
+FIR-2022-00704,Ritu Jadhav,30,Female,Drug Offense,Suspected drug dealing activity near Fort slum area.,18.940608,72.836517,2022-05-02,Fort
+FIR-2024-00705,Komal Sawant,69,Female,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Marine Lines.,18.952359,72.827854,2024-02-19,Marine Lines
+FIR-2025-00706,Meera Patel,54,Female,Domestic Violence,Elderly parents being abused by their son at Ambernath house.,19.198695,73.191913,2025-05-17,Ambernath
+FIR-2023-00707,Seema Reddy,52,Female,Murder,Double homicide reported at a house in Goregaon colony.,19.164346,72.855099,2023-11-25,Goregaon
+FIR-2025-00708,Rahul Iyer,63,Male,Domestic Violence,Domestic violence complaint against spouse. We live in Chembur.,19.052184,72.902616,2025-08-09,Chembur
+FIR-2021-00709,Komal Das,58,Female,Theft,Gold chain snatched by two men on a bike near Bhiwandi junction.,19.278585,73.041255,2021-12-22,Bhiwandi
+FIR-2022-00710,Seema Jadhav,38,Female,Assault,Got beaten up by a group of men after an argument at Fort.,18.940719,72.831139,2022-11-06,Fort
+FIR-2022-00711,Anjali Nair,33,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Ghatkopar.,19.078799,72.898654,2022-08-16,Ghatkopar
+FIR-2022-00712,Seema Iyer,20,Female,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Worli.,19.010329,72.810368,2022-11-18,Worli
+FIR-2024-00713,Akash Mukherjee,20,Male,Drug Offense,Suspected drug dealing activity near Bandra slum area.,19.066792,72.821179,2024-05-28,Bandra
+FIR-2024-00714,Prashant Kulkarni,60,Male,Assault,Was assaulted by colleagues after office hours near Kharghar.,19.054255,73.060521,2024-12-17,Kharghar
+FIR-2020-00715,Ganesh Reddy,55,Male,Domestic Violence,Elderly parents being abused by their son at Mulund house.,19.180291,72.951062,2020-06-11,Mulund
+FIR-2022-00716,Shruti Das,33,Female,Cybercrime,Received threatening emails from an unknown sender. Reporting from Kandivali.,19.201536,72.846282,2022-08-14,Kandivali
+FIR-2023-00717,Komal Verma,49,Female,Domestic Violence,Verbal and physical abuse by partner at our flat in Sanpada.,19.072474,73.00913,2023-08-22,Sanpada
+FIR-2024-00718,Sanjay Ghosh,27,Male,Murder,Woman killed by known assailant in Ambernath residential area.,19.210927,73.176421,2024-01-27,Ambernath
+FIR-2025-00719,Karan Ghosh,60,Male,Fraud,Credit card cloned and used for unauthorised purchases. I live near Mulund.,19.170294,72.959079,2025-06-26,Mulund
+FIR-2022-00720,Mahesh Mukherjee,33,Male,Drug Offense,Suspected drug dealing activity near Belapur slum area.,19.031696,73.03636,2022-05-03,Belapur
+FIR-2023-00721,Ajay Joshi,28,Male,Drug Offense,Drug peddlers operating near Fort college campus.,18.941389,72.841135,2023-01-09,Fort
+FIR-2020-00722,Sunil Bose,49,Male,Drug Offense,Drug peddlers operating near Turbhe college campus.,19.085948,73.020135,2020-03-23,Turbhe
+FIR-2023-00723,Divya Patel,40,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Churchgate.,18.938469,72.831156,2023-12-01,Churchgate
+FIR-2022-00724,Akash Iyer,29,Male,Drug Offense,Found suspicious white powder packets near Lower Parel park.,18.982862,72.825302,2022-06-19,Lower Parel
+FIR-2022-00725,Rajesh Gupta,33,Male,Domestic Violence,Dowry harassment by in-laws at residence in Lower Parel.,18.999739,72.835015,2022-08-16,Lower Parel
+FIR-2021-00726,Sanjay Gupta,61,Male,Burglary,Shop broken into at night in Panvel market. Stock worth lakhs stolen.,18.983373,73.11579,2021-07-13,Panvel
+FIR-2021-00727,Rahul Sharma,53,Male,Burglary,Office burglary at Fort. Electronic equipment stolen.,18.941937,72.845283,2021-05-23,Fort
+FIR-2021-00728,Amit Sawant,57,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Churchgate.,18.925185,72.835561,2021-10-04,Churchgate
+FIR-2022-00729,Karan Rane,45,Male,Drug Offense,Suspected drug dealing activity near Badlapur slum area.,19.14979,73.222463,2022-05-24,Badlapur
+FIR-2025-00730,Geeta Kumar,45,Female,Fraud,Cheated by a fake job placement agency in Churchgate.,18.942104,72.822059,2025-04-14,Churchgate
+FIR-2021-00731,Prashant Ghosh,27,Male,Theft,Laptop stolen from my office cabin at Vashi tech park.,19.07181,72.99762,2021-06-19,Vashi
+FIR-2023-00732,Rekha Sharma,48,Female,Robbery,Petrol pump looted at gunpoint near Panvel highway.,18.987351,73.111744,2023-12-14,Panvel
+FIR-2022-00733,Rekha Singh,53,Female,Theft,My car was broken into and valuables were stolen at Dadar parking.,19.026421,72.847219,2022-10-22,Dadar
+FIR-2021-00734,Rahul Mehta,50,Male,Burglary,Shop broken into at night in Belapur market. Stock worth lakhs stolen.,19.03305,73.041925,2021-09-02,Belapur
+FIR-2024-00735,Sanjay Gupta,50,Male,Drug Offense,Illicit liquor being sold at Airoli market area.,19.148538,72.994746,2024-07-05,Airoli
+FIR-2022-00736,Neha Patil,20,Female,Robbery,Bank robbery attempt at Badlapur branch. Suspects fled with cash.,19.160256,73.236925,2022-05-20,Badlapur
+FIR-2021-00737,Divya Patil,45,Female,Robbery,Petrol pump looted at gunpoint near Panvel highway.,18.999291,73.122774,2021-09-28,Panvel
+FIR-2025-00738,Sunita Joshi,27,Female,Theft,My two-wheeler was stolen from the parking lot near Vikhroli.,19.092117,72.922704,2025-08-14,Vikhroli
+FIR-2025-00739,Mohan Verma,46,Male,Murder,Double homicide reported at a house in Vasai colony.,19.359855,72.83195,2025-03-04,Vasai
+FIR-2025-00740,Rekha Joshi,36,Female,Robbery,Petrol pump looted at gunpoint near Worli highway.,19.017775,72.810656,2025-10-07,Worli
+FIR-2020-00741,Ganesh Bose,54,Male,Robbery,Armed robbery at my shop in Turbhe. Cash and goods worth lakhs were looted.,19.076523,73.012562,2020-06-01,Turbhe
+FIR-2022-00742,Anjali Reddy,25,Female,Cybercrime,Ransomware attack on my business computer systems at Sanpada office.,19.072083,73.004921,2022-03-01,Sanpada
+FIR-2020-00743,Sachin Banerjee,63,Male,Drug Offense,Drug peddlers operating near Dombivli college campus.,19.220184,73.076816,2020-11-20,Dombivli
+FIR-2022-00744,Shalini Das,64,Female,Burglary,Office burglary at Thane. Electronic equipment stolen.,19.225566,72.984131,2022-06-26,Thane
+FIR-2023-00745,Harsh Patel,53,Male,Burglary,House was broken into while we were away. Jewellery and cash stolen from Belapur residence.,19.021477,73.03206,2023-02-01,Belapur
+FIR-2020-00746,Anil Sawant,67,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Vashi.,19.082151,73.001681,2020-05-16,Vashi
+FIR-2024-00747,Shruti Ghosh,37,Female,Burglary,Shop broken into at night in Thane market. Stock worth lakhs stolen.,19.22161,72.984741,2024-04-16,Thane
+FIR-2022-00748,Geeta More,35,Female,Burglary,Warehouse burglary at Churchgate industrial area.,18.924004,72.824851,2022-10-06,Churchgate
+FIR-2025-00749,Sneha Jadhav,23,Female,Theft,My car was broken into and valuables were stolen at Ulhasnagar parking.,19.230965,73.168029,2025-11-23,Ulhasnagar
+FIR-2023-00750,Mohan Rane,58,Male,Domestic Violence,Wife beaten and threatened by husband and his family in Kurla.,19.071964,72.870984,2023-05-05,Kurla
+FIR-2020-00751,Vishal Shah,33,Male,Domestic Violence,Wife beaten and threatened by husband and his family in Seawoods.,19.022871,73.01852,2020-09-04,Seawoods
+FIR-2024-00752,Seema Singh,47,Female,Burglary,Shop broken into at night in Mulund market. Stock worth lakhs stolen.,19.167697,72.947935,2024-01-04,Mulund
+FIR-2022-00753,Kavita Ghosh,29,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Colaba.,18.905025,72.818788,2022-10-24,Colaba
+FIR-2021-00754,Pallavi Reddy,46,Female,Burglary,Shop broken into at night in Mulund market. Stock worth lakhs stolen.,19.181934,72.963727,2021-04-06,Mulund
+FIR-2020-00755,Harsh Nair,34,Male,Assault,Road rage incident led to physical assault at Seawoods signal.,19.011858,73.015399,2020-03-21,Seawoods
+FIR-2022-00756,Nisha Rao,43,Female,Burglary,Shop broken into at night in Badlapur market. Stock worth lakhs stolen.,19.15767,73.237878,2022-12-22,Badlapur
+FIR-2021-00757,Lakshmi Patel,26,Female,Robbery,Three men with weapons robbed a jewellery store at Andheri.,19.111938,72.836718,2021-01-07,Andheri
+FIR-2020-00758,Sneha Kumar,59,Female,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Seawoods.,19.028664,73.018272,2020-05-25,Seawoods
+FIR-2023-00759,Anita More,45,Female,Theft,My two-wheeler was stolen from the parking lot near Borivali.,19.238748,72.861476,2023-08-16,Borivali
+FIR-2022-00760,Sachin Pillai,33,Male,Fraud,Credit card cloned and used for unauthorised purchases. I live near Vashi.,19.083689,72.996435,2022-01-04,Vashi
+FIR-2023-00761,Seema Mukherjee,49,Female,Burglary,Godown broken into and goods stolen at Churchgate commercial complex.,18.933286,72.822215,2023-07-16,Churchgate
+FIR-2022-00762,Swati Rao,21,Female,Domestic Violence,Elderly parents being abused by their son at Bandra house.,19.061128,72.830565,2022-11-14,Bandra
+FIR-2021-00763,Neha More,57,Female,Murder,Double homicide reported at a house in Kalyan colony.,19.234116,73.13126,2021-08-12,Kalyan
+FIR-2023-00764,Swati Rane,32,Female,Burglary,Apartment burglary in Airoli society. Lock was broken.,19.162969,73.002704,2023-03-10,Airoli
+FIR-2025-00765,Seema Banerjee,61,Female,Murder,Man found murdered in his apartment in Ambernath society.,19.206937,73.181649,2025-02-22,Ambernath
+FIR-2023-00766,Anita Gupta,30,Female,Robbery,Home invasion robbery at my residence in Churchgate colony.,18.924218,72.82472,2023-05-08,Churchgate
+FIR-2024-00767,Mahesh Verma,19,Male,Murder,Woman killed by known assailant in Mulund residential area.,19.176139,72.949794,2024-01-26,Mulund
+FIR-2022-00768,Rohit Jadhav,25,Male,Burglary,House was broken into while we were away. Jewellery and cash stolen from Vikhroli residence.,19.10264,72.927227,2022-06-25,Vikhroli
+FIR-2023-00769,Dev Naik,35,Male,Robbery,ATM robbery by masked men at Ulhasnagar main road.,19.22489,73.168628,2023-08-27,Ulhasnagar
+FIR-2025-00770,Rajesh Ghosh,57,Male,Burglary,Apartment burglary in Malad society. Lock was broken.,19.178039,72.840508,2025-02-28,Malad
+FIR-2021-00771,Nikhil Gupta,64,Male,Kidnapping,Child went missing from a park in Kalyan and is suspected to be kidnapped.,19.243668,73.14291,2021-11-12,Kalyan
+FIR-2022-00772,Anita Singh,30,Female,Drug Offense,Suspected drug dealing activity near Turbhe slum area.,19.076506,73.018783,2022-05-17,Turbhe
+FIR-2024-00773,Suresh Mehta,41,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Sanpada.,19.0668,73.005832,2024-07-26,Sanpada
+FIR-2025-00774,Vikram Ghosh,45,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Turbhe.,19.090637,73.012923,2025-06-01,Turbhe
+FIR-2021-00775,Anita Bose,18,Female,Domestic Violence,Being physically abused by husband at our home in Juhu.,19.085066,72.824433,2021-07-02,Juhu
+FIR-2025-00776,Pallavi Verma,60,Female,Robbery,Armed robbery at my shop in Virar. Cash and goods worth lakhs were looted.,19.465455,72.821201,2025-09-10,Virar
+FIR-2020-00777,Geeta Reddy,62,Female,Domestic Violence,Verbal and physical abuse by partner at our flat in Nerul.,19.037854,73.025085,2020-05-17,Nerul
+FIR-2025-00778,Karan Sawant,46,Male,Fraud,Credit card cloned and used for unauthorised purchases. I live near Mira Road.,19.286967,72.871541,2025-06-26,Mira Road
+FIR-2025-00779,Pallavi Joshi,37,Female,Assault,Road rage incident led to physical assault at Colaba signal.,18.90339,72.819202,2025-03-17,Colaba
+FIR-2020-00780,Pooja Patel,50,Female,Domestic Violence,Domestic violence complaint against spouse. We live in Nerul.,19.029814,73.019614,2020-01-26,Nerul
+FIR-2022-00781,Swati Banerjee,67,Female,Kidnapping,Child went missing from a park in Seawoods and is suspected to be kidnapped.,19.013709,73.008699,2022-05-21,Seawoods
+FIR-2022-00782,Neha Verma,66,Female,Assault,Was assaulted by neighbour over a property dispute in Kalyan.,19.245149,73.125604,2022-04-26,Kalyan
+FIR-2020-00783,Nikhil Shah,36,Male,Burglary,Godown broken into and goods stolen at Thane commercial complex.,19.215853,72.98285,2020-06-17,Thane
+FIR-2020-00784,Sunil Bose,41,Male,Drug Offense,Found suspicious white powder packets near Malad park.,19.191433,72.854969,2020-02-02,Malad
+FIR-2024-00785,Anita More,31,Female,Drug Offense,Drug peddlers operating near Juhu college campus.,19.091836,72.824455,2024-09-25,Juhu
+FIR-2023-00786,Meera Pillai,49,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Kalyan.,19.252321,73.135291,2023-03-05,Kalyan
+FIR-2023-00787,Mohan Rao,47,Male,Robbery,ATM robbery by masked men at Ulhasnagar main road.,19.213861,73.158753,2023-01-24,Ulhasnagar
+FIR-2020-00788,Mahesh Kulkarni,25,Male,Burglary,House was broken into while we were away. Jewellery and cash stolen from Turbhe residence.,19.074017,73.014035,2020-09-05,Turbhe
+FIR-2024-00789,Nikhil Shah,41,Male,Kidnapping,Woman kidnapped from her workplace in Vashi industrial area.,19.06766,72.991457,2024-07-02,Vashi
+FIR-2020-00790,Lakshmi Joshi,29,Female,Drug Offense,Suspected drug dealing activity near Andheri slum area.,19.120651,72.837751,2020-07-16,Andheri
+FIR-2021-00791,Komal Pawar,39,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Ambernath.,19.211174,73.178656,2021-09-21,Ambernath
+FIR-2024-00792,Pallavi Pawar,60,Female,Drug Offense,Drug peddlers operating near Powai college campus.,19.109386,72.908495,2024-07-13,Powai
+FIR-2021-00793,Arvind Patil,52,Male,Theft,Bicycle stolen from outside Mahalaxmi railway station.,18.987518,72.814918,2021-12-01,Mahalaxmi
+FIR-2020-00794,Sapna Iyer,25,Female,Domestic Violence,Dowry harassment by in-laws at residence in Kurla.,19.081703,72.880237,2020-10-17,Kurla
+FIR-2021-00795,Dev More,50,Male,Theft,My two-wheeler was stolen from the parking lot near Borivali.,19.239948,72.852199,2021-04-27,Borivali
+FIR-2020-00796,Rekha Ghosh,52,Female,Burglary,Warehouse burglary at Panvel industrial area.,18.991178,73.117329,2020-06-14,Panvel
+FIR-2024-00797,Prashant Sharma,51,Male,Murder,Woman killed by known assailant in Belapur residential area.,19.015321,73.048096,2024-03-10,Belapur
+FIR-2020-00798,Anil Mehta,67,Male,Assault,Was assaulted by neighbour over a property dispute in Powai.,19.126643,72.909572,2020-10-11,Powai
+FIR-2022-00799,Rahul Rao,21,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Belapur.,19.019901,73.036756,2022-05-13,Belapur
+FIR-2023-00800,Amit Joshi,33,Male,Burglary,Office burglary at Nalasopara. Electronic equipment stolen.,19.41706,72.827448,2023-02-09,Nalasopara
+FIR-2020-00801,Rohit Pawar,53,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Juhu.,19.078878,72.829071,2020-05-18,Juhu
+FIR-2025-00802,Manoj Bose,53,Male,Robbery,ATM robbery by masked men at Nerul main road.,19.031135,73.008578,2025-09-07,Nerul
+FIR-2020-00803,Nikhil Naik,28,Male,Fraud,Real estate fraud. Sold a property with forged documents in Mira Road.,19.290427,72.869603,2020-01-27,Mira Road
+FIR-2024-00804,Aarti Shah,59,Female,Robbery,Armed robbery at my shop in Andheri. Cash and goods worth lakhs were looted.,19.12837,72.846044,2024-05-27,Andheri
+FIR-2024-00805,Ritu Banerjee,58,Female,Fraud,Credit card cloned and used for unauthorised purchases. I live near Nalasopara.,19.412826,72.815628,2024-10-03,Nalasopara
+FIR-2023-00806,Rekha Sawant,62,Female,Assault,Was assaulted by colleagues after office hours near Thane.,19.21943,72.973689,2023-04-20,Thane
+FIR-2022-00807,Anjali Patil,58,Female,Kidnapping,Businessman kidnapped for ransom from his office in Kalyan.,19.238619,73.14516,2022-04-15,Kalyan
+FIR-2021-00808,Priya Rao,26,Female,Theft,Bicycle stolen from outside Churchgate railway station.,18.922286,72.816592,2021-07-18,Churchgate
+FIR-2025-00809,Pallavi Sawant,52,Female,Assault,Was assaulted by colleagues after office hours near Lower Parel.,18.98435,72.821919,2025-08-22,Lower Parel
+FIR-2025-00810,Nikhil Banerjee,42,Male,Burglary,Warehouse burglary at Kopar Khairane industrial area.,19.096044,73.012959,2025-01-04,Kopar Khairane
+FIR-2025-00811,Ritu Joshi,46,Female,Theft,My mobile phone was stolen while I was travelling in the bus near Vikhroli.,19.106568,72.931111,2025-06-07,Vikhroli
+FIR-2020-00812,Sunil Nair,58,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Vikhroli.,19.111002,72.936846,2020-05-16,Vikhroli
+FIR-2024-00813,Rahul Joshi,70,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Borivali.,19.232082,72.85658,2024-04-22,Borivali
+FIR-2024-00814,Suresh Pillai,26,Male,Assault,Was assaulted by neighbour over a property dispute in Thane.,19.226971,72.98521,2024-12-26,Thane
+FIR-2020-00815,Pooja Mukherjee,61,Female,Theft,Laptop stolen from my office cabin at Mira Road tech park.,19.284814,72.876162,2020-07-21,Mira Road
+FIR-2020-00816,Rohit Jadhav,44,Male,Kidnapping,Child went missing from a park in Borivali and is suspected to be kidnapped.,19.230032,72.853929,2020-12-08,Borivali
+FIR-2024-00817,Sanjay Jadhav,52,Male,Drug Offense,Suspected drug dealing activity near Panvel slum area.,18.987237,73.114194,2024-01-24,Panvel
+FIR-2025-00818,Karan Jadhav,22,Male,Fraud,Cheated by a fake job placement agency in Goregaon.,19.162884,72.843857,2025-02-01,Goregaon
+FIR-2023-00819,Seema Ghosh,19,Female,Burglary,Shop broken into at night in Fort market. Stock worth lakhs stolen.,18.94061,72.830743,2023-04-11,Fort
+FIR-2025-00820,Sunil Patil,51,Male,Fraud,Credit card cloned and used for unauthorised purchases. I live near Juhu.,19.090691,72.831682,2025-08-19,Juhu
+FIR-2023-00821,Suresh Verma,20,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Panvel.,18.980701,73.110051,2023-01-10,Panvel
+FIR-2020-00822,Rekha Singh,61,Female,Theft,My mobile phone was stolen while I was travelling in the bus near Vasai.,19.356598,72.837329,2020-10-25,Vasai
+FIR-2024-00823,Swati Mukherjee,56,Female,Burglary,Warehouse burglary at Andheri industrial area.,19.117378,72.852303,2024-10-04,Andheri
+FIR-2020-00824,Sneha Reddy,68,Female,Theft,My car was broken into and valuables were stolen at Dombivli parking.,19.220056,73.07886,2020-10-23,Dombivli
+FIR-2023-00825,Ramesh Ghosh,30,Male,Burglary,Godown broken into and goods stolen at Thane commercial complex.,19.218478,72.975208,2023-12-20,Thane
+FIR-2025-00826,Kavita Desai,26,Female,Theft,My two-wheeler was stolen from the parking lot near Dadar.,19.014033,72.846517,2025-06-10,Dadar
+FIR-2024-00827,Vikram More,37,Male,Burglary,Shop broken into at night in Airoli market. Stock worth lakhs stolen.,19.153277,72.988562,2024-11-22,Airoli
+FIR-2025-00828,Amit Desai,50,Male,Domestic Violence,Elderly parents being abused by their son at Dadar house.,19.014676,72.85733,2025-04-26,Dadar
+FIR-2024-00829,Rohit Joshi,60,Male,Drug Offense,Narcotics being smuggled through Dombivli bus terminus.,19.222148,73.09374,2024-06-20,Dombivli
+FIR-2025-00830,Seema Patil,28,Female,Assault,I was physically attacked by unknown persons near Dombivli bus stop.,19.218219,73.095099,2025-04-23,Dombivli
+FIR-2025-00831,Sachin Nair,31,Male,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Ambernath.,19.209867,73.192293,2025-07-07,Ambernath
+FIR-2021-00832,Kavita Banerjee,18,Female,Murder,Dead body found with stab wounds near Andheri lake.,19.116858,72.847494,2021-05-15,Andheri
+FIR-2021-00833,Akash Pillai,66,Male,Murder,Dead body found with stab wounds near Colaba lake.,18.900682,72.810382,2021-05-24,Colaba
+FIR-2020-00834,Rohit Mukherjee,53,Male,Fraud,Cheated by a fake job placement agency in Chembur.,19.04263,72.906258,2020-01-27,Chembur
+FIR-2022-00835,Arvind Iyer,68,Male,Assault,Got beaten up by a group of men after an argument at Airoli.,19.152001,72.993203,2022-11-06,Airoli
+FIR-2022-00836,Tanvi Patel,25,Female,Robbery,Three men with weapons robbed a jewellery store at Thane.,19.212134,72.975664,2022-06-20,Thane
+FIR-2021-00837,Sneha Desai,20,Female,Burglary,Office burglary at Nalasopara. Electronic equipment stolen.,19.424289,72.818284,2021-06-08,Nalasopara
+FIR-2020-00838,Akash Ghosh,35,Male,Robbery,ATM robbery by masked men at Ulhasnagar main road.,19.229217,73.158685,2020-08-26,Ulhasnagar
+FIR-2025-00839,Anil Rane,42,Male,Domestic Violence,Elderly parents being abused by their son at Sanpada house.,19.063878,73.00638,2025-06-17,Sanpada
+FIR-2025-00840,Tanvi More,48,Female,Kidnapping,Woman kidnapped from her workplace in Nalasopara industrial area.,19.419962,72.828212,2025-01-07,Nalasopara
+FIR-2021-00841,Deepak Pawar,33,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Kandivali.,19.2079,72.849542,2021-06-09,Kandivali
+FIR-2023-00842,Vikram Bose,23,Male,Kidnapping,Child went missing from a park in Kalyan and is suspected to be kidnapped.,19.240731,73.137179,2023-09-20,Kalyan
+FIR-2023-00843,Seema Pawar,47,Female,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Turbhe.,19.08769,73.00894,2023-01-06,Turbhe
+FIR-2024-00844,Swati Mehta,59,Female,Assault,I was physically attacked by unknown persons near Kopar Khairane bus stop.,19.09839,73.007635,2024-11-03,Kopar Khairane
+FIR-2025-00845,Swati Singh,25,Female,Assault,I was physically attacked by unknown persons near Sanpada bus stop.,19.064421,73.009475,2025-06-09,Sanpada
+FIR-2025-00846,Shruti Banerjee,67,Female,Kidnapping,Child went missing from a park in Goregaon and is suspected to be kidnapped.,19.17626,72.862568,2025-12-18,Goregaon
+FIR-2025-00847,Priya Bose,37,Female,Kidnapping,Woman kidnapped from her workplace in Kopar Khairane industrial area.,19.111416,73.014037,2025-01-16,Kopar Khairane
+FIR-2023-00848,Arvind Desai,32,Male,Fraud,Cheated by a fake job placement agency in Ambernath.,19.204817,73.191719,2023-12-27,Ambernath
+FIR-2021-00849,Shalini Ghosh,23,Female,Murder,Double homicide reported at a house in Goregaon colony.,19.171703,72.856559,2021-08-15,Goregaon
+FIR-2022-00850,Nikhil Kumar,54,Male,Robbery,Petrol pump looted at gunpoint near Nerul highway.,19.023194,73.023108,2022-06-08,Nerul
+FIR-2020-00851,Seema Reddy,66,Female,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Mira Road.,19.277722,72.858965,2020-03-05,Mira Road
+FIR-2021-00852,Komal Iyer,69,Female,Burglary,Apartment burglary in Churchgate society. Lock was broken.,18.939539,72.836003,2021-07-03,Churchgate
+FIR-2021-00853,Pooja More,24,Female,Murder,Double homicide reported at a house in Virar colony.,19.45868,72.807693,2021-02-22,Virar
+FIR-2023-00854,Amit Banerjee,62,Male,Burglary,House was broken into while we were away. Jewellery and cash stolen from Badlapur residence.,19.149034,73.21979,2023-05-07,Badlapur
+FIR-2022-00855,Ajay Reddy,51,Male,Assault,I was physically attacked by unknown persons near Dombivli bus stop.,19.215673,73.076921,2022-07-13,Dombivli
+FIR-2021-00856,Rajesh Kumar,52,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Ambernath.,19.195875,73.195102,2021-03-28,Ambernath
+FIR-2021-00857,Ajay Jadhav,70,Male,Drug Offense,Narcotics being smuggled through Worli bus terminus.,19.019102,72.811406,2021-09-23,Worli
+FIR-2021-00858,Meera Joshi,18,Female,Robbery,Armed robbery at my shop in Kalyan. Cash and goods worth lakhs were looted.,19.250192,73.137597,2021-09-11,Kalyan
+FIR-2022-00859,Nisha Pawar,54,Female,Theft,Laptop stolen from my office cabin at Kurla tech park.,19.075526,72.887778,2022-12-27,Kurla
+FIR-2023-00860,Geeta Nair,70,Female,Robbery,Three men with weapons robbed a jewellery store at Turbhe.,19.075192,73.014955,2023-08-13,Turbhe
+FIR-2025-00861,Karan Pillai,24,Male,Cybercrime,Received threatening emails from an unknown sender. Reporting from Colaba.,18.914411,72.807859,2025-09-10,Colaba
+FIR-2022-00862,Karan Das,64,Male,Fraud,Real estate fraud. Sold a property with forged documents in Badlapur.,19.165148,73.229456,2022-02-25,Badlapur
+FIR-2020-00863,Ganesh Bose,67,Male,Murder,Double homicide reported at a house in Turbhe colony.,19.074897,73.006747,2020-08-01,Turbhe
+FIR-2023-00864,Akash Rao,61,Male,Drug Offense,Drug peddlers operating near Belapur college campus.,19.028419,73.045615,2023-01-01,Belapur
+FIR-2024-00865,Neha Rao,26,Female,Murder,Double homicide reported at a house in Mahalaxmi colony.,18.982495,72.803365,2024-11-08,Mahalaxmi
+FIR-2021-00866,Anita More,70,Female,Kidnapping,A young girl was abducted by unknown men in a white van near Worli.,19.02437,72.81734,2021-05-04,Worli
+FIR-2025-00867,Kavita Patel,60,Female,Theft,My two-wheeler was stolen from the parking lot near Bhandup.,19.148613,72.931059,2025-01-22,Bhandup
+FIR-2023-00868,Sachin Rao,21,Male,Domestic Violence,Verbal and physical abuse by partner at our flat in Lower Parel.,18.997128,72.83924,2023-12-10,Lower Parel
+FIR-2021-00869,Sunita Nair,18,Female,Theft,Gold chain snatched by two men on a bike near Belapur junction.,19.032076,73.035993,2021-04-03,Belapur
+FIR-2025-00870,Prashant Sharma,18,Male,Murder,Dead body found with stab wounds near Goregaon lake.,19.160711,72.860246,2025-03-24,Goregaon
+FIR-2021-00871,Amit Jadhav,50,Male,Assault,Was assaulted by neighbour over a property dispute in Panvel.,18.990641,73.111291,2021-09-13,Panvel
+FIR-2022-00872,Neha Desai,31,Female,Assault,Was assaulted by neighbour over a property dispute in Kopar Khairane.,19.095972,73.005643,2022-01-13,Kopar Khairane
+FIR-2021-00873,Sachin Desai,22,Male,Kidnapping,Child went missing from a park in Lower Parel and is suspected to be kidnapped.,18.99018,72.822647,2021-07-10,Lower Parel
+FIR-2025-00874,Neha Rao,52,Female,Burglary,Shop broken into at night in Worli market. Stock worth lakhs stolen.,19.026781,72.817197,2025-12-13,Worli
+FIR-2024-00875,Rohit Gupta,58,Male,Murder,Double homicide reported at a house in Mahalaxmi colony.,18.97415,72.802353,2024-08-13,Mahalaxmi
+FIR-2022-00876,Ganesh Pillai,63,Male,Theft,My mobile phone was stolen while I was travelling in the bus near Vikhroli.,19.103727,72.935436,2022-04-24,Vikhroli
+FIR-2021-00877,Pallavi Desai,57,Female,Assault,Got beaten up by a group of men after an argument at Dadar.,19.01529,72.843732,2021-07-07,Dadar
+FIR-2020-00878,Manoj Das,56,Male,Drug Offense,Found suspicious white powder packets near Airoli park.,19.151463,73.001272,2020-09-26,Airoli
+FIR-2020-00879,Sneha Banerjee,36,Female,Theft,My car was broken into and valuables were stolen at Vikhroli parking.,19.098255,72.921616,2020-11-08,Vikhroli
+FIR-2023-00880,Dinesh Mukherjee,42,Male,Domestic Violence,Dowry harassment by in-laws at residence in Panvel.,18.988247,73.107621,2023-02-07,Panvel
+FIR-2021-00881,Akash Kumar,31,Male,Robbery,Three men with weapons robbed a jewellery store at Kurla.,19.074453,72.886024,2021-04-17,Kurla
+FIR-2021-00882,Prashant Das,47,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Worli.,19.012498,72.808729,2021-05-10,Worli
+FIR-2023-00883,Sneha Joshi,35,Female,Drug Offense,Drug peddlers operating near Kurla college campus.,19.070565,72.872755,2023-07-17,Kurla
+FIR-2022-00884,Pallavi Kumar,70,Female,Drug Offense,Illicit liquor being sold at Bandra market area.,19.058148,72.821165,2022-10-18,Bandra
+FIR-2024-00885,Mahesh Das,29,Male,Kidnapping,Woman kidnapped from her workplace in Belapur industrial area.,19.019617,73.034165,2024-10-16,Belapur
+FIR-2024-00886,Rohit Kumar,63,Male,Drug Offense,Found suspicious white powder packets near Goregaon park.,19.174623,72.842684,2024-12-24,Goregaon
+FIR-2024-00887,Manisha Sawant,44,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Sanpada.,19.063291,73.015621,2024-02-14,Sanpada
+FIR-2025-00888,Rajesh Sawant,54,Male,Robbery,Home invasion robbery at my residence in Goregaon colony.,19.175442,72.858025,2025-06-17,Goregaon
+FIR-2021-00889,Sneha Rao,41,Female,Theft,Pickpocket stole my purse while shopping at Lower Parel mall.,19.00133,72.836013,2021-08-02,Lower Parel
+FIR-2025-00890,Sneha Rao,61,Female,Theft,My two-wheeler was stolen from the parking lot near Mahalaxmi.,18.978027,72.811109,2025-03-09,Mahalaxmi
+FIR-2023-00891,Dinesh Pillai,60,Male,Robbery,Armed robbery at my shop in Andheri. Cash and goods worth lakhs were looted.,19.125119,72.849288,2023-07-23,Andheri
+FIR-2024-00892,Ganesh Joshi,45,Male,Robbery,Bank robbery attempt at Seawoods branch. Suspects fled with cash.,19.025337,73.017513,2024-11-13,Seawoods
+FIR-2021-00893,Shruti Jadhav,66,Female,Assault,Was assaulted by colleagues after office hours near Malad.,19.188652,72.854351,2021-05-24,Malad
+FIR-2020-00894,Harsh Sawant,62,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Andheri.,19.126028,72.836432,2020-12-14,Andheri
+FIR-2021-00895,Sneha Shah,64,Female,Cybercrime,Received threatening emails from an unknown sender. Reporting from Worli.,19.015093,72.819281,2021-08-06,Worli
+FIR-2021-00896,Sachin Pillai,70,Male,Fraud,Cheated by a fake job placement agency in Chembur.,19.04338,72.893055,2021-05-28,Chembur
+FIR-2020-00897,Nisha Iyer,57,Female,Assault,Got beaten up by a group of men after an argument at Fort.,18.925396,72.827514,2020-05-03,Fort
+FIR-2020-00898,Priya Pillai,33,Female,Drug Offense,Suspected drug dealing activity near Badlapur slum area.,19.14549,73.223722,2020-11-19,Badlapur
+FIR-2022-00899,Rajesh Joshi,51,Male,Theft,Laptop stolen from my office cabin at Belapur tech park.,19.032143,73.037965,2022-10-14,Belapur
+FIR-2020-00900,Ritu Reddy,39,Female,Murder,Woman killed by known assailant in Ghatkopar residential area.,19.089102,72.905669,2020-06-28,Ghatkopar
+FIR-2022-00901,Neha Sharma,47,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Thane.,19.220338,72.98548,2022-12-25,Thane
+FIR-2025-00902,Nikhil Pawar,57,Male,Drug Offense,Illicit liquor being sold at Ulhasnagar market area.,19.224705,73.154563,2025-06-01,Ulhasnagar
+FIR-2024-00903,Sunita Ghosh,65,Female,Murder,Man found murdered in his apartment in Kalyan society.,19.245835,73.133503,2024-02-12,Kalyan
+FIR-2024-00904,Manisha Reddy,62,Female,Assault,Was assaulted by neighbour over a property dispute in Belapur.,19.025643,73.042739,2024-10-26,Belapur
+FIR-2023-00905,Vikram More,68,Male,Assault,Was assaulted by colleagues after office hours near Nerul.,19.042926,73.026644,2023-03-15,Nerul
+FIR-2025-00906,Mohan Reddy,52,Male,Fraud,Cheated by a fake job placement agency in Ghatkopar.,19.079209,72.916984,2025-02-04,Ghatkopar
+FIR-2023-00907,Tanvi Sharma,28,Female,Murder,Woman killed by known assailant in Belapur residential area.,19.017908,73.033653,2023-11-04,Belapur
+FIR-2024-00908,Mahesh Iyer,64,Male,Drug Offense,Drug peddlers operating near Kurla college campus.,19.080039,72.888036,2024-02-21,Kurla
+FIR-2023-00909,Geeta Rao,65,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Lower Parel.,18.998502,72.840625,2023-04-08,Lower Parel
+FIR-2025-00910,Neha Shah,23,Female,Assault,Was assaulted by neighbour over a property dispute in Kurla.,19.077412,72.888144,2025-02-19,Kurla
+FIR-2024-00911,Anita Mukherjee,38,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Virar.,19.445934,72.802838,2024-04-28,Virar
+FIR-2020-00912,Seema Patil,67,Female,Murder,Unidentified body found near Thane railway tracks.,19.221575,72.979916,2020-07-01,Thane
+FIR-2022-00913,Shalini Kumar,70,Female,Kidnapping,Woman kidnapped from her workplace in Vikhroli industrial area.,19.105,72.920449,2022-03-24,Vikhroli
+FIR-2023-00914,Dinesh Patil,37,Male,Domestic Violence,Wife beaten and threatened by husband and his family in Borivali.,19.240637,72.86083,2023-11-27,Borivali
+FIR-2025-00915,Mohan Shah,63,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Dadar.,19.010854,72.852135,2025-04-23,Dadar
+FIR-2020-00916,Dev Gupta,49,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Nerul.,19.041248,73.010084,2020-09-13,Nerul
+FIR-2022-00917,Seema Reddy,48,Female,Murder,Double homicide reported at a house in Kharghar colony.,19.038836,73.070335,2022-12-07,Kharghar
+FIR-2024-00918,Neha Kumar,38,Female,Burglary,Godown broken into and goods stolen at Dadar commercial complex.,19.013881,72.850893,2024-03-15,Dadar
+FIR-2024-00919,Lakshmi Kumar,31,Female,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Goregaon.,19.169325,72.849845,2024-02-22,Goregaon
+FIR-2020-00920,Arvind Jadhav,61,Male,Robbery,Armed robbery at my shop in Dadar. Cash and goods worth lakhs were looted.,19.014912,72.847278,2020-02-17,Dadar
+FIR-2022-00921,Komal Jadhav,27,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Ghatkopar.,19.078176,72.906033,2022-12-20,Ghatkopar
+FIR-2023-00922,Akash Das,42,Male,Assault,Was assaulted by colleagues after office hours near Dombivli.,19.215942,73.089347,2023-06-01,Dombivli
+FIR-2024-00923,Rajesh Patel,25,Male,Drug Offense,Narcotics being smuggled through Lower Parel bus terminus.,18.987299,72.833037,2024-08-09,Lower Parel
+FIR-2021-00924,Ravi Pillai,29,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Ambernath.,19.208555,73.181967,2021-02-11,Ambernath
+FIR-2024-00925,Karan Mukherjee,68,Male,Domestic Violence,Elderly parents being abused by their son at Chembur house.,19.058457,72.889795,2024-09-26,Chembur
+FIR-2025-00926,Rekha Rane,55,Female,Domestic Violence,Being physically abused by husband at our home in Lower Parel.,18.99787,72.825449,2025-02-06,Lower Parel
+FIR-2021-00927,Rahul Naik,46,Male,Murder,Dead body found with stab wounds near Borivali lake.,19.223276,72.850825,2021-02-18,Borivali
+FIR-2023-00928,Pallavi Verma,23,Female,Assault,Was assaulted by neighbour over a property dispute in Ulhasnagar.,19.218771,73.165389,2023-11-01,Ulhasnagar
+FIR-2025-00929,Ajay Verma,51,Male,Kidnapping,Child went missing from a park in Mahalaxmi and is suspected to be kidnapped.,18.981698,72.813541,2025-06-17,Mahalaxmi
+FIR-2021-00930,Aarti Naik,50,Female,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Malad.,19.193595,72.843142,2021-03-10,Malad
+FIR-2023-00931,Vikram Nair,53,Male,Fraud,Insurance fraud by agent who collected premiums but never issued policy in Nalasopara.,19.412748,72.826982,2023-02-18,Nalasopara
+FIR-2023-00932,Meera Sawant,59,Female,Robbery,Home invasion robbery at my residence in Kharghar colony.,19.039065,73.060884,2023-12-05,Kharghar
+FIR-2025-00933,Suresh Iyer,64,Male,Kidnapping,A young girl was abducted by unknown men in a white van near Fort.,18.938089,72.837073,2025-09-20,Fort
+FIR-2020-00934,Prashant Banerjee,27,Male,Murder,Double homicide reported at a house in Seawoods colony.,19.012018,73.019572,2020-05-04,Seawoods
+FIR-2022-00935,Vishal Naik,44,Male,Assault,Was assaulted by colleagues after office hours near Airoli.,19.147679,73.006585,2022-03-28,Airoli
+FIR-2020-00936,Sanjay Sharma,24,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Vikhroli.,19.110436,72.933155,2020-03-17,Vikhroli
+FIR-2022-00937,Komal Banerjee,69,Female,Drug Offense,Narcotics being smuggled through Malad bus terminus.,19.184178,72.849843,2022-09-09,Malad
+FIR-2024-00938,Amit Gupta,38,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Chembur.,19.058322,72.902956,2024-09-20,Chembur
+FIR-2021-00939,Manisha Pillai,26,Female,Kidnapping,Child went missing from a park in Andheri and is suspected to be kidnapped.,19.123964,72.849551,2021-07-19,Andheri
+FIR-2023-00940,Sunita Das,58,Female,Murder,Unidentified body found near Ghatkopar railway tracks.,19.084165,72.907256,2023-06-26,Ghatkopar
+FIR-2022-00941,Divya Shah,35,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Bhiwandi.,19.288928,73.05458,2022-11-28,Bhiwandi
+FIR-2020-00942,Ajay Jadhav,67,Male,Murder,Dead body found with stab wounds near Kurla lake.,19.064134,72.874201,2020-03-19,Kurla
+FIR-2024-00943,Suresh Das,36,Male,Domestic Violence,Being physically abused by husband at our home in Badlapur.,19.164543,73.22688,2024-12-05,Badlapur
+FIR-2025-00944,Manisha Rane,61,Female,Domestic Violence,Elderly parents being abused by their son at Borivali house.,19.220978,72.850504,2025-01-23,Borivali
+FIR-2023-00945,Tanvi Naik,65,Female,Murder,Unidentified body found near Ghatkopar railway tracks.,19.089482,72.898947,2023-03-22,Ghatkopar
+FIR-2023-00946,Anil Patel,41,Male,Robbery,Bank robbery attempt at Ulhasnagar branch. Suspects fled with cash.,19.23055,73.162954,2023-03-12,Ulhasnagar
+FIR-2021-00947,Rohit Reddy,33,Male,Domestic Violence,Wife beaten and threatened by husband and his family in Borivali.,19.226684,72.852571,2021-01-24,Borivali
+FIR-2020-00948,Pooja Shah,59,Female,Domestic Violence,Elderly parents being abused by their son at Colaba house.,18.91455,72.821667,2020-06-01,Colaba
+FIR-2022-00949,Shalini Shah,40,Female,Assault,Was assaulted by neighbour over a property dispute in Andheri.,19.127504,72.840123,2022-01-04,Andheri
+FIR-2020-00950,Manisha Joshi,23,Female,Domestic Violence,Dowry harassment by in-laws at residence in Ulhasnagar.,19.219714,73.172762,2020-03-25,Ulhasnagar
+FIR-2022-00951,Swati More,43,Female,Murder,Woman killed by known assailant in Nerul residential area.,19.031567,73.010544,2022-02-15,Nerul
+FIR-2020-00952,Kavita Kumar,40,Female,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Andheri.,19.127372,72.850584,2020-04-10,Andheri
+FIR-2025-00953,Vikram Sawant,44,Male,Murder,Man found murdered in his apartment in Colaba society.,18.910024,72.823668,2025-05-04,Colaba
+FIR-2023-00954,Manisha Naik,49,Female,Robbery,Home invasion robbery at my residence in Panvel colony.,18.989437,73.125971,2023-03-04,Panvel
+FIR-2020-00955,Ravi Sharma,26,Male,Robbery,ATM robbery by masked men at Kopar Khairane main road.,19.092773,73.011289,2020-11-27,Kopar Khairane
+FIR-2023-00956,Seema Nair,65,Female,Theft,Bicycle stolen from outside Seawoods railway station.,19.017289,73.017219,2023-04-20,Seawoods
+FIR-2021-00957,Harsh Rane,29,Male,Fraud,"Online banking fraud. Rs. 50,000 debited from my account without authorisation. I reside in Bhandup.",19.157083,72.947385,2021-11-27,Bhandup
+FIR-2024-00958,Pooja More,63,Female,Assault,Road rage incident led to physical assault at Ulhasnagar signal.,19.215124,73.174351,2024-11-21,Ulhasnagar
+FIR-2023-00959,Manoj Singh,26,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Colaba.,18.916508,72.823282,2023-01-20,Colaba
+FIR-2021-00960,Suresh Mukherjee,21,Male,Cybercrime,Ransomware attack on my business computer systems at Turbhe office.,19.077729,73.015266,2021-04-11,Turbhe
+FIR-2022-00961,Manisha Verma,50,Female,Cybercrime,My social media account was hacked and used for sending abusive messages. I am from Lower Parel.,18.988886,72.826685,2022-06-23,Lower Parel
+FIR-2021-00962,Swati Patil,21,Female,Robbery,Armed robbery at my shop in Colaba. Cash and goods worth lakhs were looted.,18.897743,72.819595,2021-05-16,Colaba
+FIR-2020-00963,Aarti Singh,45,Female,Robbery,Home invasion robbery at my residence in Mulund colony.,19.169872,72.952387,2020-11-01,Mulund
+FIR-2022-00964,Rohit Kulkarni,65,Male,Murder,Unidentified body found near Nalasopara railway tracks.,19.419294,72.817165,2022-04-19,Nalasopara
+FIR-2025-00965,Rekha Singh,26,Female,Burglary,House was broken into while we were away. Jewellery and cash stolen from Borivali residence.,19.232431,72.864944,2025-04-07,Borivali
+FIR-2021-00966,Neha Patel,52,Female,Burglary,Shop broken into at night in Airoli market. Stock worth lakhs stolen.,19.160407,73.008193,2021-09-24,Airoli
+FIR-2024-00967,Amit Kumar,30,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Vasai.,19.355751,72.847242,2024-06-12,Vasai
+FIR-2024-00968,Sneha Rao,25,Female,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Juhu.,19.08668,72.835027,2024-01-06,Juhu
+FIR-2025-00969,Tanvi Kumar,36,Female,Theft,My mobile phone was stolen while I was travelling in the bus near Virar.,19.461788,72.815476,2025-07-16,Virar
+FIR-2022-00970,Anil Pawar,66,Male,Domestic Violence,Domestic violence complaint against spouse. We live in Belapur.,19.029087,73.036517,2022-04-06,Belapur
+FIR-2024-00971,Anil Pillai,31,Male,Burglary,Apartment burglary in Andheri society. Lock was broken.,19.118809,72.850555,2024-05-10,Andheri
+FIR-2022-00972,Ajay Rao,35,Male,Domestic Violence,Dowry harassment by in-laws at residence in Borivali.,19.225179,72.857371,2022-01-21,Borivali
+FIR-2020-00973,Sanjay Kumar,35,Male,Theft,Gold chain snatched by two men on a bike near Lower Parel junction.,19.002591,72.825499,2020-01-21,Lower Parel
+FIR-2024-00974,Sneha Nair,41,Female,Murder,Unidentified body found near Kurla railway tracks.,19.067881,72.872072,2024-05-11,Kurla
+FIR-2024-00975,Akash Banerjee,18,Male,Murder,Woman killed by known assailant in Vikhroli residential area.,19.094935,72.936932,2024-11-28,Vikhroli
+FIR-2024-00976,Harsh Das,62,Male,Cybercrime,Victim of an online phishing scam. Lost Rs. 1 lakh. I live in Lower Parel.,19.000201,72.833986,2024-04-27,Lower Parel
+FIR-2021-00977,Swati Patil,35,Female,Fraud,Investment scam. Lost money to a Ponzi scheme operating from Nalasopara.,19.423355,72.827458,2021-08-08,Nalasopara
+FIR-2021-00978,Ritu Kumar,48,Female,Assault,Got beaten up by a group of men after an argument at Badlapur.,19.154488,73.234712,2021-04-19,Badlapur
+FIR-2023-00979,Shruti Gupta,59,Female,Kidnapping,Businessman kidnapped for ransom from his office in Bandra.,19.052858,72.823055,2023-11-20,Bandra
+FIR-2020-00980,Suresh Kumar,22,Male,Cybercrime,Someone created a fake profile using my photos and is harassing people. I reside in Ghatkopar.,19.093983,72.917508,2020-12-17,Ghatkopar
+FIR-2020-00981,Harsh Bose,69,Male,Theft,Someone stole my wallet containing cash and cards at Churchgate market.,18.929758,72.816814,2020-11-02,Churchgate
+FIR-2020-00982,Manoj Bose,23,Male,Kidnapping,Child went missing from a park in Powai and is suspected to be kidnapped.,19.10787,72.915327,2020-09-24,Powai
+FIR-2022-00983,Tanvi Patel,30,Female,Robbery,ATM robbery by masked men at Ambernath main road.,19.212348,73.192309,2022-06-16,Ambernath
+FIR-2020-00984,Manoj Verma,52,Male,Kidnapping,Child went missing from a park in Fort and is suspected to be kidnapped.,18.926262,72.842298,2020-09-10,Fort
+FIR-2021-00985,Ganesh Banerjee,44,Male,Robbery,Three men with weapons robbed a jewellery store at Andheri.,19.11018,72.844943,2021-06-21,Andheri
+FIR-2022-00986,Swati Reddy,42,Female,Assault,Got beaten up by a group of men after an argument at Badlapur.,19.165115,73.22289,2022-06-03,Badlapur
+FIR-2024-00987,Neha Kulkarni,23,Female,Theft,My two-wheeler was stolen from the parking lot near Churchgate.,18.925761,72.82701,2024-03-22,Churchgate
+FIR-2023-00988,Anita Reddy,61,Female,Kidnapping,Businessman kidnapped for ransom from his office in Marine Lines.,18.940168,72.815578,2023-11-12,Marine Lines
+FIR-2025-00989,Tanvi Ghosh,22,Female,Theft,My two-wheeler was stolen from the parking lot near Powai.,19.114005,72.903812,2025-08-27,Powai
+FIR-2023-00990,Rajesh Pillai,45,Male,Kidnapping,My 8-year-old child was kidnapped from outside school near Powai.,19.114061,72.898551,2023-06-11,Powai
+FIR-2025-00991,Seema More,62,Female,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Churchgate.,18.928869,72.832443,2025-04-13,Churchgate
+FIR-2020-00992,Sapna More,52,Female,Domestic Violence,Domestic violence complaint against spouse. We live in Badlapur.,19.156024,73.223002,2020-10-23,Badlapur
+FIR-2020-00993,Divya Pillai,67,Female,Fraud,Cheated by a fake job placement agency in Kurla.,19.069834,72.873466,2020-06-18,Kurla
+FIR-2024-00994,Anita Singh,21,Female,Murder,Man found murdered in his apartment in Sanpada society.,19.059394,73.005683,2024-07-08,Sanpada
+FIR-2020-00995,Sunil Desai,21,Male,Robbery,Petrol pump looted at gunpoint near Borivali highway.,19.234779,72.854249,2020-12-14,Borivali
+FIR-2020-00996,Sunita Rao,24,Female,Burglary,Warehouse burglary at Juhu industrial area.,19.095049,72.83381,2020-03-12,Juhu
+FIR-2025-00997,Suresh Desai,22,Male,Theft,Pickpocket stole my purse while shopping at Virar mall.,19.448894,72.805248,2025-03-24,Virar
+FIR-2025-00998,Manisha Jadhav,64,Female,Murder,Dead body found with stab wounds near Kalyan lake.,19.239435,73.128618,2025-01-20,Kalyan
+FIR-2025-00999,Ganesh Gupta,18,Male,Cybercrime,Online stalking and cyber harassment through social media. Complainant from Seawoods.,19.030465,73.016586,2025-05-19,Seawoods
+FIR-2021-01000,Tanvi Desai,45,Female,Robbery,Armed robbery at my shop in Bhandup. Cash and goods worth lakhs were looted.,19.15023,72.947059,2021-12-07,Bhandup
+FIR-2026-01001,Test User,25,Male,Theft,Someone stole my phone from my pocket while I was on the bus,19.076,72.8777,2026-05-15,User Reported
