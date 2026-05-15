@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FIR Crime Detection System{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/" class="nav-brand">
+                <span class="brand-icon">&#128270;</span>
+                <span>FIR Crime Detection</span>
+            </a>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                {% if user %}
+                    <a href="/dashboard" class="nav-link">Dashboard</a>
+                    <span class="nav-user">{{ user.name }}</span>
+                    <a href="/logout" class="nav-link btn-nav-outline">Logout</a>
+                {% else %}
+                    <a href="/login" class="nav-link">Login</a>
+                    <a href="/register" class="nav-link btn-nav-filled">Register</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>
