@@ -1,303 +1,371 @@
-// Crime type color mapping
+const UI = window.PortalUI || {};
+
 const CRIME_COLORS = {
-    "Theft": "#e74c3c",
-    "Assault": "#e67e22",
-    "Robbery": "#9b59b6",
-    "Fraud": "#3498db",
-    "Kidnapping": "#1abc9c",
-    "Murder": "#c0392b",
-    "Cybercrime": "#2980b9",
-    "Drug Offense": "#27ae60",
-    "Domestic Violence": "#d35400",
-    "Burglary": "#8e44ad",
+    "Arson": "#f472b6",
+    "Assault": "#34d399",
+    "Battery": "#6ee7b7",
+    "Burglary": "#a78bfa",
+    "Criminal Damage": "#94a3b8",
+    "Criminal Trespass": "#64748b",
+    "Fraud / Deceptive Practice": "#38bdf8",
+    "Homicide": "#fb7185",
+    "Human Trafficking": "#f43f5e",
+    "Intimidation": "#ec4899",
+    "Kidnapping": "#10b981",
+    "Motor Vehicle Theft": "#818cf8",
+    "Narcotics": "#22d3ee",
+    "Obscenity": "#f97316",
+    "Offense Involving Children": "#ef4444",
+    "Other Offense": "#94a3b8",
+    "Public Peace Violation": "#fbbf24",
+    "Robbery": "#c084fc",
+    "Sex Offense": "#f472b6",
+    "Sexual Assault": "#ec4899",
+    "Stalking": "#e879f9",
+    "Theft": "#4ade80",
+    "Weapons License Violation": "#2dd4bf",
+    "Weapons Violation": "#22c55e"
 };
 
 let map;
-let heatLayer;
-let userMarker;
-let crimeMarkers = [];
+let mapMarker;
+let crimeChart;
+let firVerified = false;
+
+function notify(message, type) {
+    if (UI.showToast) {
+        UI.showToast(message, type);
+    } else {
+        alert(message);
+    }
+}
+
+function setWorkflowStep(step) {
+    document.querySelectorAll(".step-item").forEach((item) => {
+        const n = Number(item.dataset.step);
+        item.classList.toggle("step-active", n === step);
+        item.classList.toggle("step-done", n < step);
+    });
+}
+
+function updateComplaintCount() {
+    const textarea = document.getElementById("complaint");
+    const counter = document.getElementById("complaint-count");
+    if (!textarea || !counter) return;
+
+    const length = textarea.value.trim().length;
+    counter.textContent = `${length} characters · minimum 40`;
+    counter.classList.toggle("text-ok", length >= 40);
+    counter.classList.toggle("text-warn", length > 0 && length < 40);
+}
 
 function initMap() {
-    map = L.map("map").setView([19.076, 72.8777], 11);
+    const mapEl = document.getElementById("map");
+    if (!mapEl) return;
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap contributors",
-        maxZoom: 19,
+    map = L.map("map", {
+        scrollWheelZoom: false,
+        dragging: false,
+        touchZoom: false,
+        doubleClickZoom: false,
+        boxZoom: false,
+        keyboard: false
+    }).setView([19.076, 72.8777], 11);
+
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+        attribution: "&copy; OpenStreetMap &copy; CARTO",
+        maxZoom: 19
     }).addTo(map);
 
-    map.on("click", function (e) {
-        const lat = e.latlng.lat.toFixed(6);
-        const lng = e.latlng.lng.toFixed(6);
-
-        document.getElementById("latitude").value = lat;
-        document.getElementById("longitude").value = lng;
-
-        if (userMarker) {
-            map.removeLayer(userMarker);
-        }
-
-        userMarker = L.marker(e.latlng, {
-            icon: L.divIcon({
-                className: "user-location-marker",
-                html: '<div style="background:#e74c3c;width:16px;height:16px;border-radius:50%;border:3px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.3);"></div>',
-                iconSize: [16, 16],
-                iconAnchor: [8, 8],
-            }),
-        })
-            .addTo(map)
-            .bindPopup(
-                '<div class="user-marker-info"><strong>Your Selected Location</strong><br>Lat: ' +
-                    lat +
-                    "<br>Lng: " +
-                    lng +
-                    "</div>"
-            )
-            .openPopup();
-    });
-
-    loadHeatmapData();
-    loadCrimeTypes();
-    loadStats();
+    setTimeout(() => map.invalidateSize(), 250);
 }
 
-async function loadHeatmapData(crimeType) {
-    const filter = crimeType || "All";
-    const url = `/api/heatmap-data?crime_type=${encodeURIComponent(filter)}`;
+function setMapLocation(latitude, longitude) {
+    if (!map || latitude == null || longitude == null) return;
 
-    const response = await fetch(url);
-    const data = await response.json();
+    const lat = Number(latitude);
+    const lng = Number(longitude);
 
-    if (heatLayer) {
-        map.removeLayer(heatLayer);
+    document.getElementById("latitude").value = lat.toFixed(6);
+    document.getElementById("longitude").value = lng.toFixed(6);
+
+    if (mapMarker) {
+        map.removeLayer(mapMarker);
     }
 
-    crimeMarkers.forEach(function (m) {
-        map.removeLayer(m);
-    });
-    crimeMarkers = [];
-
-    const heatPoints = data.map(function (point) {
-        return [point.Latitude, point.Longitude, 0.5];
-    });
-
-    heatLayer = L.heatLayer(heatPoints, {
-        radius: 25,
-        blur: 15,
-        maxZoom: 17,
-        max: 1.0,
-        gradient: {
-            0.2: "#ffffb2",
-            0.4: "#fecc5c",
-            0.6: "#fd8d3c",
-            0.8: "#f03b20",
-            1.0: "#bd0026",
-        },
-    }).addTo(map);
-
-    data.forEach(function (point) {
-        const color = CRIME_COLORS[point.Crime_Type] || "#999";
-        const marker = L.circleMarker([point.Latitude, point.Longitude], {
-            radius: 4,
-            fillColor: color,
-            color: "white",
-            weight: 1,
-            opacity: 0.8,
-            fillOpacity: 0.7,
-        })
-            .bindPopup(
-                "<strong>" +
-                    point.Crime_Type +
-                    "</strong><br>Lat: " +
-                    point.Latitude.toFixed(4) +
-                    "<br>Lng: " +
-                    point.Longitude.toFixed(4)
-            )
-            .addTo(map);
-        crimeMarkers.push(marker);
-    });
-
-    updateLegend();
+    mapMarker = L.marker([lat, lng]).addTo(map);
+    map.setView([lat, lng], 14);
+    setTimeout(() => map.invalidateSize(), 200);
 }
 
-async function loadCrimeTypes() {
-    const response = await fetch("/api/crime-types");
-    const types = await response.json();
-    const select = document.getElementById("crime-filter");
+function populateVerifiedFields(verified, filename) {
+    document.getElementById("official_fir_id").value = verified.fir_id;
+    document.getElementById("registry_status").value = "Verified · registry match";
+    document.getElementById("name").value = verified.name || "";
+    document.getElementById("phone_number").value = verified.phone_number || "";
+    document.getElementById("age").value = verified.age ?? "";
+    document.getElementById("gender").value = verified.gender || "";
+    document.getElementById("incident_date").value = verified.incident_date || "";
+    document.getElementById("incident_time").value = verified.incident_time || "";
+    document.getElementById("incident_location").value = verified.incident_location || "";
+    document.getElementById("upload_filename").value = filename || "";
+    document.getElementById("complaint").value = "";
 
-    types.forEach(function (type) {
-        const option = document.createElement("option");
-        option.value = type;
-        option.textContent = type;
-        select.appendChild(option);
-    });
-
-    select.addEventListener("change", function () {
-        loadHeatmapData(this.value);
-    });
-}
-
-async function loadStats() {
-    const response = await fetch("/api/stats");
-    const data = await response.json();
-    const container = document.getElementById("stats-content");
-
-    let html =
-        '<div class="stats-grid">' +
-        '<div class="stat-item stat-total">' +
-        '<div class="stat-count">' +
-        data.total_firs +
-        "</div>" +
-        '<div class="stat-label">Total FIRs Filed</div>' +
-        "</div>";
-
-    const sortedCrimes = Object.entries(data.crime_counts).sort(function (
-        a,
-        b
-    ) {
-        return b[1] - a[1];
-    });
-
-    sortedCrimes.forEach(function (entry) {
-        const crime = entry[0];
-        const count = entry[1];
-        html +=
-            '<div class="stat-item">' +
-            '<div class="stat-count">' +
-            count +
-            "</div>" +
-            '<div class="stat-label">' +
-            crime +
-            "</div>" +
-            "</div>";
-    });
-
-    html += "</div>";
-    container.innerHTML = html;
-}
-
-function updateLegend() {
-    const container = document.getElementById("map-legend");
-    let html =
-        '<div class="legend-title">Crime Type Legend</div>' +
-        '<div class="legend-items">';
-
-    Object.entries(CRIME_COLORS).forEach(function (entry) {
-        const crime = entry[0];
-        const color = entry[1];
-        html +=
-            '<div class="legend-item">' +
-            '<div class="legend-color" style="background:' +
-            color +
-            '"></div>' +
-            "<span>" +
-            crime +
-            "</span>" +
-            "</div>";
-    });
-
-    html += "</div>";
-    container.innerHTML = html;
-}
-
-document.getElementById("fir-form").addEventListener("submit", async function (e) {
-    e.preventDefault();
-
+    const detailsCard = document.getElementById("details-card");
     const submitBtn = document.getElementById("submit-btn");
-    const btnText = submitBtn.querySelector(".btn-text");
-    const btnLoading = submitBtn.querySelector(".btn-loading");
 
-    submitBtn.disabled = true;
-    btnText.style.display = "none";
-    btnLoading.style.display = "inline";
+    detailsCard.hidden = false;
+    submitBtn.disabled = false;
+    firVerified = true;
 
-    const formData = {
-        name: document.getElementById("name").value,
-        age: parseInt(document.getElementById("age").value),
-        gender: document.getElementById("gender").value,
-        complaint: document.getElementById("complaint").value,
-        latitude: parseFloat(document.getElementById("latitude").value),
-        longitude: parseFloat(document.getElementById("longitude").value),
-    };
+    if (!map) {
+        initMap();
+    }
+    setMapLocation(verified.latitude, verified.longitude);
 
-    if (!formData.latitude || !formData.longitude) {
-        alert("Please click on the map to select your address location.");
-        submitBtn.disabled = false;
-        btnText.style.display = "inline";
-        btnLoading.style.display = "none";
+    updateComplaintCount();
+    setWorkflowStep(2);
+    detailsCard.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+async function handleUpload(event) {
+    event.preventDefault();
+
+    const fileInput = document.getElementById("fir_file");
+    const firIdInput = document.getElementById("upload_fir_id");
+    const preview = document.getElementById("upload-preview");
+    const uploadBtn = document.getElementById("upload-btn");
+
+    if (!firIdInput.value.trim()) {
+        notify("Enter the official FIR number before uploading.", "error");
+        firIdInput.focus();
         return;
     }
 
-    const response = await fetch("/api/predict", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-    });
-
-    const result = await response.json();
-
-    if (response.ok) {
-        showResult(result);
-        loadHeatmapData(document.getElementById("crime-filter").value);
-        loadStats();
-    } else {
-        alert(result.error || "Something went wrong. Please try again.");
+    if (!fileInput.files.length) {
+        notify("Choose an FIR file to upload.", "error");
+        return;
     }
 
-    submitBtn.disabled = false;
-    btnText.style.display = "inline";
-    btnLoading.style.display = "none";
-});
+    const formData = new FormData();
+    formData.append("fir_file", fileInput.files[0]);
+    formData.append("fir_id", firIdInput.value.trim());
+
+    preview.innerHTML = '<div class="status-card status-neutral">Verifying FIR number against uploaded document...</div>';
+    UI.setButtonLoading(uploadBtn, true, "Verifying...");
+
+    try {
+        const response = await fetch("/api/upload-fir", { method: "POST", body: formData });
+        const result = await response.json();
+
+        if (!response.ok) {
+            preview.innerHTML = `<div class="status-card status-warning">${result.error || "Verification failed."}</div>`;
+            notify(result.error || "Verification failed.", "error");
+            firVerified = false;
+            return;
+        }
+
+        populateVerifiedFields(result.verified_fir, result.filename);
+        preview.innerHTML = `
+            <div class="status-card status-success">
+                <strong>${result.verified_fir.fir_id}</strong> verified successfully.
+                <div class="status-detail">Entered FIR number matches the uploaded document and the police registry.</div>
+            </div>
+        `;
+        notify("FIR verified. Enter your complaint description to classify.", "success");
+    } catch {
+        preview.innerHTML = '<div class="status-card status-warning">Network error while verifying the FIR copy.</div>';
+        notify("Could not reach the server. Check your connection.", "error");
+    } finally {
+        UI.setButtonLoading(uploadBtn, false);
+    }
+}
+
+function destroyChart() {
+    if (crimeChart) {
+        crimeChart.destroy();
+        crimeChart = null;
+    }
+}
+
+function renderCrimeChart(canvas, probabilities) {
+    destroyChart();
+
+    const labels = probabilities.map((entry) => entry.crime_type);
+    const values = probabilities.map((entry) => entry.percentage);
+    const colors = labels.map((label) => CRIME_COLORS[label] || "#64748b");
+
+    crimeChart = new Chart(canvas, {
+        type: "bar",
+        data: {
+            labels,
+            datasets: [{
+                label: "Confidence %",
+                data: values,
+                backgroundColor: colors.map((color) => `${color}cc`),
+                borderColor: colors,
+                borderWidth: 1,
+                borderRadius: 8
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: "y",
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: (ctx) => `${ctx.parsed.x}%`
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    max: 100,
+                    grid: { color: "rgba(148, 163, 184, 0.12)" },
+                    ticks: { color: "#94a3b8", callback: (v) => `${v}%` }
+                },
+                y: {
+                    grid: { display: false },
+                    ticks: { color: "#e2e8f0", font: { size: 12 } }
+                }
+            }
+        }
+    });
+}
 
 function showResult(result) {
     const card = document.getElementById("result-card");
     const content = document.getElementById("result-content");
+    const guidance = result.guidance.map((item) => `<li>${item}</li>`).join("");
 
-    let html =
-        '<div class="result-item">' +
-        '<span class="result-label">FIR ID</span>' +
-        '<span class="result-value">' +
-        result.fir_id +
-        "</span>" +
-        "</div>" +
-        '<div class="result-item">' +
-        '<span class="result-label">Detected Crime Type</span>' +
-        '<span class="crime-type-badge">' +
-        result.predicted_crime_type +
-        "</span>" +
-        "</div>" +
-        '<div style="margin-top:1rem;">' +
-        '<div class="result-label" style="margin-bottom:0.5rem;">Confidence Scores</div>';
+    content.innerHTML = `
+        <div class="result-hero">
+            <div>
+                <div class="result-fir-id">${result.fir_id}</div>
+                <div class="result-crime">${result.predicted_crime_type}</div>
+                <div class="result-meta">Top match from your description · ${result.fir_type}</div>
+            </div>
+            <div class="confidence-pill confidence-${result.confidence_band.toLowerCase()}">
+                ${result.confidence_score}% ${result.confidence_band}
+            </div>
+        </div>
 
-    const topProbs = Object.entries(result.probabilities).slice(0, 5);
-    topProbs.forEach(function (entry) {
-        const crime = entry[0];
-        const prob = entry[1];
-        const pct = (prob * 100).toFixed(1);
-        const color = CRIME_COLORS[crime] || "#999";
-        html +=
-            '<div class="probability-bar">' +
-            '<div class="prob-label">' +
-            "<span>" +
-            crime +
-            "</span>" +
-            "<span>" +
-            pct +
-            "%</span>" +
-            "</div>" +
-            '<div class="prob-track">' +
-            '<div class="prob-fill" style="width:' +
-            pct +
-            "%;background:" +
-            color +
-            '"></div>' +
-            "</div>" +
-            "</div>";
-    });
+        <div class="result-panel chart-panel">
+            <h3>Crime type confidence</h3>
+            <div class="chart-wrap">
+                <canvas id="crime-confidence-chart" aria-label="Crime type confidence chart"></canvas>
+            </div>
+        </div>
 
-    html += "</div>";
-    content.innerHTML = html;
-    card.style.display = "block";
-    card.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        <div class="result-grid">
+            <div class="result-panel">
+                <h3>Summary</h3>
+                <div class="result-stack">
+                    <div class="result-item"><span>Review recommended</span><strong>${result.review_recommended ? "Yes" : "No"}</strong></div>
+                    <div class="result-item"><span>Police station</span><strong>${result.record.station_name || "Registered station"}</strong></div>
+                    <div class="result-item"><span>Incident area</span><strong>${result.record.incident_location}</strong></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-panel">
+            <h3>Guidance</h3>
+            <ul class="guidance-list">${guidance}</ul>
+        </div>
+    `;
+
+    const canvas = document.getElementById("crime-confidence-chart");
+    if (canvas && result.probabilities?.length) {
+        renderCrimeChart(canvas, result.probabilities);
+    }
+
+    card.hidden = false;
+    setWorkflowStep(3);
+    card.scrollIntoView({ behavior: "smooth", block: "start" });
+    notify("Classification complete.", "success");
 }
 
-document.addEventListener("DOMContentLoaded", initMap);
+function validateFirForm() {
+    const form = document.getElementById("fir-form");
+    UI.clearFormErrors(form);
+
+    const complaint = document.getElementById("complaint");
+    const officialId = document.getElementById("official_fir_id");
+    let valid = true;
+
+    if (!firVerified || !officialId.value.trim()) {
+        notify("Verify your FIR copy before classification.", "error");
+        return false;
+    }
+
+    if (!UI.validateComplaint(complaint.value)) {
+        UI.setFieldError(complaint, "Complaint should be at least 40 characters.");
+        valid = false;
+    }
+
+    if (!valid) {
+        notify("Please complete the complaint description.", "error");
+        complaint.focus();
+    }
+
+    return valid;
+}
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    const submitButton = document.getElementById("submit-btn");
+
+    if (!validateFirForm()) return;
+
+    const payload = {
+        complaint: document.getElementById("complaint").value.trim(),
+        upload_filename: document.getElementById("upload_filename").value,
+        official_fir_id: document.getElementById("official_fir_id").value.trim()
+    };
+
+    UI.setButtonLoading(submitButton, true, "Analyzing...");
+
+    try {
+        const response = await fetch("/api/predict", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+        });
+        const result = await response.json();
+
+        if (response.ok) {
+            showResult(result);
+        } else {
+            notify(result.error || "Classification failed.", "error");
+        }
+    } catch {
+        notify("Could not reach the server.", "error");
+    } finally {
+        UI.setButtonLoading(submitButton, false);
+    }
+}
+
+function bindDashboardInteractions() {
+    const complaint = document.getElementById("complaint");
+
+    if (complaint) {
+        complaint.addEventListener("input", () => {
+            updateComplaintCount();
+            UI.setFieldError(complaint, null);
+        });
+        updateComplaintCount();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (!document.getElementById("upload-form")) return;
+
+    bindDashboardInteractions();
+    setWorkflowStep(1);
+
+    document.getElementById("upload-form").addEventListener("submit", handleUpload);
+    document.getElementById("fir-form").addEventListener("submit", handleSubmit);
+});

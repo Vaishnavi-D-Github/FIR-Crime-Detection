@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block title %}Police FIR Registration{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+{% endblock %}
+
+{% block content %}
+<section class="officer-shell">
+    <div class="officer-header">
+        <div>
+            <span class="eyebrow">Official Registry</span>
+            <h1>Register Police-Verified FIR</h1>
+            <p>{{ officer.name }} | {{ officer.station_name }}</p>
+        </div>
+        <a href="/police/logout" class="btn btn-outline">Officer Logout</a>
+    </div>
+
+    <main class="officer-grid">
+        <section class="card">
+            <div class="card-topline">Police Upload</div>
+            <h2>Official FIR Entry</h2>
+            <p class="card-intro">This portal only registers official FIR records and their softcopies. Citizen classification depends on these records.</p>
+
+            <form id="police-fir-form" class="stack-form">
+                <div class="form-section">
+                    <h3>FIR Identity</h3>
+                    <div class="form-grid two-col">
+                        <div class="form-group">
+                            <label for="police_fir_id">FIR Number</label>
+                            <input type="text" id="police_fir_id" name="fir_id" placeholder="FIR-2026-00101" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="police_fir_type">Type of FIR</label>
+                            <select id="police_fir_type" name="fir_type" required>
+                                <option value="Cognizable FIR">Cognizable FIR</option>
+                                <option value="Sensitive FIR">Sensitive FIR</option>
+                                <option value="Non-Cognizable Complaint">Non-Cognizable Complaint</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Complainant Details</h3>
+                    <div class="form-grid two-col">
+                        <div class="form-group">
+                            <label for="police_name">Complainant Name</label>
+                            <input type="text" id="police_name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="police_phone">Contact Number</label>
+                            <input type="tel" id="police_phone" name="phone_number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="police_age">Age</label>
+                            <input type="number" id="police_age" name="age" min="1" max="120" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="police_gender">Gender</label>
+                            <select id="police_gender" name="gender" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Incident Details</h3>
+                    <div class="form-grid two-col">
+                        <div class="form-group">
+                            <label for="police_crime_type">Crime Type</label>
+                            <select id="police_crime_type" name="crime_type" required>
+                                <option value="Theft">Theft</option>
+                                <option value="Robbery">Robbery</option>
+                                <option value="Burglary">Burglary</option>
+                                <option value="Assault">Assault</option>
+                                <option value="Battery">Battery</option>
+                                <option value="Fraud / Deceptive Practice">Fraud / Deceptive Practice</option>
+                                <option value="Motor Vehicle Theft">Motor Vehicle Theft</option>
+                                <option value="Criminal Damage">Criminal Damage</option>
+                                <option value="Kidnapping">Kidnapping</option>
+                                <option value="Sex Offense">Sex Offense</option>
+                                <option value="Narcotics">Narcotics</option>
+                                <option value="Weapons Violation">Weapons Violation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="police_incident_date">Incident Date</label>
+                            <input type="date" id="police_incident_date" name="incident_date" max="{{ today }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="police_incident_time">Incident Time</label>
+                            <input type="time" id="police_incident_time" name="incident_time">
+                        </div>
+                        <div class="form-group">
+                            <label for="police_location">Incident Address / Area</label>
+                            <input type="text" id="police_location" name="incident_location" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="police_complaint">FIR Narrative</label>
+                        <textarea id="police_complaint" name="complaint" rows="6" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Location and Softcopy</h3>
+                    <div class="coords-display">
+                        <div class="coord-field">
+                            <label for="police_latitude">Latitude</label>
+                            <input type="text" id="police_latitude" name="latitude" readonly required>
+                        </div>
+                        <div class="coord-field">
+                            <label for="police_longitude">Longitude</label>
+                            <input type="text" id="police_longitude" name="longitude" readonly required>
+                        </div>
+                    </div>
+                    <div class="file-dropzone">
+                        <input type="file" id="police_fir_file" name="fir_file" accept=".txt,.pdf,.png,.jpg,.jpeg" required>
+                        <label for="police_fir_file">
+                            <span class="file-dropzone-title">Upload Official FIR Softcopy</span>
+                            <span class="file-dropzone-subtitle">TXT, PDF, PNG, or JPG</span>
+                        </label>
+                    </div>
+                    <div id="police-ocr-status" class="status-card status-neutral">Checking OCR status...</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Register Official FIR</button>
+            </form>
+
+            <div id="police-submit-status" class="inline-status"></div>
+        </section>
+
+        <aside class="officer-side">
+            <div class="card">
+                <h2>Location Selector</h2>
+                <p class="card-intro">Click the incident location for the official hotspot registry.</p>
+                <div id="police-map"></div>
+            </div>
+
+            <div class="card">
+                <h2>Recently Registered</h2>
+                <div class="ranked-list">
+                    {% for fir in recent_firs %}
+                    <div class="ranked-item">
+                        <span>{{ fir.fir_id }} | {{ fir.crime_type }}</span>
+                        <strong>{{ fir.incident_location }}</strong>
+                    </div>
+                    {% else %}
+                    <div class="ranked-item">
+                        <span>No FIRs registered by this officer yet</span>
+                        <strong>0</strong>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </aside>
+    </main>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/static/js/police.js"></script>
+{% endblock %}

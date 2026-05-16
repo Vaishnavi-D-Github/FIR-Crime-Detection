@@ -1,82 +1,126 @@
-# FIR Crime Detection System
+# Citizen FIR Portal
 
-A web-based FIR (First Information Report) Classification and Crime Hotspot Detection system built with Flask, PyTorch, and Leaflet.js.
+Citizen FIR Portal is a Flask-based web application that helps common citizens prepare incident reports, upload FIR drafts, classify the likely crime type, estimate the likely FIR category, and visualize reporting hotspots on a map.
+
+## What Makes This Version Stronger
+
+- More polished citizen-facing interface with a premium dashboard layout
+- FIR workflow designed around real user needs instead of only a demo form
+- Upload support for `.txt` and `.pdf` FIR drafts
+- Upload support for `.txt`, searchable `.pdf`, `.png`, `.jpg`, and `.jpeg` files
+- Separate police officer portal for registering official FIR softcopies
+- Citizen-side FIR verification before classification to block dummy FIR submissions
+- Registry-backed crime classification after FIR verification
+- FIR category support:
+  - `Sensitive FIR`
+  - `Cognizable FIR`
+  - `Non-Cognizable Complaint`
+- Hotspot visualization and live statistics
+- Better portability through SQLite fallback
+
+## Important Academic Honesty Note
+
+The current model is trained on a generic crime dataset and not on real Indian FIR narratives. Because of that:
+
+- the system is best presented as an **FIR assistance and classification support tool**
+- the output should **not** be described as a final legal FIR decision
+- real deployment would require FIR-specific annotated training data and legal validation
+
+This makes the concept realistic, defensible in presentation, and more appropriate for real-life assisted use.
 
 ## Features
 
-- **User Authentication**: Login and Registration with bcrypt password hashing
-- **Homepage**: Landing page with feature overview and crime type listing
-- **FIR Filing Form**: Submit complaints with Name, Age, Gender, Complaint text, and map-based address selection (latitude/longitude)
-- **Crime Type Classification**: Automatically detects the crime type from complaint text using a PyTorch neural network (TF-IDF + Multi-layer NN)
-- **Crime Hotspot Heatmap**: Interactive map showing crime hotspots across Mumbai metropolitan region, including newly filed FIRs
-- **Crime Statistics**: Real-time dashboard showing total FIRs and crime type distribution
-- **Crime Type Filtering**: Filter the heatmap by specific crime types
-
-## Crime Types Detected
-
-Theft, Assault, Robbery, Fraud, Kidnapping, Murder, Cybercrime, Drug Offense, Domestic Violence, Burglary
-
-## Setup & Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/Vaishnavi-D-Github/FIR-Crime-Detection.git
-cd FIR-Crime-Detection
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Generate the dataset (if not already present)
-python generate_dataset.py
-
-# Train the PyTorch model
-python model.py
-
-# Run the application
-python app.py
-```
-
-The application will be available at `http://localhost:5000`.
-
-## How to Use
-
-1. **Register/Login**: Create an account or sign in
-2. **Fill the Form**: Enter your Name, Age, Gender, and describe your complaint
-3. **Select Location**: Click anywhere on the map to set your address (latitude and longitude are auto-filled)
-4. **Submit**: Click "Submit Complaint" to file the FIR
-5. **View Results**: The system predicts the crime type with confidence scores
-6. **Explore Heatmap**: Your complaint location is added to the heatmap in real-time
-7. **Filter Crimes**: Use the dropdown to filter the heatmap by crime type
-
-## Project Structure
-
-```
-FIR-Crime-Detection/
-├── app.py                  # Flask application with auth
-├── model.py                # PyTorch crime classifier
-├── generate_dataset.py     # Synthetic dataset generator
-├── requirements.txt        # Python dependencies
-├── dataset/
-│   └── fir_dataset.csv     # FIR crime dataset (1000 records)
-├── templates/
-│   ├── base.html           # Base layout template
-│   ├── home.html           # Homepage
-│   ├── login.html          # Login page
-│   ├── register.html       # Registration page
-│   └── dashboard.html      # FIR filing dashboard with map
-└── static/
-    ├── css/
-    │   └── style.css       # Styles
-    └── js/
-        └── app.js          # Frontend JavaScript (map, form, heatmap)
-```
+- User registration and login
+- Police officer login with officer user ID and secret key
+- Official police FIR registration portal
+- Incident reporting form with:
+  - full name
+  - contact number
+  - age and gender
+  - incident date and time
+  - address or locality
+  - complaint narrative
+  - map-based incident location
+- FIR upload analysis for text, PDF, and OCR-supported image files
+- Registry match scoring against police-registered FIRs
+- Predicted crime type from the verified official FIR record
+- Confidence score and confidence band
+- FIR type guidance for user awareness
+- Live crime hotspot map
+- Real-time dashboard statistics
 
 ## Tech Stack
 
-- **Backend**: Flask (Python)
-- **ML**: PyTorch (Multi-layer Neural Network with TF-IDF features)
-- **Auth**: bcrypt for password hashing, Flask sessions
-- **Frontend**: HTML, CSS, JavaScript
-- **Maps**: Leaflet.js with OpenStreetMap tiles
-- **Heatmap**: leaflet-heat plugin
-- **Data**: pandas for data handling
+- Backend: Flask
+- Database: SQLite by default, MySQL supported through `DATABASE_URL`
+- ML: PyTorch + TF-IDF
+- Frontend: HTML, CSS, JavaScript
+- Maps: Leaflet.js + OpenStreetMap
+- Migrations: Flask-Migrate / Alembic
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+flask db upgrade
+python seed_database.py
+python app.py
+```
+
+Open: [http://localhost:5000](http://localhost:5000)
+
+Image OCR uses `pytesseract` and Tesseract OCR. On Windows, the app auto-detects common Tesseract install paths such as `C:\Program Files\Tesseract-OCR\tesseract.exe`. If Tesseract is installed somewhere else, set `TESSERACT_CMD` to the full `tesseract.exe` path before running the app.
+
+## Demo Officer Credentials
+
+After running `python seed_database.py`, use any of these officer accounts:
+
+```text
+MH-PI-1001 / andheri-2026-key
+MH-PI-1002 / dadar-2026-key
+MH-PI-1003 / bandra-2026-key
+```
+
+The seed script creates 100 official FIR records in the police registry. The citizen portal can classify only FIRs that match those official records.
+
+## Database Configuration
+
+By default, the application uses SQLite:
+
+```env
+DATABASE_URL=sqlite:///fir_crime.db
+```
+
+If you want MySQL, set:
+
+```env
+DATABASE_URL=mysql+pymysql://username:password@localhost/fir_crime_db
+```
+
+## Real-Life Use Case
+
+This project can be positioned as a first-stage citizen support system for:
+
+- police help desks
+- e-governance complaint portals
+- legal aid support centers
+- NGO victim-support desks
+- incident pre-screening and digital intake counters
+
+## Workflow
+
+1. A police officer logs into `/police/login`.
+2. The officer registers the FIR details and uploads the official softcopy.
+3. The official FIR becomes part of the registry and appears on the hotspot map.
+4. A citizen logs into the normal dashboard and uploads or enters their FIR copy.
+5. The system compares the citizen copy with the official registry.
+6. Classification is shown only if the FIR is verified.
+
+## Suggested Next Upgrade
+
+For a stronger final version, the next best improvement would be:
+
+1. Collect FIR-style training examples from Indian legal/reporting formats
+2. Add multilingual complaint support
+3. Add OCR for scanned FIR images
+4. Add officer review workflow and downloadable report export

@@ -10,15 +10,16 @@ import torch
 import torch.nn as nn
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, accuracy_score
 from sklearn.preprocessing import LabelEncoder
+import shutil
 
 MODEL_DIR = "model"
 MODEL_PATH = os.path.join(MODEL_DIR, "crime_classifier.pth")
 VECTORIZER_PATH = os.path.join(MODEL_DIR, "tfidf_vectorizer.pkl")
 LABEL_ENCODER_PATH = os.path.join(MODEL_DIR, "label_encoder.pkl")
 METADATA_PATH = os.path.join(MODEL_DIR, "model_metadata.json")
-DATASET_PATH = "dataset/fir_dataset.csv"
+DATASET_PATH = "dataset/Crimes_dataset.csv"
 
 
 class CrimeClassifier(nn.Module):
@@ -51,22 +52,48 @@ class CrimeModel:
         self.model = None
         self.classes = None
 
-    def train(self, dataset_path=DATASET_PATH):
+    def train(self, dataset_path=DATASET_PATH, sample_size=100000):
         """Train the crime classifier."""
-        df = pd.read_csv(dataset_path)
-        X_text = df["Complaint"].values
-        y_text = df["Crime_Type"].values
+        print(f"Loading dataset from {dataset_path} ...")
+        df = pd.read_csv(
+            dataset_path,
+            usecols=["Description", "Primary Type"],
+            low_memory=False,
+        )
+        print(f"Loaded {len(df):,} rows.")
+        df = df.dropna(subset=["Description", "Primary Type"])
+        df["Description"] = df["Description"].astype(str)
+        df["Primary Type"] = df["Primary Type"].astype(str)
+
+        if sample_size and len(df) > sample_size:
+            df = df.sample(n=sample_size, random_state=42)
+            print(f"Using random sample of {sample_size:,} rows for training.")
+
+        df = df[df["Description"].str.strip().str.len() > 0]
+        class_counts = df["Primary Type"].value_counts()
+        valid_classes = class_counts[class_counts >= 2].index
+        dropped_classes = len(class_counts) - len(valid_classes)
+        if dropped_classes:
+            print(f"Dropped {dropped_classes} crime type(s) with fewer than 2 samples.")
+        df = df[df["Primary Type"].isin(valid_classes)]
+
+        X_text = df["Description"].values
+        y_text = df["Primary Type"].values
 
         self.label_encoder = LabelEncoder()
         y_encoded = self.label_encoder.fit_transform(y_text)
         self.classes = self.label_encoder.classes_.tolist()
 
         X_train_text, X_test_text, y_train, y_test = train_test_split(
-            X_text, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded
+            X_text,
+            y_encoded,
+            test_size=0.2,
+            random_state=42,
+            stratify=y_encoded,
         )
 
         self.vectorizer = TfidfVectorizer(
-            max_features=5000, ngram_range=(1, 2), stop_words="english"
+            max_features=1000, ngram_range=(1, 1), stop_words="english"
         )
         X_train_tfidf = self.vectorizer.fit_transform(X_train_text).toarray()
         X_test_tfidf = self.vectorizer.transform(X_test_text).toarray()
@@ -83,7 +110,7 @@ class CrimeModel:
         optimizer = torch.optim.Adam(self.model.parameters(), lr=0.001)
 
         self.model.train()
-        num_epochs = 100
+        num_epochs = 50
         batch_size = 32
         n_samples = X_train_tensor.shape[0]
 
@@ -118,14 +145,22 @@ class CrimeModel:
             _, predicted = torch.max(test_outputs, 1)
             y_pred = predicted.numpy()
 
+        labels = np.unique(np.concatenate([y_test, y_pred]))
+
         print("\nClassification Report:")
+
         print(classification_report(
-            y_test, y_pred,
-            target_names=self.classes
+            y_test,
+            y_pred,
+            labels=labels,
+            target_names=self.label_encoder.inverse_transform(labels)
         ))
 
-        accuracy = np.mean(y_pred == y_test)
-        print(f"Accuracy: {accuracy:.4f}")
+        # Calculate Accuracy
+        accuracy = accuracy_score(y_test, y_pred)
+
+        print("\nModel Accuracy:")
+        print(f"Accuracy: {accuracy * 100:.2f}%")
 
         self._save()
         return self
@@ -139,15 +174,20 @@ class CrimeModel:
         with open(LABEL_ENCODER_PATH, "wb") as f:
             pickle.dump(self.label_encoder, f)
         metadata = {
-            "input_dim": self.vectorizer.max_features
-            if hasattr(self.vectorizer, "max_features")
-            else len(self.vectorizer.vocabulary_),
+            "input_dim": len(self.vectorizer.vocabulary_),
             "num_classes": len(self.classes),
             "classes": self.classes,
         }
         with open(METADATA_PATH, "w") as f:
             json.dump(metadata, f)
+
         print(f"Model saved to {MODEL_DIR}/")
+
+        # Copy .pkl files to project root for easy download/access
+        shutil.copy(VECTORIZER_PATH, "tfidf_vectorizer.pkl")
+        shutil.copy(LABEL_ENCODER_PATH, "label_encoder.pkl")
+
+        print("PKL files copied successfully.")
 
     def load(self):
         """Load model from disk."""

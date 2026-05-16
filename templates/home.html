@@ -1,18 +1,19 @@
 {% extends "base.html" %}
 
-{% block title %}FIR Crime Detection - Home{% endblock %}
+{% block title %}Citizen FIR Portal{% endblock %}
 
 {% block content %}
 <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-        <h1 class="hero-title">FIR Crime Classification<br>&amp; Hotspot Detection</h1>
-        <p class="hero-subtitle">AI-powered crime type detection from complaint text with interactive crime hotspot mapping</p>
+        <span class="eyebrow">Project Demo with Real-Life Utility</span>
+        <h1 class="hero-title">An FIR assistance platform designed for common citizens, not just a model demo.</h1>
+        <p class="hero-subtitle">Upload a registered FIR, verify it against the police registry, and classify the likely crime type from your complaint description using machine learning.</p>
         <div class="hero-actions">
             {% if user %}
-                <a href="/dashboard" class="btn btn-primary btn-lg">Go to Dashboard</a>
+                <a href="/dashboard" class="btn btn-primary btn-lg">Open Dashboard</a>
             {% else %}
-                <a href="/register" class="btn btn-primary btn-lg">Get Started</a>
+                <a href="/register" class="btn btn-primary btn-lg">Create Account</a>
                 <a href="/login" class="btn btn-outline btn-lg">Login</a>
             {% endif %}
         </div>
@@ -25,23 +26,23 @@
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">&#128221;</div>
-                <h3>File a Complaint</h3>
-                <p>Enter your details, describe the incident, and select your location on an interactive map</p>
+                <h3>Citizen-Friendly Filing</h3>
+                <p>Capture who reported the incident, when it happened, where it happened, and the complaint narrative in a clearer FIR workflow.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128194;</div>
+                <h3>Upload Existing FIR Drafts</h3>
+                <p>Import a typed complaint or FIR PDF, extract the text, and preview the likely classification before submission.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#129302;</div>
-                <h3>AI Classification</h3>
-                <p>Our PyTorch neural network instantly classifies the crime type from your complaint text</p>
+                <h3>Assisted Classification</h3>
+                <p>The system predicts the probable crime type, confidence level, and likely FIR category while warning when manual review is needed.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#128506;</div>
-                <h3>Hotspot Mapping</h3>
-                <p>View crime hotspots on an interactive heatmap that updates in real-time with new reports</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">&#128202;</div>
-                <h3>Crime Statistics</h3>
-                <p>Track crime trends with live statistics and filter the map by specific crime types</p>
+                <h3>Pin Incident Location</h3>
+                <p>Set where the incident occurred on an interactive map next to your address field for accurate verification context.</p>
             </div>
         </div>
     </div>
@@ -49,25 +50,25 @@
 
 <section class="crime-types-section">
     <div class="section-container">
-        <h2 class="section-title">Crime Types Detected</h2>
+        <h2 class="section-title">Representative Crime Classes</h2>
         <div class="crime-tags">
-            <span class="crime-tag" style="--tag-color: #e74c3c">Theft</span>
-            <span class="crime-tag" style="--tag-color: #e67e22">Assault</span>
-            <span class="crime-tag" style="--tag-color: #9b59b6">Robbery</span>
-            <span class="crime-tag" style="--tag-color: #3498db">Fraud</span>
-            <span class="crime-tag" style="--tag-color: #1abc9c">Kidnapping</span>
-            <span class="crime-tag" style="--tag-color: #c0392b">Murder</span>
-            <span class="crime-tag" style="--tag-color: #2980b9">Cybercrime</span>
-            <span class="crime-tag" style="--tag-color: #27ae60">Drug Offense</span>
-            <span class="crime-tag" style="--tag-color: #d35400">Domestic Violence</span>
-            <span class="crime-tag" style="--tag-color: #8e44ad">Burglary</span>
+            <span class="crime-tag" style="--tag-color: #34d399">Theft</span>
+            <span class="crime-tag" style="--tag-color: #ec4899">Assault</span>
+            <span class="crime-tag" style="--tag-color: #a78bfa">Robbery</span>
+            <span class="crime-tag" style="--tag-color: #38bdf8">Fraud</span>
+            <span class="crime-tag" style="--tag-color: #10b981">Kidnapping</span>
+            <span class="crime-tag" style="--tag-color: #f43f5e">Homicide</span>
+            <span class="crime-tag" style="--tag-color: #22d3ee">Narcotics</span>
+            <span class="crime-tag" style="--tag-color: #4ade80">Weapons Violation</span>
+            <span class="crime-tag" style="--tag-color: #f472b6">Sex Offense</span>
+            <span class="crime-tag" style="--tag-color: #818cf8">Burglary</span>
         </div>
     </div>
 </section>
 
 <footer class="footer">
     <div class="section-container">
-        <p>FIR Crime Detection System &mdash; Powered by PyTorch &amp; Leaflet.js</p>
+        <p>Citizen FIR Portal — registry verification and description-based crime classification.</p>
     </div>
 </footer>
 {% endblock %}

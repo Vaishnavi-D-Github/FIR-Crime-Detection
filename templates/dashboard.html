@@ -1,109 +1,176 @@
 {% extends "base.html" %}
 
-{% block title %}Dashboard - FIR Crime Detection{% endblock %}
+{% block title %}Citizen FIR Assistant{% endblock %}
 
 {% block head %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 {% endblock %}
 
 {% block content %}
-<div class="dashboard-header">
-    <div class="section-container">
-        <h1>Welcome, {{ user.name }}</h1>
-        <p>File a complaint and explore crime hotspots on the interactive map</p>
-    </div>
-</div>
+<section class="dashboard-shell">
+    <header class="dashboard-hero">
+        <div class="section-container dashboard-hero-inner">
+            <span class="eyebrow">Citizen Support Portal</span>
+            <h1>Verify your FIR, describe the incident, view predicted crime types.</h1>
+            <p>Upload your official FIR copy and enter the FIR number. Registry details are locked; classification uses only your complaint description.</p>
+            <div class="hero-user-chip">
+                <span>Signed in</span>
+                <strong>{{ user.name }}</strong>
+            </div>
+        </div>
+    </header>
 
-<main class="dashboard-main">
-    <div class="dashboard-container">
-        <div class="left-panel">
-            <div class="card form-card">
-                <h2><span class="card-icon">&#128221;</span> File a Complaint</h2>
-                <form id="fir-form">
+    <main class="dashboard-main section-container">
+        <nav class="workflow-steps" aria-label="Progress">
+            <ol class="step-track">
+                <li class="step-item step-active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-label">Verify FIR</span>
+                </li>
+                <li class="step-item" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-label">Describe & submit</span>
+                </li>
+                <li class="step-item" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-label">Results</span>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="dashboard-stack">
+            <section class="card upload-card" id="verify-card">
+                <div class="card-topline">Step 1</div>
+                <h2>Verify FIR copy</h2>
+                <p class="card-intro">Enter the FIR number and upload the matching softcopy. Verification succeeds only when both numbers match and the FIR exists in the police registry.</p>
+                <form id="upload-form" class="stack-form">
                     <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        <label for="upload_fir_id">Official FIR number</label>
+                        <input type="text" id="upload_fir_id" name="fir_id" placeholder="FIR-2026-00042" required autocomplete="off">
+                    </div>
+                    <div class="file-dropzone" id="fir-dropzone">
+                        <input type="file" id="fir_file" name="fir_file" accept=".txt,.pdf,.png,.jpg,.jpeg" required>
+                        <label for="fir_file">
+                            <span class="file-dropzone-title">Upload FIR softcopy</span>
+                            <span class="file-dropzone-subtitle">TXT, PDF, PNG, JPG</span>
+                            <span class="file-selected-name" hidden></span>
+                        </label>
+                    </div>
+                    <button type="submit" id="upload-btn" class="btn btn-secondary btn-block">
+                        <span class="btn-text">Verify FIR</span>
+                        <span class="btn-loading" style="display:none;">Verifying...</span>
+                    </button>
+                </form>
+                <div id="upload-preview" class="inline-status"></div>
+            </section>
+
+            <section class="card form-card" id="details-card" hidden>
+                <div class="card-topline">Step 2</div>
+                <h2>Registry details & complaint</h2>
+                <p class="card-intro">Fields below are filled from the verified registry record and cannot be edited. Enter your complaint narrative for classification.</p>
+                <form id="fir-form" class="stack-form">
+                    <div class="form-section">
+                        <h3>Official reference</h3>
+                        <div class="form-grid two-col">
+                            <div class="form-group">
+                                <label for="official_fir_id">Official FIR number</label>
+                                <input type="text" id="official_fir_id" name="official_fir_id" readonly class="field-locked" tabindex="-1">
+                            </div>
+                            <div class="form-group">
+                                <label for="registry_status">Registry status</label>
+                                <input type="text" id="registry_status" value="Not verified" readonly class="field-locked" tabindex="-1">
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="age">Age</label>
-                            <input type="number" id="age" name="age" min="1" max="120" placeholder="Age" required>
+                    <div class="form-section">
+                        <h3>Reporter information</h3>
+                        <div class="form-grid two-col">
+                            <div class="form-group">
+                                <label for="name">Full name</label>
+                                <input type="text" id="name" name="name" readonly class="field-locked" tabindex="-1">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone_number">Contact number</label>
+                                <input type="tel" id="phone_number" name="phone_number" readonly class="field-locked" tabindex="-1">
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" name="age" readonly class="field-locked" tabindex="-1">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <input type="text" id="gender" name="gender" readonly class="field-locked" tabindex="-1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Incident information</h3>
+                        <div class="form-grid two-col">
+                            <div class="form-group">
+                                <label for="incident_date">Incident date</label>
+                                <input type="date" id="incident_date" name="incident_date" readonly class="field-locked" tabindex="-1">
+                            </div>
+                            <div class="form-group">
+                                <label for="incident_time">Incident time</label>
+                                <input type="time" id="incident_time" name="incident_time" readonly class="field-locked" tabindex="-1">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="gender">Gender</label>
-                            <select id="gender" name="gender" required>
-                                <option value="">Select</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Other">Other</option>
-                            </select>
+                            <label for="incident_location">Incident location</label>
+                            <input type="text" id="incident_location" name="incident_location" readonly class="field-locked" tabindex="-1">
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="complaint">Complaint Details</label>
-                        <textarea id="complaint" name="complaint" rows="4"
-                            placeholder="Describe the incident in detail..." required></textarea>
+                    <div class="form-section">
+                        <h3>Complaint description</h3>
+                        <div class="form-group">
+                            <label for="complaint">Your narrative <span class="label-hint">(required for classification)</span></label>
+                            <textarea id="complaint" name="complaint" rows="8" placeholder="Describe what happened in your own words. Only this text is used to predict crime types." required></textarea>
+                            <div class="helper-row">
+                                <span id="complaint-count" class="helper-text">0 characters · minimum 40</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label>Address (Click on the map to select location)</label>
+                    <div class="form-section location-section">
+                        <h3>Incident map</h3>
                         <div class="coords-display">
                             <div class="coord-field">
                                 <label for="latitude">Latitude</label>
-                                <input type="text" id="latitude" name="latitude" readonly
-                                    placeholder="Click on map">
+                                <input type="text" id="latitude" name="latitude" readonly class="field-locked" tabindex="-1">
                             </div>
                             <div class="coord-field">
                                 <label for="longitude">Longitude</label>
-                                <input type="text" id="longitude" name="longitude" readonly
-                                    placeholder="Click on map">
+                                <input type="text" id="longitude" name="longitude" readonly class="field-locked" tabindex="-1">
                             </div>
                         </div>
-                        <p class="hint">&#128070; Click anywhere on the map to select your address location</p>
+                        <div id="map" class="location-map map-readonly" aria-label="Verified incident location"></div>
                     </div>
 
-                    <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
-                        <span class="btn-text">Submit Complaint</span>
-                        <span class="btn-loading" style="display:none;">Processing...</span>
+                    <input type="hidden" id="upload_filename" name="upload_filename">
+
+                    <button type="submit" id="submit-btn" class="btn btn-primary btn-block" disabled>
+                        <span class="btn-text">Classify from description</span>
+                        <span class="btn-loading" style="display:none;">Analyzing...</span>
                     </button>
                 </form>
-            </div>
+            </section>
 
-            <div class="card result-card" id="result-card" style="display:none;">
-                <h2><span class="card-icon">&#128203;</span> FIR Result</h2>
+            <section class="card result-card" id="result-card" hidden>
+                <div class="card-topline">Step 3</div>
+                <h2>Classification results</h2>
+                <p class="card-intro">Predicted crime types based solely on your complaint description.</p>
                 <div id="result-content"></div>
-            </div>
-
-            <div class="card stats-card">
-                <h2><span class="card-icon">&#128202;</span> Crime Statistics</h2>
-                <div id="stats-content">
-                    <p class="loading-text">Loading statistics...</p>
-                </div>
-            </div>
+            </section>
         </div>
-
-        <div class="right-panel">
-            <div class="card map-card">
-                <div class="map-header">
-                    <h2><span class="card-icon">&#128506;</span> Crime Hotspot Map</h2>
-                    <div class="map-controls">
-                        <select id="crime-filter">
-                            <option value="All">All Crime Types</option>
-                        </select>
-                    </div>
-                </div>
-                <div id="map"></div>
-                <div class="map-legend" id="map-legend"></div>
-            </div>
-        </div>
-    </div>
-</main>
+    </main>
+</section>
 {% endblock %}
 
 {% block scripts %}
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="/static/js/app.js"></script>
 {% endblock %}

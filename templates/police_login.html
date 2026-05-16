@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Police Login - Citizen FIR Portal{% endblock %}
+
+{% block content %}
+<div class="auth-page police-auth-page">
+    <div class="auth-card">
+        <div class="auth-header">
+            <h2>Police Officer Portal</h2>
+            <p>Use your officer ID and secret key to register official FIR softcopies.</p>
+        </div>
+
+        {% if error %}
+        <div class="alert alert-error">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST" action="/police/login" class="auth-form">
+            <div class="form-group">
+                <label for="officer_userid">Officer User ID</label>
+                <input type="text" id="officer_userid" name="officer_userid" placeholder="Example: MH-PI-1001" required>
+            </div>
+
+            <div class="form-group">
+                <label for="secret_key">Secret Key</label>
+                <input type="password" id="secret_key" name="secret_key" placeholder="Enter assigned secret key" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Enter Police Portal</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% if error %}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    PortalUI.showToast({{ error|tojson }}, "error");
+    document.getElementById("secret_key")?.focus();
+});
+</script>
+{% endif %}
+{% endblock %}
