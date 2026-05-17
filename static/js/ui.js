@@ -1,5 +1,5 @@
 /**
- * Shared UI helpers: toasts, button loading, field validation, mobile nav.
+ * Shared UI: toasts, loading states, validation, animations, mobile nav.
  */
 (function () {
     const TOAST_DURATION = 5200;
@@ -99,29 +99,88 @@
         return String(value || "").trim().length >= 40;
     }
 
-    function initMobileNav() {
-        const toggle = document.querySelector(".nav-toggle");
-        const links = document.querySelector(".nav-links");
-        if (!toggle || !links) return;
+    function initPageLoader() {
+        const loader = document.getElementById("page-loader");
+        if (!loader) return;
 
-        toggle.addEventListener("click", () => {
-            const open = links.classList.toggle("nav-open");
-            toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        window.addEventListener("load", () => {
+            document.body.classList.add("is-loaded");
+            loader.classList.add("is-hidden");
         });
 
-        links.querySelectorAll("a").forEach((link) => {
-            link.addEventListener("click", () => {
-                links.classList.remove("nav-open");
-                toggle.setAttribute("aria-expanded", "false");
+        setTimeout(() => {
+            document.body.classList.add("is-loaded");
+            loader.classList.add("is-hidden");
+        }, 1200);
+    }
+
+    function initRevealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+        if (!reveals.length) return;
+
+        if (!("IntersectionObserver" in window)) {
+            reveals.forEach((el) => el.classList.add("is-visible"));
+            return;
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+        );
+
+        reveals.forEach((el) => observer.observe(el));
+    }
+
+    function initStepDots() {
+        document.querySelectorAll("[data-step-dot]").forEach((dot) => {
+            dot.addEventListener("click", () => {
+                const step = Number(dot.dataset.stepDot);
+                const target = document.querySelector(`[data-step="${step}"]`);
+                if (target) {
+                    target.scrollIntoView({ behavior: "smooth", block: "center" });
+                }
             });
         });
+    }
 
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") {
-                links.classList.remove("nav-open");
-                toggle.setAttribute("aria-expanded", "false");
-            }
+    function syncStepDots(step) {
+        document.querySelectorAll("[data-step-dot]").forEach((dot) => {
+            const n = Number(dot.dataset.stepDot);
+            dot.classList.toggle("active", n === step);
         });
+    }
+
+    function animateUploadProgress(barEl, wrapEl) {
+        if (!barEl || !wrapEl) return;
+        wrapEl.hidden = false;
+        barEl.style.width = "0%";
+        let progress = 0;
+        const tick = setInterval(() => {
+            progress = Math.min(progress + Math.random() * 18 + 8, 92);
+            barEl.style.width = `${progress}%`;
+        }, 180);
+        return {
+            complete() {
+                clearInterval(tick);
+                barEl.style.width = "100%";
+                setTimeout(() => {
+                    wrapEl.hidden = true;
+                    barEl.style.width = "0%";
+                }, 400);
+            },
+            stop() {
+                clearInterval(tick);
+                wrapEl.hidden = true;
+                barEl.style.width = "0%";
+            }
+        };
     }
 
     function initPasswordToggles() {
@@ -184,13 +243,16 @@
         clearFormErrors,
         validatePhone,
         validateComplaint,
-        initMobileNav,
         initPasswordToggles,
-        initFileDropzone
+        initFileDropzone,
+        syncStepDots,
+        animateUploadProgress
     };
 
     document.addEventListener("DOMContentLoaded", () => {
-        initMobileNav();
+        initPageLoader();
+        initRevealOnScroll();
+        initStepDots();
         initPasswordToggles();
         document.querySelectorAll(".file-dropzone").forEach(initFileDropzone);
     });

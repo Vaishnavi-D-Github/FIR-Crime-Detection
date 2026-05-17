@@ -12,7 +12,7 @@ import bcrypt
 import numpy as np
 import torch
 import torch.nn as nn
-from flask import Flask, jsonify, redirect, render_template, request, session, url_for
+from flask import Flask, jsonify, redirect, render_template, request, send_from_directory, session, url_for
 from itsdangerous import BadSignature, SignatureExpired, URLSafeTimedSerializer
 from sqlalchemy import func
 from sqlalchemy.exc import IntegrityError
@@ -45,11 +45,12 @@ migrate.init_app(app, db)
 
 
 MODEL_PATH = "model/crime_classifier.pth"
-VECTORIZER_PATH = "model/tfidf_vectorizer.pkl"
-LABEL_ENCODER_PATH = "model/label_encoder.pkl"
+VECTORIZER_PATH = "tfidf_vectorizer.pkl"
+LABEL_ENCODER_PATH = "label_encoder.pkl"
 UPLOAD_EXTENSIONS = {".txt", ".pdf", ".png", ".jpg", ".jpeg"}
 UPLOAD_FOLDER = Path("uploads")
 UPLOAD_FOLDER.mkdir(exist_ok=True)
+FRONTEND_DIST = Path(__file__).resolve().parent / "frontend" / "dist"
 FIR_ID_PATTERN = re.compile(r"\bFIR[-\s]?\d{4}[-\s]?\d{3,6}\b", re.IGNORECASE)
 FIR_SPACED_PATTERN = re.compile(r"\bFIR[\s\-:#]*(\d{4})[\s\-:/]*(\d{2,6})\b", re.IGNORECASE)
 FIR_PS_PATTERN = re.compile(r"\b(?:FIR|PS)[\s\-#]*(\d{1,4})[\s\-/]{1,2}(\d{1,4})\b", re.IGNORECASE)
@@ -277,6 +278,33 @@ def police_required(f):
         return f(*args, **kwargs)
 
     return decorated_function
+
+
+def api_login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if "user" not in session:
+            return jsonify({"error": "Authentication required."}), 401
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+
+def api_police_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if "police_officer" not in session:
+            return jsonify({"error": "Officer authentication required."}), 401
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+
+def serve_spa():
+    """Serve the Vite React build when available."""
+    if (FRONTEND_DIST / "index.html").is_file():
+        return send_from_directory(FRONTEND_DIST, "index.html")
+    return None
 
 
 def get_friendly_crime_label(crime_label):
@@ -716,6 +744,9 @@ def serialize_fir_record(fir_record):
 
 @app.route("/")
 def home():
+    spa = serve_spa()
+    if spa:
+        return spa
     return render_template("home.html", user=session.get("user"))
 
 
@@ -724,6 +755,9 @@ def register():
     if request.method == "GET":
         if "user" in session:
             return redirect(url_for("dashboard"))
+        spa = serve_spa()
+        if spa:
+            return spa
         return render_template("register.html", user=session.get("user"))
 
     data = request.form
@@ -806,6 +840,9 @@ def login():
     if request.method == "GET":
         if "user" in session:
             return redirect(url_for("dashboard"))
+        spa = serve_spa()
+        if spa:
+            return spa
         success_message = session.pop("login_success", None)
         return render_template("login.html", user=session.get("user"), success=success_message)
 
@@ -861,6 +898,9 @@ def forgot_password():
     if request.method == "GET":
         if "user" in session:
             return redirect(url_for("dashboard"))
+        spa = serve_spa()
+        if spa:
+            return spa
         return render_template("forgot_password.html", user=session.get("user"))
 
     email = normalize_email(request.form.get("email", ""))
@@ -906,6 +946,9 @@ def reset_password(token):
         )
 
     if request.method == "GET":
+        spa = serve_spa()
+        if spa:
+            return spa
         return render_template("reset_password.html", token=token, user=session.get("user"))
 
     password = normalize_password(request.form.get("password", ""))
@@ -955,6 +998,9 @@ def police_login():
     if request.method == "GET":
         if "police_officer" in session:
             return redirect(url_for("police_portal"))
+        spa = serve_spa()
+        if spa:
+            return spa
         return render_template("police_login.html", user=session.get("user"), officer=session.get("police_officer"))
 
     officer_userid = request.form.get("officer_userid", "").strip()
@@ -988,6 +1034,9 @@ def police_logout():
 @app.route("/police/portal")
 @police_required
 def police_portal():
+    spa = serve_spa()
+    if spa:
+        return spa
     recent_firs = (
         FIR.query.filter_by(source="police", officer_id=session["police_officer"]["id"])
         .order_by(FIR.created_at.desc())
@@ -1004,7 +1053,7 @@ def police_portal():
 
 
 @app.route("/api/police/register-fir", methods=["POST"])
-@police_required
+@api_police_required
 def police_register_fir():
     data = request.form
     upload = request.files.get("fir_file")
@@ -1094,6 +1143,9 @@ def police_register_fir():
 @app.route("/dashboard")
 @login_required
 def dashboard():
+    spa = serve_spa()
+    if spa:
+        return spa
     return render_template("dashboard.html", user=session.get("user"), today=date.today().isoformat())
 
 
@@ -1103,7 +1155,7 @@ def ocr_status():
 
 
 @app.route("/api/upload-fir", methods=["POST"])
-@login_required
+@api_login_required
 def upload_fir():
     upload = request.files.get("fir_file")
     submitted_fir_id = request.form.get("fir_id", "").strip()
@@ -1135,7 +1187,7 @@ def upload_fir():
 
 
 @app.route("/api/predict", methods=["POST"])
-@login_required
+@api_login_required
 def predict():
     data = request.get_json(silent=True) or {}
 
@@ -1238,6 +1290,207 @@ def stats():
             "confidence_counts": confidence_counts,
         }
     )
+
+
+@app.route("/api/auth/session", methods=["GET"])
+def auth_session():
+    return jsonify(
+        {
+            "user": session.get("user"),
+            "police_officer": session.get("police_officer"),
+        }
+    )
+
+
+@app.route("/api/auth/login", methods=["POST"])
+def api_auth_login():
+    data = request.get_json(silent=True) or {}
+    email = normalize_email(data.get("email", ""))
+    password = normalize_password(data.get("password", ""))
+
+    if not all([email, password]):
+        return jsonify({"error": "All fields are required."}), 400
+
+    if not is_valid_email(email):
+        return jsonify({"error": "Please enter a valid email address."}), 400
+
+    user = find_user_by_email(email)
+    if not user:
+        return jsonify({"error": "No account found for that email."}), 401
+
+    if not check_password(password, user.password):
+        return jsonify({"error": "Incorrect password."}), 401
+
+    session["user"] = {"id": user.id, "name": user.name, "email": user.email}
+    return jsonify({"user": session["user"], "message": "Signed in successfully."})
+
+
+@app.route("/api/auth/register", methods=["POST"])
+def api_auth_register():
+    data = request.get_json(silent=True) or {}
+    name = data.get("name", "").strip()
+    email = normalize_email(data.get("email", ""))
+    password = normalize_password(data.get("password", ""))
+    confirm_password = normalize_password(data.get("confirm_password", ""))
+
+    if not all([name, email, password, confirm_password]):
+        return jsonify({"error": "All fields are required."}), 400
+
+    if not is_valid_email(email):
+        return jsonify({"error": "Please enter a valid email address."}), 400
+
+    if password != confirm_password:
+        return jsonify({"error": "Passwords do not match."}), 400
+
+    if len(password) < 6:
+        return jsonify({"error": "Password must be at least 6 characters."}), 400
+
+    if find_user_by_email(email):
+        return jsonify({"error": "Email already registered."}), 409
+
+    hashed = hash_password(password)
+    new_user = User(name=name, email=email, password=hashed)
+
+    try:
+        db.session.add(new_user)
+        db.session.commit()
+    except IntegrityError:
+        db.session.rollback()
+        return jsonify({"error": "Email already registered."}), 409
+    except Exception:
+        db.session.rollback()
+        return jsonify({"error": "Could not create your account. Please try again."}), 500
+
+    session["user"] = {"id": new_user.id, "name": new_user.name, "email": new_user.email}
+    return jsonify({"user": session["user"]})
+
+
+@app.route("/api/auth/logout", methods=["POST"])
+def api_auth_logout():
+    session.pop("user", None)
+    return jsonify({"message": "Signed out."})
+
+
+@app.route("/api/auth/forgot-password", methods=["POST"])
+def api_auth_forgot_password():
+    data = request.get_json(silent=True) or {}
+    email = normalize_email(data.get("email", ""))
+
+    if not email:
+        return jsonify({"error": "Please enter your email address."}), 400
+
+    if not is_valid_email(email):
+        return jsonify({"error": "Please enter a valid email address."}), 400
+
+    user = find_user_by_email(email)
+    reset_url = None
+    if user:
+        token = generate_password_reset_token(user.email)
+        reset_url = url_for("reset_password", token=token, _external=True)
+
+    return jsonify({"success": True, "email": email, "reset_url": reset_url})
+
+
+@app.route("/api/auth/reset-password", methods=["POST"])
+def api_auth_reset_password():
+    data = request.get_json(silent=True) or {}
+    token = data.get("token", "")
+    password = normalize_password(data.get("password", ""))
+    confirm_password = normalize_password(data.get("confirm_password", ""))
+
+    email = verify_password_reset_token(token)
+    if email is None:
+        return jsonify({"error": "This reset link is invalid or has expired."}), 400
+
+    if not password or not confirm_password:
+        return jsonify({"error": "Both password fields are required."}), 400
+
+    if password != confirm_password:
+        return jsonify({"error": "Passwords do not match."}), 400
+
+    if len(password) < 6:
+        return jsonify({"error": "Password must be at least 6 characters."}), 400
+
+    user = find_user_by_email(email)
+    if not user:
+        return jsonify({"error": "This reset link is invalid or has expired."}), 400
+
+    user.password = hash_password(password)
+    db.session.commit()
+
+    return jsonify({"message": "Your password has been updated. You can sign in now."})
+
+
+@app.route("/api/police/login", methods=["POST"])
+def api_police_login():
+    data = request.get_json(silent=True) or {}
+    officer_userid = data.get("officer_userid", "").strip()
+    secret_key = data.get("secret_key", "")
+
+    if not officer_userid or not secret_key:
+        return jsonify({"error": "Officer ID and secret key are required."}), 400
+
+    officer = PoliceOfficer.query.filter_by(officer_userid=officer_userid).first()
+    if not officer:
+        return jsonify({"error": "Invalid officer credentials."}), 401
+
+    if not bcrypt.checkpw(secret_key.encode("utf-8"), officer.secret_key_hash.encode("utf-8")):
+        return jsonify({"error": "Invalid officer credentials."}), 401
+
+    session["police_officer"] = {
+        "id": officer.id,
+        "name": officer.name,
+        "officer_userid": officer.officer_userid,
+        "station_name": officer.station_name,
+    }
+    return jsonify({"officer": session["police_officer"]})
+
+
+@app.route("/api/police/logout", methods=["POST"])
+def api_police_logout():
+    session.pop("police_officer", None)
+    return jsonify({"message": "Officer signed out."})
+
+
+@app.route("/api/police/portal", methods=["GET"])
+@api_police_required
+def api_police_portal():
+    recent_firs = (
+        FIR.query.filter_by(source="police", officer_id=session["police_officer"]["id"])
+        .order_by(FIR.created_at.desc())
+        .limit(8)
+        .all()
+    )
+    return jsonify(
+        {
+            "officer": session["police_officer"],
+            "today": date.today().isoformat(),
+            "recent_firs": [
+                {
+                    "fir_id": fir.fir_id,
+                    "crime_type": fir.crime_type,
+                    "incident_location": fir.incident_location,
+                }
+                for fir in recent_firs
+            ],
+        }
+    )
+
+
+@app.route("/favicon.svg")
+def frontend_favicon():
+    icon = FRONTEND_DIST / "favicon.svg"
+    if icon.is_file():
+        return send_from_directory(FRONTEND_DIST, "favicon.svg")
+    return jsonify({"error": "Not found"}), 404
+
+
+@app.route("/assets/<path:filename>")
+def frontend_assets(filename):
+    asset_path = FRONTEND_DIST / "assets" / filename
+    if asset_path.is_file():
+        return send_from_directory(FRONTEND_DIST / "assets", filename)
+    return jsonify({"error": "Not found"}), 404
 
 
 if __name__ == "__main__":

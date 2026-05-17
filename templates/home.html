@@ -1,74 +1,71 @@
 {% extends "base.html" %}
 
-{% block title %}Citizen FIR Portal{% endblock %}
+{% block title %}Citizen FIR Intelligence{% endblock %}
 
 {% block content %}
-<section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <span class="eyebrow">Project Demo with Real-Life Utility</span>
-        <h1 class="hero-title">An FIR assistance platform designed for common citizens, not just a model demo.</h1>
-        <p class="hero-subtitle">Upload a registered FIR, verify it against the police registry, and classify the likely crime type from your complaint description using machine learning.</p>
-        <div class="hero-actions">
-            {% if user %}
-                <a href="/dashboard" class="btn btn-primary btn-lg">Open Dashboard</a>
-            {% else %}
-                <a href="/register" class="btn btn-primary btn-lg">Create Account</a>
-                <a href="/login" class="btn btn-outline btn-lg">Login</a>
-            {% endif %}
-        </div>
+<section class="onboarding-hero reveal">
+    <div class="illustration-wrap">
+        <svg class="illustration" viewBox="0 0 240 200" fill="none" aria-hidden="true">
+            <circle cx="120" cy="100" r="70" fill="rgba(255,176,0,0.08)" stroke="rgba(255,176,0,0.25)" stroke-width="1.5"/>
+            <path d="M120 55 L120 145 M85 90 L155 90" stroke="#FFB000" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+            <rect x="95" y="115" width="50" height="55" rx="8" fill="#151B2E" stroke="#FFB000" stroke-width="1.5"/>
+            <path d="M105 130 h30 M105 145 h20" stroke="#B8BCC8" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="120" cy="75" r="18" fill="#151B2E" stroke="#7a8194" stroke-width="1.5"/>
+            <path d="M120 45 L120 35 M120 93 L120 103" stroke="#FFB000" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <span class="eyebrow">AI-Powered Safety</span>
+    <h1 class="headline-accent">Safety over Speed</h1>
+    <p class="subtitle-muted">Verify your FIR against the police registry and get instant AI crime classification from your complaint — built for citizens, not just demos.</p>
+    <div class="page-dots" aria-hidden="true">
+        <span class="page-dot active"></span>
+        <span class="page-dot"></span>
+        <span class="page-dot"></span>
+    </div>
+    <div class="hero-actions">
+        {% if user %}
+            <a href="/dashboard" class="btn btn-primary btn-lg btn-block">Get Started</a>
+        {% else %}
+            <a href="/register" class="btn btn-primary btn-lg btn-block">Get Started</a>
+            <a href="/login" class="btn-text-link">Already have an account? Sign in</a>
+        {% endif %}
     </div>
 </section>
 
-<section class="features-section">
-    <div class="section-container">
-        <h2 class="section-title">How It Works</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">&#128221;</div>
-                <h3>Citizen-Friendly Filing</h3>
-                <p>Capture who reported the incident, when it happened, where it happened, and the complaint narrative in a clearer FIR workflow.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">&#128194;</div>
-                <h3>Upload Existing FIR Drafts</h3>
-                <p>Import a typed complaint or FIR PDF, extract the text, and preview the likely classification before submission.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">&#129302;</div>
-                <h3>Assisted Classification</h3>
-                <p>The system predicts the probable crime type, confidence level, and likely FIR category while warning when manual review is needed.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">&#128506;</div>
-                <h3>Pin Incident Location</h3>
-                <p>Set where the incident occurred on an interactive map next to your address field for accurate verification context.</p>
-            </div>
-        </div>
+<section class="features-section reveal">
+    <h2 class="section-title">How It Works</h2>
+    <div class="feature-slide">
+        <div class="feature-icon-wrap" aria-hidden="true">&#128737;</div>
+        <h3>Verify Your FIR</h3>
+        <p>Upload your official FIR softcopy and match it against the police registry in seconds.</p>
+    </div>
+    <div class="feature-slide">
+        <div class="feature-icon-wrap" aria-hidden="true">&#128221;</div>
+        <h3>Describe the Incident</h3>
+        <p>Enter your complaint narrative — only your words are used for AI classification.</p>
+    </div>
+    <div class="feature-slide">
+        <div class="feature-icon-wrap" aria-hidden="true">&#129302;</div>
+        <h3>AI Crime Analysis</h3>
+        <p>View predicted crime type, confidence scores, and guidance in a premium results view.</p>
     </div>
 </section>
 
-<section class="crime-types-section">
-    <div class="section-container">
-        <h2 class="section-title">Representative Crime Classes</h2>
-        <div class="crime-tags">
-            <span class="crime-tag" style="--tag-color: #34d399">Theft</span>
-            <span class="crime-tag" style="--tag-color: #ec4899">Assault</span>
-            <span class="crime-tag" style="--tag-color: #a78bfa">Robbery</span>
-            <span class="crime-tag" style="--tag-color: #38bdf8">Fraud</span>
-            <span class="crime-tag" style="--tag-color: #10b981">Kidnapping</span>
-            <span class="crime-tag" style="--tag-color: #f43f5e">Homicide</span>
-            <span class="crime-tag" style="--tag-color: #22d3ee">Narcotics</span>
-            <span class="crime-tag" style="--tag-color: #4ade80">Weapons Violation</span>
-            <span class="crime-tag" style="--tag-color: #f472b6">Sex Offense</span>
-            <span class="crime-tag" style="--tag-color: #818cf8">Burglary</span>
-        </div>
+<section class="mobile-card reveal">
+    <h2 class="section-title" style="margin-top:0">Crime Classes</h2>
+    <div class="crime-tags">
+        <span class="crime-tag" style="--tag-color: #FFB000">Theft</span>
+        <span class="crime-tag" style="--tag-color: #FFC93C">Assault</span>
+        <span class="crime-tag" style="--tag-color: #fb923c">Robbery</span>
+        <span class="crime-tag" style="--tag-color: #a78bfa">Fraud</span>
+        <span class="crime-tag" style="--tag-color: #4ade80">Kidnapping</span>
+        <span class="crime-tag" style="--tag-color: #f87171">Homicide</span>
+        <span class="crime-tag" style="--tag-color: #22d3ee">Narcotics</span>
+        <span class="crime-tag" style="--tag-color: #86efac">Weapons</span>
+        <span class="crime-tag" style="--tag-color: #f472b6">Sex Offense</span>
+        <span class="crime-tag" style="--tag-color: #c4b5fd">Burglary</span>
     </div>
 </section>
 
-<footer class="footer">
-    <div class="section-container">
-        <p>Citizen FIR Portal — registry verification and description-based crime classification.</p>
-    </div>
-</footer>
+<p class="footer-mini">FIR Crime Detection — registry verification &amp; AI classification</p>
 {% endblock %}

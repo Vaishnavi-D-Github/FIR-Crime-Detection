@@ -23,8 +23,8 @@ async function loadPoliceOcrStatus() {
 function initPoliceMap() {
     policeMap = L.map("police-map").setView([19.076, 72.8777], 11);
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap contributors",
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+        attribution: "&copy; OpenStreetMap &copy; CARTO",
         maxZoom: 19
     }).addTo(policeMap);
 

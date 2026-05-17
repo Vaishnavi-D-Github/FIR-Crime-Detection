@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
-{% block title %}Police FIR Registration{% endblock %}
+{% block title %}Police FIR Registration — FIR AI{% endblock %}
+{% block body_class %}layout-wide{% endblock %}
 
 {% block head %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -8,7 +9,7 @@
 
 {% block content %}
 <section class="officer-shell">
-    <div class="officer-header">
+    <div class="officer-header reveal">
         <div>
             <span class="eyebrow">Official Registry</span>
             <h1>Register Police-Verified FIR</h1>
@@ -18,7 +19,7 @@
     </div>
 
     <main class="officer-grid">
-        <section class="card">
+        <section class="card reveal">
             <div class="card-topline">Police Upload</div>
             <h2>Official FIR Entry</h2>
             <p class="card-intro">This portal only registers official FIR records and their softcopies. Citizen classification depends on these records.</p>
@@ -137,13 +138,13 @@
         </section>
 
         <aside class="officer-side">
-            <div class="card">
+            <div class="card reveal">
                 <h2>Location Selector</h2>
                 <p class="card-intro">Click the incident location for the official hotspot registry.</p>
                 <div id="police-map"></div>
             </div>
 
-            <div class="card">
+            <div class="card reveal">
                 <h2>Recently Registered</h2>
                 <div class="ranked-list">
                     {% for fir in recent_firs %}

@@ -1,13 +1,27 @@
 {% extends "base.html" %}
 
-{% block title %}Login - Citizen FIR Portal{% endblock %}
+{% block title %}Sign In — FIR AI{% endblock %}
+
+{% block header_action %}
+<a href="/" class="header-link">Skip</a>
+{% endblock %}
 
 {% block content %}
 <div class="auth-page">
-    <div class="auth-card">
+    <div class="illustration-wrap">
+        <svg class="illustration" viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <rect x="55" y="40" width="90" height="100" rx="14" fill="#151B2E" stroke="rgba(255,176,0,0.4)" stroke-width="1.5"/>
+            <circle cx="100" cy="72" r="16" stroke="#FFB000" stroke-width="1.5"/>
+            <path d="M78 108 q22 18 44 0" stroke="#B8BCC8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M100 30 L100 18 M88 22 L112 22" stroke="#FFB000" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <div class="auth-card mobile-card-glass reveal">
         <div class="auth-header">
-            <h2>Welcome Back</h2>
-            <p>Sign in to continue filing reports and reviewing classifications.</p>
+            <span class="eyebrow">Welcome Back</span>
+            <h2>Sign In</h2>
+            <p>Access your FIR workspace and AI crime classification.</p>
         </div>
 
         {% if success %}

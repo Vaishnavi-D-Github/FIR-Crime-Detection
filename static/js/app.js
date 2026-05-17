@@ -46,6 +46,9 @@ function setWorkflowStep(step) {
         item.classList.toggle("step-active", n === step);
         item.classList.toggle("step-done", n < step);
     });
+    if (UI.syncStepDots) {
+        UI.syncStepDots(step);
+    }
 }
 
 function updateComplaintCount() {
@@ -152,6 +155,12 @@ async function handleUpload(event) {
     formData.append("fir_id", firIdInput.value.trim());
 
     preview.innerHTML = '<div class="status-card status-neutral">Verifying FIR number against uploaded document...</div>';
+    const progressBar = document.getElementById("upload-progress-bar");
+    const progressWrap = document.getElementById("upload-progress");
+    const progressAnim = UI.animateUploadProgress
+        ? UI.animateUploadProgress(progressBar, progressWrap)
+        : null;
+
     UI.setButtonLoading(uploadBtn, true, "Verifying...");
 
     try {
@@ -159,11 +168,14 @@ async function handleUpload(event) {
         const result = await response.json();
 
         if (!response.ok) {
+            if (progressAnim) progressAnim.stop();
             preview.innerHTML = `<div class="status-card status-warning">${result.error || "Verification failed."}</div>`;
             notify(result.error || "Verification failed.", "error");
             firVerified = false;
             return;
         }
+
+        if (progressAnim) progressAnim.complete();
 
         populateVerifiedFields(result.verified_fir, result.filename);
         preview.innerHTML = `
@@ -174,6 +186,7 @@ async function handleUpload(event) {
         `;
         notify("FIR verified. Enter your complaint description to classify.", "success");
     } catch {
+        if (progressAnim) progressAnim.stop();
         preview.innerHTML = '<div class="status-card status-warning">Network error while verifying the FIR copy.</div>';
         notify("Could not reach the server. Check your connection.", "error");
     } finally {
@@ -224,12 +237,12 @@ function renderCrimeChart(canvas, probabilities) {
                 x: {
                     beginAtZero: true,
                     max: 100,
-                    grid: { color: "rgba(148, 163, 184, 0.12)" },
-                    ticks: { color: "#94a3b8", callback: (v) => `${v}%` }
+                    grid: { color: "rgba(184, 188, 200, 0.1)" },
+                    ticks: { color: "#B8BCC8", callback: (v) => `${v}%` }
                 },
                 y: {
                     grid: { display: false },
-                    ticks: { color: "#e2e8f0", font: { size: 12 } }
+                    ticks: { color: "#ffffff", font: { size: 12 } }
                 }
             }
         }
@@ -241,20 +254,41 @@ function showResult(result) {
     const content = document.getElementById("result-content");
     const guidance = result.guidance.map((item) => `<li>${item}</li>`).join("");
 
+    const probBars = (result.probabilities || [])
+        .slice(0, 5)
+        .map(
+            (entry) => `
+        <div class="probability-bar">
+            <div class="prob-label">
+                <span>${entry.crime_type}</span>
+                <strong>${entry.percentage}%</strong>
+            </div>
+            <div class="prob-track">
+                <div class="prob-fill" style="width:0%" data-width="${entry.percentage}%"></div>
+            </div>
+        </div>`
+        )
+        .join("");
+
     content.innerHTML = `
         <div class="result-hero">
             <div>
                 <div class="result-fir-id">${result.fir_id}</div>
                 <div class="result-crime">${result.predicted_crime_type}</div>
-                <div class="result-meta">Top match from your description · ${result.fir_type}</div>
+                <div class="result-meta">Top match · ${result.fir_type}</div>
             </div>
             <div class="confidence-pill confidence-${result.confidence_band.toLowerCase()}">
                 ${result.confidence_score}% ${result.confidence_band}
             </div>
         </div>
 
+        <div class="result-panel">
+            <h3>Confidence breakdown</h3>
+            <div class="result-stack">${probBars}</div>
+        </div>
+
         <div class="result-panel chart-panel">
-            <h3>Crime type confidence</h3>
+            <h3>AI analysis chart</h3>
             <div class="chart-wrap">
                 <canvas id="crime-confidence-chart" aria-label="Crime type confidence chart"></canvas>
             </div>
@@ -281,6 +315,15 @@ function showResult(result) {
     if (canvas && result.probabilities?.length) {
         renderCrimeChart(canvas, result.probabilities);
     }
+
+    requestAnimationFrame(() => {
+        content.querySelectorAll(".prob-fill").forEach((bar) => {
+            const width = bar.dataset.width || "0%";
+            setTimeout(() => {
+                bar.style.width = width;
+            }, 120);
+        });
+    });
 
     card.hidden = false;
     setWorkflowStep(3);
@@ -327,6 +370,18 @@ async function handleSubmit(event) {
     };
 
     UI.setButtonLoading(submitButton, true, "Analyzing...");
+
+    const resultCard = document.getElementById("result-card");
+    const resultContent = document.getElementById("result-content");
+    if (resultCard && resultContent) {
+        resultCard.hidden = false;
+        resultContent.innerHTML = `
+            <div class="ai-loader" aria-live="polite">
+                <div class="ai-loader-ring"></div>
+                <p class="subtitle-muted">AI is analyzing your complaint narrative…</p>
+            </div>`;
+        resultCard.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
 
     try {
         const response = await fetch("/api/predict", {

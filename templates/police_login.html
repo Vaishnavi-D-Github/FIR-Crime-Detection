@@ -1,13 +1,21 @@
 {% extends "base.html" %}
 
-{% block title %}Police Login - Citizen FIR Portal{% endblock %}
-
+{% block title %}Police Portal — FIR AI{% endblock %}
 {% block content %}
 <div class="auth-page police-auth-page">
-    <div class="auth-card">
+    <div class="illustration-wrap">
+        <svg class="illustration" viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M100 30 L145 55 V95 C145 120 100 135 100 135 C100 135 55 120 55 95 V55 Z" fill="#151B2E" stroke="rgba(255,176,0,0.45)" stroke-width="1.5"/>
+            <circle cx="100" cy="78" r="14" stroke="#FFB000" stroke-width="1.5"/>
+            <path d="M88 95 h24" stroke="#B8BCC8" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <div class="auth-card mobile-card-glass reveal">
         <div class="auth-header">
-            <h2>Police Officer Portal</h2>
-            <p>Use your officer ID and secret key to register official FIR softcopies.</p>
+            <span class="eyebrow">Official Access</span>
+            <h2>Police Portal</h2>
+            <p>Register official FIR softcopies in the police registry.</p>
         </div>
 
         {% if error %}

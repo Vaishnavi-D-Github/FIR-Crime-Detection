@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Citizen FIR Assistant{% endblock %}
+{% block title %}FIR Assistant — FIR AI{% endblock %}
 
 {% block head %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -8,41 +8,44 @@
 
 {% block content %}
 <section class="dashboard-shell">
-    <header class="dashboard-hero">
-        <div class="section-container dashboard-hero-inner">
-            <span class="eyebrow">Citizen Support Portal</span>
-            <h1>Verify your FIR, describe the incident, view predicted crime types.</h1>
-            <p>Upload your official FIR copy and enter the FIR number. Registry details are locked; classification uses only your complaint description.</p>
-            <div class="hero-user-chip">
-                <span>Signed in</span>
-                <strong>{{ user.name }}</strong>
-            </div>
+    <header class="dashboard-hero reveal">
+        <span class="eyebrow">Citizen Portal</span>
+        <h1>Verify, describe &amp; classify your FIR with AI</h1>
+        <p>Upload your official FIR copy, match the registry, then let AI analyze your complaint narrative.</p>
+        <div class="hero-user-chip">
+            <span>Signed in</span>
+            <strong>{{ user.name }}</strong>
         </div>
     </header>
 
-    <main class="dashboard-main section-container">
-        <nav class="workflow-steps" aria-label="Progress">
-            <ol class="step-track">
-                <li class="step-item step-active" data-step="1">
-                    <span class="step-number">1</span>
-                    <span class="step-label">Verify FIR</span>
-                </li>
-                <li class="step-item" data-step="2">
-                    <span class="step-number">2</span>
-                    <span class="step-label">Describe & submit</span>
-                </li>
-                <li class="step-item" data-step="3">
-                    <span class="step-number">3</span>
-                    <span class="step-label">Results</span>
-                </li>
-            </ol>
-        </nav>
+    <nav class="workflow-steps reveal" aria-label="Progress">
+        <ol class="step-track">
+            <li class="step-item step-active" data-step="1">
+                <span class="step-number">1</span>
+                <span class="step-label">Verify</span>
+            </li>
+            <li class="step-item" data-step="2">
+                <span class="step-number">2</span>
+                <span class="step-label">Describe</span>
+            </li>
+            <li class="step-item" data-step="3">
+                <span class="step-number">3</span>
+                <span class="step-label">Results</span>
+            </li>
+        </ol>
+        <div class="page-dots" aria-hidden="true">
+            <span class="page-dot active" data-step-dot="1"></span>
+            <span class="page-dot" data-step-dot="2"></span>
+            <span class="page-dot" data-step-dot="3"></span>
+        </div>
+    </nav>
 
+    <main class="dashboard-main">
         <div class="dashboard-stack">
-            <section class="card upload-card" id="verify-card">
+            <section class="card upload-card reveal" id="verify-card">
                 <div class="card-topline">Step 1</div>
                 <h2>Verify FIR copy</h2>
-                <p class="card-intro">Enter the FIR number and upload the matching softcopy. Verification succeeds only when both numbers match and the FIR exists in the police registry.</p>
+                <p class="card-intro">Enter the FIR number and upload the matching softcopy. Both must match the police registry.</p>
                 <form id="upload-form" class="stack-form">
                     <div class="form-group">
                         <label for="upload_fir_id">Official FIR number</label>
@@ -51,10 +54,16 @@
                     <div class="file-dropzone" id="fir-dropzone">
                         <input type="file" id="fir_file" name="fir_file" accept=".txt,.pdf,.png,.jpg,.jpeg" required>
                         <label for="fir_file">
-                            <span class="file-dropzone-title">Upload FIR softcopy</span>
+                            <svg class="file-dropzone-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 16V4m0 0l-4 4m4-4l4 4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="file-dropzone-title">Drop FIR softcopy here</span>
                             <span class="file-dropzone-subtitle">TXT, PDF, PNG, JPG</span>
                             <span class="file-selected-name" hidden></span>
                         </label>
+                    </div>
+                    <div class="upload-progress" id="upload-progress" hidden aria-hidden="true">
+                        <div class="upload-progress-bar" id="upload-progress-bar"></div>
                     </div>
                     <button type="submit" id="upload-btn" class="btn btn-secondary btn-block">
                         <span class="btn-text">Verify FIR</span>
@@ -64,10 +73,10 @@
                 <div id="upload-preview" class="inline-status"></div>
             </section>
 
-            <section class="card form-card" id="details-card" hidden>
+            <section class="card form-card reveal" id="details-card" hidden>
                 <div class="card-topline">Step 2</div>
-                <h2>Registry details & complaint</h2>
-                <p class="card-intro">Fields below are filled from the verified registry record and cannot be edited. Enter your complaint narrative for classification.</p>
+                <h2>Registry &amp; complaint</h2>
+                <p class="card-intro">Registry fields are locked. Enter your narrative for AI classification.</p>
                 <form id="fir-form" class="stack-form">
                     <div class="form-section">
                         <h3>Official reference</h3>
@@ -158,10 +167,10 @@
                 </form>
             </section>
 
-            <section class="card result-card" id="result-card" hidden>
-                <div class="card-topline">Step 3</div>
+            <section class="card result-card reveal" id="result-card" hidden>
+                <div class="card-topline">Step 3 · AI Analysis</div>
                 <h2>Classification results</h2>
-                <p class="card-intro">Predicted crime types based solely on your complaint description.</p>
+                <p class="card-intro">Predicted crime types based on your complaint description.</p>
                 <div id="result-content"></div>
             </section>
         </div>

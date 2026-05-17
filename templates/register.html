@@ -1,13 +1,27 @@
 {% extends "base.html" %}
 
-{% block title %}Register - Citizen FIR Portal{% endblock %}
+{% block title %}Create Account — FIR AI{% endblock %}
+
+{% block header_action %}
+<a href="/login" class="header-link">Sign in</a>
+{% endblock %}
 
 {% block content %}
 <div class="auth-page">
-    <div class="auth-card">
+    <div class="illustration-wrap">
+        <svg class="illustration" viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <circle cx="100" cy="55" r="22" fill="#151B2E" stroke="#FFB000" stroke-width="1.5"/>
+            <path d="M65 120 q35 28 70 0" stroke="#7a8194" stroke-width="1.5" fill="none"/>
+            <path d="M55 95 h90" stroke="rgba(255,176,0,0.35)" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="70" y="125" width="60" height="8" rx="4" fill="#FFB000" opacity="0.5"/>
+        </svg>
+    </div>
+
+    <div class="auth-card mobile-card-glass reveal">
         <div class="auth-header">
+            <span class="eyebrow">Join FIR AI</span>
             <h2>Create Account</h2>
-            <p>Create your account to file reports, upload FIR drafts, and view hotspot analytics.</p>
+            <p>File reports, upload FIR drafts, and view AI crime insights.</p>
         </div>
 
         {% if error %}
@@ -41,7 +55,7 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+            <button type="submit" class="btn btn-primary btn-block">Get Started</button>
         </form>
 
         <div class="auth-footer">
